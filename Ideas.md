@@ -18,7 +18,7 @@
   - Bosses finales
 
 * # Darkest Dungeon
-  ![Fotografia de referencia de Celeste. Desarrollo inicial del prototipo del videojuego](https://imgs.search.brave.com/_HOUnaRk-P497BEoLy7DOFv6fRjwZijbUcYva9ubMvI/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93d3cu/aW5maW5pdHluZXdz/LmNvbS5ici93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOS8wMi9k/YXJrZXN0LWR1bmdl/b24taGQtd2FsbHBh/cGVycy1oZC02OTE2/OC0yMjk3NjcxLmpw/Zw)
+  ![Fotografia de referencia de Darkest Dungeon. Desarrollo inicial del prototipo del videojuego](https://imgs.search.brave.com/_HOUnaRk-P497BEoLy7DOFv6fRjwZijbUcYva9ubMvI/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93d3cu/aW5maW5pdHluZXdz/LmNvbS5ici93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOS8wMi9k/YXJrZXN0LWR1bmdl/b24taGQtd2FsbHBh/cGVycy1oZC02OTE2/OC0yMjk3NjcxLmpw/Zw)
     
     Caracteristicas de interes del juego:
     - Sistema de suerte
@@ -26,7 +26,7 @@
     - Masmorras
 
 * # Undertale
-  ![](https://imgs.search.brave.com/cRUt_YyR8t6xyvLHLUsuiA1AA14SrxwaiDQN-Ucwt9U/rs:fit:480:270:1/g:ce/aHR0cDovL3BhMS5u/YXJ2aWkuY29tLzYx/NjIvMjlmNWNiNjll/ZGVmYTExMjQ1OTlj/ODRhMzAzNzZhMzA3/MDIzMWE3Y19ocS5n/aWY.gif)
+  ![Fotografia de referencia de Undertale. Desarrollo inicial del prototipo del videojuego](https://imgs.search.brave.com/cRUt_YyR8t6xyvLHLUsuiA1AA14SrxwaiDQN-Ucwt9U/rs:fit:480:270:1/g:ce/aHR0cDovL3BhMS5u/YXJ2aWkuY29tLzYx/NjIvMjlmNWNiNjll/ZGVmYTExMjQ1OTlj/ODRhMzAzNzZhMzA3/MDIzMWE3Y19ocS5n/aWY.gif)
 
     Caracteristicas de interes del juego:
     - Mecanica de hablar con el contrincante
