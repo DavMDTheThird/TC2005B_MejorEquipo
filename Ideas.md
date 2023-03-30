@@ -38,25 +38,71 @@
 
 *  ### Ideas de Videojuegos
 
+  # Celeste
   ![Fotografia de videojuegos de celeste](https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/c/celeste-switch/hero)(https://youtu.be/iofYDsA2yqg)
 
+    Caracteristicas de interes del juego:
+    -Dificultad
+    -Pixel Art
+    -Historia
+    -Diseñon de niveles
+    -Mecanica de dash
+    
+
+  # Undertale
   ![Fotografia de videojuegos de Undertale](https://static.wikia.nocookie.net/eswikia/images/a/a5/Undertale.png/revision/latest/scale-to-width-down/3840?cb=20160825000138)(https://youtu.be/TbyiFK9hZLw)
 
+    Caracteristicas de interes del juego:
+    -Historia 
+    -Juego Turn Based
+    -Mecanica de esquivar los ataques
+    -Dificultad
+    -Diferentes elementos o corazones
+    -Varios bosses
+
+  # Binding of Isaac
   ![Fotografia de videojuegos de Binding of Isaac](https://cdn.akamai.steamstatic.com/steam/apps/250900/capsule_616x353.jpg?t=1617174663)(https://youtu.be/HIajkEnCd_I)
 
+    Caracteristicas de interes del juego:
+    -Dificultad 
+    -Diseño de niveles
+    -Varios finales
+    -Gameplay
+
+  # Terraria
   ![Fotografia de videojuegos de Terraria](https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg?t=1666290860)(https://youtu.be/UGo7iMUcxLc)
 
+    Caracteristicas de interes del juego:
+
+  # Cuphead
   ![Fotografia de videojuegos de Cuphead](https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe)(https://youtu.be/81zM_vg96VY)
 
+    Caracteristicas de interes del juego:
+
+  # Cult of The Lamb
   ![Fotografia de videojuegos de Cult of the lamb](https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/dlc/switch-dlc/cult-of-the-lamb-dlc/rom-bundle/cult-of-the-lamb-cultist-edition/image)(https://youtu.be/QEes2DC_cw4)
 
+    Caracteristicas de interes del juego:
+
+  # Ak-xolotl
   ![Fotografia de videojuegos de Ak-xolotl](https://cdn.akamai.steamstatic.com/steam/apps/1479140/header.jpg?t=1680090546)(https://youtu.be/Twb42YXW_fg)
 
+    Caracteristicas de interes del juego:
+
+  # Titan Souls
   ![Fotografia de videojuegos de Titan Souls](https://i.blogs.es/09c700/1366_2000/1366_2000.jpeg)(https://youtu.be/9AV4Cd7wdpA)
 
+    Caracteristicas de interes del juego:
+
+  # Dont Starve Together
   ![Fotografia de videojuegos de Dont Starve Together](https://store-images.s-microsoft.com/image/apps.47843.68986806511725911.f424da40-674e-41a9-878c-7a524fa56895.f1496447-da74-4070-887c-e8cd3e366e38?q=90&w=480&h=270)(https://youtu.be/bVbyn7c1X6E)
 
+    Caracteristicas de interes del juego:
+
+  # Five Night at Freddys
   ![Fotografia de videojuegos de Fnaf](https://image.api.playstation.com/vulcan/ap/rnd/202009/3020/AwfxjgRsZUe9JK6AOvZcz8Rx.jpg)(https://youtu.be/hdHlIy0W4uU)
+
+    Caracteristicas de interes del juego:
   
 
   
