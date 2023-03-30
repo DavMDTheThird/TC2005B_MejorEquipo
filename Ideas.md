@@ -26,6 +26,7 @@
     - Masmorras
 
 * # Undertale
+  
   ![Fotografia de referencia de Undertale. Desarrollo inicial del prototipo del videojuego](https://imgs.search.brave.com/cRUt_YyR8t6xyvLHLUsuiA1AA14SrxwaiDQN-Ucwt9U/rs:fit:480:270:1/g:ce/aHR0cDovL3BhMS5u/YXJ2aWkuY29tLzYx/NjIvMjlmNWNiNjll/ZGVmYTExMjQ1OTlj/ODRhMzAzNzZhMzA3/MDIzMWE3Y19ocS5n/aWY.gif)
 
     Caracteristicas de interes del juego:
