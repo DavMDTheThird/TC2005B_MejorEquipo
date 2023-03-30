@@ -69,5 +69,8 @@ Mi idea es la principal, que el juego base sea pokemon como en el DS
 ![Fotografia de videojuegos de POKEMON](https://static.fandomspot.com/images/06/7102/00-featured-soulsilver-screenshot-gameplay-on-ds.jpg)
 
   Caracteristicas de interes del juego:
-  - Un mundo abierto donde el personaje se puede mover por todo el mapa a medida que lo va descubriendo
-  - Está pixeleado, me gusta el estilo de juego viejito, vintage
+  - Un mundo abierto donde el personaje se puede mover por todo el mapa a medida que lo va descubriendo.
+  - Está pixeleado, me gusta el estilo de juego viejito, vintage.
+
+Personajes:
+![PERSONAJES](/personajes.png)
