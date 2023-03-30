@@ -64,4 +64,5 @@
 ## Dany
 
 ## Angel
-
+Mi idea es la principal, que el juego base sea pokemon como en el DS
+![Fotografia de videojuegos de POKEMON] (https://static.fandomspot.com/images/06/7102/00-featured-soulsilver-screenshot-gameplay-on-ds.jpg)
