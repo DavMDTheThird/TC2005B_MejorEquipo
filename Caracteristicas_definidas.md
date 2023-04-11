@@ -28,5 +28,5 @@ Esto lo vamos a tener que agendar un zoom con los profesores para identificar bi
 ### Esteban
     - Recopilacion de informacion para ser almacenada en una BD - checar
     - Despliegue de BD (graficas, tablas).
-### Socio Formador
+### Luis Curiel (Espora Estudios) Soc.Formador
     - Juego RPG (Roll Playing Game) - checar
