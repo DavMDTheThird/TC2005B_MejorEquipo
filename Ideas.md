@@ -26,6 +26,7 @@
     - Masmorras
 
 * # Undertale
+  
   ![Fotografia de referencia de Undertale. Desarrollo inicial del prototipo del videojuego](https://imgs.search.brave.com/cRUt_YyR8t6xyvLHLUsuiA1AA14SrxwaiDQN-Ucwt9U/rs:fit:480:270:1/g:ce/aHR0cDovL3BhMS5u/YXJ2aWkuY29tLzYx/NjIvMjlmNWNiNjll/ZGVmYTExMjQ1OTlj/ODRhMzAzNzZhMzA3/MDIzMWE3Y19ocS5n/aWY.gif)
 
     Caracteristicas de interes del juego:
@@ -110,4 +111,28 @@
 ## Dany
 
 ## Angel
+Mi idea es la principal, que el juego base sea pokemon como en el DS
+![Fotografia de videojuegos de POKEMON](https://static.fandomspot.com/images/06/7102/00-featured-soulsilver-screenshot-gameplay-on-ds.jpg)
 
+  Caracteristicas de interes del juego:
+  - Un mundo abierto donde el personaje se puede mover por todo el mapa a medida que lo va descubriendo.
+  - Está pixeleado, me gusta el estilo de juego viejito, vintage.
+
+# Posibles Mecanicas personales de cada integrante para el desarrollo del Videojuego
+
+## David
+* Sistema de Vida (HP - Hit Points)
+    
+        Esta mecanica determinara cuando el usuario pierda juego.
+        Determinara cuando un enemigo se eliminado.
+
+* Sistema de LUCK (LCK)
+
+        Determinara si
+*  
+
+## JuanPa
+
+## Dany
+
+## Angel
