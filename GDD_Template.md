@@ -1,4 +1,4 @@
-# **Game Name Here**
+# **Indefinido**
 
 ## _Game Design Document_
 
@@ -6,39 +6,40 @@
 
 ##### **Copyright notice / author information / boring legal stuff nobody likes**
 
-##
+Juan Pablo Cruz Rodriguez A01783208
+
+
+
 ## _Index_
 
 ---
 
-1. [Index](#index)
-2. [Game Design](#game-design)
-    1. [Summary](#summary)
-    2. [Gameplay](#gameplay)
-    3. [Mindset](#mindset)
-3. [Technical](#technical)
-    1. [Screens](#screens)
-    2. [Controls](#controls)
-    3. [Mechanics](#mechanics)
-4. [Level Design](#level-design)
-    1. [Themes](#themes)
-        1. Ambience
-        2. Objects
-            1. Ambient
-            2. Interactive
-        3. Challenges
-    2. [Game Flow](#game-flow)
-5. [Development](#development)
-    1. [Abstract Classes](#abstract-classes--components)
-    2. [Derived Classes](#derived-classes--component-compositions)
-6. [Graphics](#graphics)
-    1. [Style Attributes](#style-attributes)
-    2. [Graphics Needed](#graphics-needed)
-7. [Sounds/Music](#soundsmusic)
-    1. [Style Attributes](#style-attributes-1)
-    2. [Sounds Needed](#sounds-needed)
-    3. [Music Needed](#music-needed)
-8. [Schedule](#schedule)
+- [**Indefinido**](#indefinido)
+  - [_Game Design Document_](#game-design-document)
+        - [**Copyright notice / author information / boring legal stuff nobody likes**](#copyright-notice--author-information--boring-legal-stuff-nobody-likes)
+  - [_Index_](#index)
+  - [_Game Design_](#game-design)
+    - [**Summary**](#summary)
+    - [**Gameplay**](#gameplay)
+    - [**Mindset**](#mindset)
+  - [_Technical_](#technical)
+    - [**Screens**](#screens)
+    - [**Controls**](#controls)
+    - [**Mechanics**](#mechanics)
+  - [_Level Design_](#level-design)
+    - [**Themes**](#themes)
+    - [**Game Flow**](#game-flow)
+  - [_Development_](#development)
+    - [**Abstract Classes / Components**](#abstract-classes--components)
+    - [**Derived Classes / Component Compositions**](#derived-classes--component-compositions)
+  - [_Graphics_](#graphics)
+    - [**Style Attributes**](#style-attributes)
+    - [**Graphics Needed**](#graphics-needed)
+  - [_Sounds/Music_](#soundsmusic)
+    - [**Style Attributes**](#style-attributes-1)
+    - [**Sounds Needed**](#sounds-needed)
+    - [**Music Needed**](#music-needed)
+  - [_Schedule_](#schedule)
 
 ## _Game Design_
 
@@ -46,15 +47,25 @@
 
 ### **Summary**
 
-Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
+Juanpa: Es un rpg (role play game) donde el personaje principal eres tu (customize avatar) y te encuentras en los backrooms ( los Backrooms se llaman así porque son una especie de cuartos que se encuentran detrás de lugares normales y de la realidad como la conocemos) luego de haber salido del trabajo muy cansado/a.
+
+![Fotografia de una idea de los backrooms](https://i0.wp.com/culturacolectiva.com/wp-content/uploads/2023/02/PH644P4BUNDQHOYWTQAS5ASZFY.jpg?w=1024&ssl=1)
 
 ### **Gameplay**
 
 What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in the way? What tactics should the player use to overcome them?
 
+Juanpa:La meta del juego es encontrar la salida atravesando varios obstaculos bizarros (generalmente monsturos relacionados con fobias reales) por los diferentes escenarios (5 escenarios o ambientes). El jugador debera utilizar todas la herramientas a su disposicion para combatir, resolver acertijos y atravesar todas las zonas.
+
+![Fotografia de videojuegos de Binding of isaac referencia hacia un gameplay parecido](https://cdn.akamai.steamstatic.com/steam/apps/250900/capsule_616x353.jpg?t=1617174663)
+
 ### **Mindset**
 
 What kind of mindset do you want to provoke in the player? Do you want them to feel powerful, or weak? Adventurous, or nervous? Hurried, or calm? How do you intend to provoke those emotions?
+
+El jugador se debe de sentir confundido,intrigado,atento,analitico,cuidadoso y aventurero pero con cierto nerviosismo.
+
+![Fotografia de un ejemplo de como se debe de sentir el jugador](https://desaludpsicologos.es/wp-content/uploads/2020/07/desaludpsicologos-fobiasocial21.jpg)
 
 ## _Technical_
 
@@ -63,18 +74,48 @@ What kind of mindset do you want to provoke in the player? Do you want them to f
 ### **Screens**
 
 1. Title Screen
-    1. Options
-2. Level Select
-3. Game
-    1. Inventory
-    2. Assessment / Next Level
-4. End Credits
+   1. Nueva Partida
+      1. Crear personaje
+      2. Salida de pestaña
+   2. Cargar Partida
+      1. Muestra las partidas creadas con anterioridad (max 3)
+   3. Logros
+      1. Muestra los logros que obtuvo el juegador
+   4. Opciones
+      1. General
+      2. Video
+      3. Brillo
+      4. Sonido
+      5. Controles 
+      6. Lenguaje
+   5. Creditos
+   6. Salida del juego
+
+2. Game Screen
+   1. Menu de pausa 
+   2. Inventario
+   3. Mapa
 
 _(example)_
 
 ### **Controls**
 
 How will the player interact with the game? Will they be able to choose the controls? What kind of in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
+
+Los controles van a cambiar dependiendo de la plataforma de videojuegos:
+
+Pc:
+
+    1. Movimento: w,a,s,d
+    2. Interactuar con objetos: e
+    3. Abrir inventario: i
+    4. Utilizar objeto o arma: click izquierdo
+    5. Abrir mapa:m
+
+Mando Xbox:
+
+    1. Movimiento: Joystick
+    2. Interactuar con objetos
 
 ### **Mechanics**
 
