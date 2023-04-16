@@ -6,6 +6,8 @@
 
 ##### **Copyright notice / author information / boring legal stuff nobody likes**
 
+David Medina Domínguez A01783155
+
 Juan Pablo Cruz Rodriguez A01783208
 
 
@@ -47,7 +49,7 @@ Juan Pablo Cruz Rodriguez A01783208
 
 ### **Summary**
 
-Juanpa: Es un rpg (role play game) donde el personaje principal eres tu (customize avatar) y te encuentras en los backrooms ( los Backrooms se llaman así porque son una especie de cuartos que se encuentran detrás de lugares normales y de la realidad como la conocemos) luego de haber salido del trabajo muy cansado/a.
+Es un RPG (role play game) donde se le da al jugador varias opciones de diferentes personajes, cada uno con sus respectivas características y stats que tendrán impacto significativo a la hora del modo de juego y estrategia que desarrolle el jugador. La temática del videojuego se enfoca en terror y el miedo de la realidad de las situaciones, por lo que el juego intentara situar al jugador en un ambiente hostil y desconocido.
 
 ![Fotografia de una idea de los backrooms](https://i0.wp.com/culturacolectiva.com/wp-content/uploads/2023/02/PH644P4BUNDQHOYWTQAS5ASZFY.jpg?w=1024&ssl=1)
 
@@ -55,7 +57,10 @@ Juanpa: Es un rpg (role play game) donde el personaje principal eres tu (customi
 
 What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in the way? What tactics should the player use to overcome them?
 
-Juanpa:La meta del juego es encontrar la salida atravesando varios obstaculos bizarros (generalmente monsturos relacionados con fobias reales) por los diferentes escenarios (5 escenarios o ambientes). El jugador debera utilizar todas la herramientas a su disposicion para combatir, resolver acertijos y atravesar todas las zonas.
+La misión del jugador es interactuar con los otros personajes de la historia para descubrir que está pasando y finalmente escapar de esta realidad o pesadilla que está viviendo. 
+
+
+Sobrevivir, escapar, aprender, apostar y pelear de regreso son palabras clave a lo largo del desarrollo de la historia.  El jugador deberá utilizar todas las herramientas a su disposición para lograr sobrevivir, por lo que la escasez de estos, y la toma de decisiones del jugador a la hora de interactuar con el mundo repercutirán el desarrollo de la historia.
 
 ![Fotografia de videojuegos de Binding of isaac referencia hacia un gameplay parecido](https://cdn.akamai.steamstatic.com/steam/apps/250900/capsule_616x353.jpg?t=1617174663)
 
