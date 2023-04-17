@@ -12,6 +12,8 @@ Juan Pablo Cruz Rodriguez A01783208
 
 Angel Adrian Afonso Castellanos A01782545
 
+Daniel Soult Gómez A01782985
+
 
 
 ## _Index_
