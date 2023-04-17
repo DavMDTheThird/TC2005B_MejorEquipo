@@ -120,7 +120,7 @@ Los controles van a cambiar dependiendo de la plataforma de videojuegos:
 
 Pc:
 
-    1. Movimento: w,a,s,d
+    1. Movimento: w,a,s,d (Angel cree que es mejor con las flechas)
     2. Interactuar con objetos: e
     3. Abrir inventario: i
     4. Utilizar objeto o arma: click izquierdo
@@ -219,7 +219,7 @@ _(example)_
 
 ## _Graphics_
 
----
+2D con perspectiva desde arriba.
 
 ### **Style Attributes**
 
@@ -239,6 +239,7 @@ Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), a
     2. Other
         1. Wolf (idle, walking, running)
         2. Giant Rat (idle, scurrying)
+        3. Main character pet -> crown (just fly with him)
 2. Blocks
     1. Dirt
     2. Dirt/Grass
@@ -306,7 +307,7 @@ _(example)_
 
 ## _Schedule_
 
----
+Como hemos venido trabajando, no han sido fijadas fechas límite para tener secciones listas debido a que es necesaria la aprobación de ideas de los profesores para poder organizarnos y empezar a distruibuir la carga de trabajo entre nosotros.
 
 _(define the main activities and the expected dates when they should be finished. This is only a reference, and can change as the project is developed)_
 
