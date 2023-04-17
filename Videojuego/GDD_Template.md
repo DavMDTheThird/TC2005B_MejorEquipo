@@ -1,4 +1,4 @@
-# **Indefinido**
+# **Darkest Times**
 
 ## _Game Design Document_
 
@@ -20,12 +20,14 @@ Daniel Soult Gómez A01782985
 
 ---
 
-- [**Indefinido**](#indefinido)
+- [**Darkest Times**](#darkest-times)
   - [_Game Design Document_](#game-design-document)
         - [**Copyright notice / author information / boring legal stuff nobody likes**](#copyright-notice--author-information--boring-legal-stuff-nobody-likes)
   - [_Index_](#index)
   - [_Game Design_](#game-design)
     - [**Summary**](#summary)
+        - [***Narrativa***](#narrativa)
+      - [***Generos***](#generos)
     - [**Gameplay**](#gameplay)
     - [**Mindset**](#mindset)
   - [_Technical_](#technical)
@@ -53,17 +55,65 @@ Daniel Soult Gómez A01782985
 
 ### **Summary**
 
-Es un RPG (role play game) donde se le da al jugador varias opciones de diferentes personajes, cada uno con sus respectivas características y stats que tendrán impacto significativo a la hora del modo de juego y estrategia que desarrolle el jugador. La temática del videojuego se enfoca en terror y el miedo de la realidad de las situaciones, por lo que el juego intentara situar al jugador en un ambiente hostil y desconocido.
+##### ***Narrativa***
+
+Eres ______ saliendo de tu trabajo en SCP Inc (Safe Control Places "Guiño a Special Contaiment Provedures"). De camino a la salida comienzas a sentir un ambiente inquietante y tenso. Comienzas a tambalearte, tienes nauseas y vas perdiendo tu consiencia. Luego, ves una puerta al final de un pasillo largo; decides atravesar la puerta de manera apresurada.
+
+ No era lo que esperabas, ya que te encuentras en un es un espacio expansivo no euclidiano, que se asemeja a las habitaciones traseras de una tienda minorista. Todas las habitaciones en el Nivel 0 comparten las mismas características superficiales, como el papel tapiz monoamarillo gastado, la alfombra vieja y húmeda, los enchufes eléctricos dispersos y la iluminación fluorescente colocada de manera inconsistente. 
+
+Preocupado y asustado empizas a buscar una salida, pero es en vano, ya que el espacio liminal en el que te encuentra es infinito. Sin embargo no todo es desesperacion, ya que encuntras una sala enorme con mas personas y tres puertas (dos puertas niveles y una puerta boss.). La sala esta marcada con el logo de tu empresa y encuentras varias notas de compañeros pasados que supuestamente habian despedido.
+
+"Que esta ocurriendo"?
+"Donde estoy"?
+"Como salgo"?
+Son las preguntas que te invaden la cabeza. Conforme avanzas en los diferentes escenarios, te vas dando cuenta del verdadero proposito de tu empresa SPC.
 
 ![Fotografia de una idea de los backrooms](https://i0.wp.com/culturacolectiva.com/wp-content/uploads/2023/02/PH644P4BUNDQHOYWTQAS5ASZFY.jpg?w=1024&ssl=1)
-![Fotografia de una idea sobre terror](https://www.gamespew.com/wp-content/uploads/2016/06/Inside-Playdead-1-756x420.jpg)
+
+#### ***Generos***
+
+Es un RPG (Role-Playing Game) que contiene elementos o generos como:
+
+1. Plataformer: Este genero se presenta en la introduccion y desenlace de la historia.
+   
+2. Shooter: Este genero se encuentra en uno de los escenarios o espacios liminales.
+   
+3. Survival Horror: Este genero se encuentra en uno de los escenarios o espacios liminales.
+   
+4. Roguelike, Shooter, Survival RPG: Es el subgenero principal de nuestro videojuego. Se basa en mazmorras aleatorias con combate a larga distancia.
+
+
+![Fotografia de una idea sobre roguelike](https://static.wikia.nocookie.net/bindingofisaac/images/4/43/Habitaci%C3%B3n_Home.png/revision/latest?cb=20221002180239&path-prefix=es)
+
+![Fotografia de una idea de los shooter](https://cdn.akamai.steamstatic.com/steam/apps/311690/ss_9a74ab65fb19e85cac6a64b7dbe05da5411cfb7b.1920x1080.jpg?t=1666986657)
+
+![Fotografia de una idea de los survival horro](https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/07/18/15634789301233.jpg)
 
 ### **Gameplay**
 
-What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in the way? What tactics should the player use to overcome them?
+What should the gameplay be like? 
 
-La misión del jugador es interactuar con los otros personajes de la historia para descubrir que está pasando y finalmente escapar de esta realidad o pesadilla que está viviendo. 
+El gameplay debe de contener elementos del RPG.
 
+1. El jugador podra elegir entre cuatro personajes. Cada personaje tiene stats diferentes.
+
+2. Narrativa: El jugador se imserse dentro de la historia. Desea conocer el origen del lugar.
+
+3. Interaccion con el mundo: El jugador podra interactuar con los escenario, npc y objetos del juego.
+
+4. Progresion de personaje: El jugador podra mejorar las stats del personaje equipandolo con mejores objetos o consumiendo varios consumibles.
+
+What is the goal of the game, and what kind of obstacles are in the way?
+
+La meta de juego es sobrevivir y escapar de los backrooms (en una cierta cantidad de tiempo o cronometro) utilizando las herremientas que se encuentran en los distintos escenarios. Debes de realizar varias misiones principales para recolectar varias llaves con las cuales podras abrir la puerta al boss final. 
+
+Los obstaculos que se encuntran en nuestro videojuego son varios puzzles que se deben de resolver para abrir diferentes zonas. Luego, los principales obstaculos son los diferentes enemigos (fobias) y la oscuridad que intentara asesinar al jugador.
+
+![Fotografia de una idea de los obstaculos](https://i.ytimg.com/vi/5bc8on9ujxQ/maxresdefault.jpg)
+
+![Fotografia de una idea de los obstaculos](https://itstimetoescape.com/wp-content/uploads/2021/04/Tut_E-800-min.jpg)
+
+ What tactics should the player use to overcome them?
 
 Sobrevivir, escapar, aprender, apostar y pelear de regreso son palabras clave a lo largo del desarrollo de la historia.  El jugador deberá utilizar todas las herramientas a su disposición para lograr sobrevivir, por lo que la escasez de estos, y la toma de decisiones del jugador a la hora de interactuar con el mundo repercutirán el desarrollo de la historia.
 
