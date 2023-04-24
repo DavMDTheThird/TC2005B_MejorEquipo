@@ -27,6 +27,8 @@ Daniel Soult Gómez A01782985
   - [_Game Design_](#game-design)
     - [**Summary**](#summary)
         - [***Narrativa***](#narrativa)
+      - [***Historia y Dialogos***](#historia-y-dialogos)
+      - [***Personajes***](#personajes)
       - [***Generos***](#generos)
     - [**Gameplay**](#gameplay)
     - [**Mindset**](#mindset)
@@ -69,6 +71,34 @@ Preocupado y asustado empizas a buscar una salida, pero es en vano, ya que el es
 Son las preguntas que te invaden la cabeza. Conforme avanzas en los diferentes escenarios, te vas dando cuenta del verdadero proposito de tu empresa SPC.
 
 ![Fotografia de una idea de los backrooms](https://i0.wp.com/culturacolectiva.com/wp-content/uploads/2023/02/PH644P4BUNDQHOYWTQAS5ASZFY.jpg?w=1024&ssl=1)
+
+####  ***Historia y Dialogos***
+
+1. Escenario 1(Epilogo,Platformer) "Welcome to the #H$3@1?L#"
+
+
+
+
+#### ***Personajes***
+
+Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc:
+
+1.David->The Luckiest One (Cientifico)
+![Personaje|900](Personaje1.png)
+
+2.Angel->The richest one (Ejecutivo)
+![Personaje|900](Personaje2.png)
+
+3.Daniel->The fastest one (Mecanico o Plomero)
+![Personaje|900](Personaje4.png)
+
+4.Juan->The rudest one (Guardia de seguridad)
+![Personaje|900](Personaje3.png)
+
+Plan A: Los personajes contaran con un inicio y final distintos. Tambien contara con habilidades y stats diferentes.
+
+Plan B:Los personajes contaran con habilidades y stats diferentes.
+
 
 #### ***Generos***
 
