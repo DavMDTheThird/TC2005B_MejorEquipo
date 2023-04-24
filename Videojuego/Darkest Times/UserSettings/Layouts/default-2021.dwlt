@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 427.99994
     height: 398.6667
-  m_MinSize: {x: 240, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 242, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 575
+  controlID: 113
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 394
+  controlID: 31
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 574
+  controlID: 32
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 346
+  controlID: 33
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,8 +320,8 @@ MonoBehaviour:
     y: 0
     width: 397.33337
     height: 979.3334
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -644,9 +644,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.5636381, y: 2.0915685, z: 0.13311292}
+    m_Target: {x: 0.68781537, y: 0.007663478, z: 0.029376581}
     speed: 2
-    m_Value: {x: 1.5636381, y: 2.0915685, z: 0.13311292}
+    m_Value: {x: 0.68781537, y: 0.007663478, z: 0.029376581}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -697,9 +697,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.6628098
+    m_Target: 1.8178508
     speed: 2
-    m_Value: 2.6628098
+    m_Value: 1.8178508
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -758,7 +758,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ac94ffff8cbbffff2cfbfffffc5c0000
+      m_ExpandedIDs: 8ab6ffff9ce1ffffb6e1ffff2afbffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -774,7 +774,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 13}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -844,7 +844,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -917,23 +917,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Documentos\ACTIVIDADES TEC\CUARTO SEMESTRE\CONSTRUCCION SOFTWARE\TC2005B_MejorEquipo\Videojuego\Darkest
     Times
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 585d0000
-    m_LastClickedID: 23896
-    m_ExpandedIDs: 00000000585d0000685d00006a5d0000705d0000046000000e600000106000003c6000002862000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 46600000
+    m_LastClickedID: 24646
+    m_ExpandedIDs: 0000000026600000286000002a6000002c6000002e600000306000003260000034600000366000006660000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -961,7 +961,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000585d000000ca9a3b
+    m_ExpandedIDs: 0000000026600000286000002a6000002c6000002e60000030600000326000003460000036600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
