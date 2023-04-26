@@ -128,7 +128,7 @@ Mi idea es la principal, que el juego base sea pokemon como en el DS
 
 * Sistema de LUCK (LCK)
 
-        Determinara si
+        Determinara si el arma va a disparar o no. Prueba
 *  
 
 ## JuanPa
