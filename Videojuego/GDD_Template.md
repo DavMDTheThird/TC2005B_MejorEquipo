@@ -76,49 +76,48 @@ Son las preguntas que te invaden la cabeza. Conforme avanzas en los diferentes e
 
 1. Escenario 1(Epilogo) "Welcome to the #H$3@1?L#": 
    
--Al fin acabe con mi turno (Expresa cansancio).
+-Al fin acabé con mi turno. (Expresa cansancio).
 
-De pronto suena una radio que emite un mensaje unicamente para miembros de la empresa SCP (Safe Control Places: Empresa encargada de reducir accidentes de trabajo como una de seguridad industrial).
+De pronto suena una radio que emite un mensaje únicamente para miembros de la empresa SCP (Safe Control Places: Empresa encargada de reducir accidentes de trabajo como una de seguridad industrial).
 
--A todo los trabajadores por favor regresar inmediatamente a su casa debido a una falla en el sistema, deberan volver hasta nuevo aviso.
+-A todos los trabajadores, por favor, regresar inmediatamente a su casa debido a una falla en el sistema. Deberán volver hasta nuevo aviso.
 
--No otra vez, espero que otra persona no haya vuelto a desaparecer, ya seria la quinta esta semana.
+-No otra vez. Ya es la cuarta falla en este mes.
 
--Debo volver lo antes posible, mi capibara (Zack) me esta esperando. Debe de estar hambriento y preocupado.
+-Debo volver lo antes posible. Mi capibara (Zack) me está esperando. Debe estar hambriento y preocupado.
 
-El jugador sale del cuarto principal y se dirige hacia la salida. Conforme el jugador avanza el ambiente del lugar ira cambiando a la forma de un laberinto. Cada vez que se acerque a la puerta correcta la atmosfera lo era entrar en panico (Los caminos tendran un diseño glitcheado y tetrico).
+El jugador sale del cuarto principal y se dirige hacia la salida. Conforme el jugador avanza, el ambiente del lugar irá cambiando a la forma de un laberinto. Cada vez que se acerque a la puerta correcta, la atmósfera lo hará entrar en pánico (Los caminos tendrán un diseño glitcheado y tétrico).
 
--Vaya, no me acordaba que este lugar tuviera tantos pasillos.
+-Vaya, no me acordaba de que este lugar tuviera tantos pasillos.
+¿Desde cuándo las paredes son de color _____? Algo anda mal. (Se muestra preocupado).
 
--Desde cuando las paredes son de color _____. Algo anda mal (Se muestra preocupado). 
+Más adelante se encuentra con un cartel de publicidad de su compañía.
 
-Mas adelante se encuentra con un cartel de publicidad de su compañia.
+-SCP (Safe Control Places): La mejor decisión de tu vida. Desde que entré a esta empresa, no he vuelto a sonreír.
 
--SCP *Safe Control Places:La mejor desicion de tu vida* . Desde que entre a esta empresa no he vuelto a sonreir.
+Luego encuentra otro cartel que indica que están reclutando personal.
 
-Luego encuentra otro cartel que indica que estan reclutando personal.
+-SCP te necesita. Llámanos ya. No entiendo por qué siguen reclutando a nuevo personal si ellos son los responsables de despedir a casi 10 trabajadores por mes.
 
--*SPC te necesita llamanos ya*. No entiendo porque siguen reclutando a nuevo personal, si ellos son los responsables de despedir a casi 10 trabajadores por mes.
+-Pero, ¿qué...? ¿Dónde está la salida? (Se encuentra asustado y enojado).
 
--Pero que ______ , donde esta la salida? (Se encuntra asustado y enojado).
+El jugador se acerca al pasillo final, la música se apaga, la iluminación comienza a titilar y varios jumpscare aparecen para darle tensión al ambiente.
 
-El jugador se acerca al pasillo final, la musica se apaga las luminacion comienza a titilar y varios jumpscare aparecen para darle tencion al amiente.
+-¿Qué está sucediendo? (Se encuentra asustado).
 
--Que esta sucediendo (Se encuntra asustado)?
+Al frente aparece una persona sin cara, pero luego desaparece.
 
-Al frente aparace una persona sin cara pero luego desaparece.
+-¿Quién está ahí? (Se encuentra enojado, asustado y lo dice en tono agresivo).
 
--Quien esta ahi ?(Se encuntra enojado, asustado y lo dice en tono agresivo).
+-¿Quienquiera que esté haciendo esto, para de una maldita vez.
 
--Quien sea que este haciendo esto PARE DE UNA MALDITA VEZ.
+De pronto, la persona sin cara aparece detrás del jugador y comienza a perseguirlo mientras se escucha una música de fondo de miedo.
 
-De pronto la persona sin cara aparece detras del jugador y comienza a perseguirlo, mientras se escucha una musica de fondo de miedo.
+-¡Alto, alto, aléjate de mí! ¡No des un paso más! ¡ALTO!
 
--Alto, alto, alejate de mi. No des un paso masss ALTO.
+-¡Ah! (De asombro y alivio). Ahí está la salida.
 
--Ah (De asombro y alivio). Ahi esta la salida.
-
-EL jugador llega a la salida que lo llevara al siguiente escenario. 
+El jugador llega a la salida que lo llevará al siguiente escenario.
 
 **Cierre del nivel**
 
