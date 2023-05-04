@@ -74,17 +74,70 @@ Son las preguntas que te invaden la cabeza. Conforme avanzas en los diferentes e
 
 ####  ***Historia y Dialogos***
 
-1. Escenario 1(Epilogo,Platformer) "Welcome to the #H$3@1?L#"
+1. Escenario 1(Epilogo) "Welcome to the #H$3@1?L#": 
+   
+-Al fin acabe con mi turno (Expresa cansancio).
+
+De pronto suena una radio que emite un mensaje unicamente para miembros de la empresa SCP (Safe Control Places: Empresa encargada de reducir accidentes de trabajo como una de seguridad industrial).
+
+-A todo los trabajadores por favor regresar inmediatamente a su casa debido a una falla en el sistema, deberan volver hasta nuevo aviso.
+
+-No otra vez, espero que otra persona no haya vuelto a desaparecer, ya seria la quinta esta semana.
+
+-Debo volver lo antes posible, mi capibara (Zack) me esta esperando. Debe de estar hambriento y preocupado.
+
+El jugador sale del cuarto principal y se dirige hacia la salida. Conforme el jugador avanza el ambiente del lugar ira cambiando a la forma de un laberinto. Cada vez que se acerque a la puerta correcta la atmosfera lo era entrar en panico (Los caminos tendran un diseño glitcheado y tetrico).
+
+-Vaya, no me acordaba que este lugar tuviera tantos pasillos.
+
+-Desde cuando las paredes son de color _____. Algo anda mal (Se muestra preocupado). 
+
+Mas adelante se encuentra con un cartel de publicidad de su compañia.
+
+-SCP *Safe Control Places:La mejor desicion de tu vida* . Desde que entre a esta empresa no he vuelto a sonreir.
+
+Luego encuentra otro cartel que indica que estan reclutando personal.
+
+-*SPC te necesita llamanos ya*. No entiendo porque siguen reclutando a nuevo personal, si ellos son los responsables de despedir a casi 10 trabajadores por mes.
+
+-Pero que ______ , donde esta la salida? (Se encuntra asustado y enojado).
+
+El jugador se acerca al pasillo final, la musica se apaga las luminacion comienza a titilar y varios jumpscare aparecen para darle tencion al amiente.
+
+-Que esta sucediendo (Se encuntra asustado)?
+
+Al frente aparace una persona sin cara pero luego desaparece.
+
+-Quien esta ahi ?(Se encuntra enojado, asustado y lo dice en tono agresivo).
+
+-Quien sea que este haciendo esto PARE DE UNA MALDITA VEZ.
+
+De pronto la persona sin cara aparece detras del jugador y comienza a perseguirlo, mientras se escucha una musica de fondo de miedo.
+
+-Alto, alto, alejate de mi. No des un paso masss ALTO.
+
+-Ah (De asombro y alivio). Ahi esta la salida.
+
+EL jugador llega a la salida que lo llevara al siguiente escenario. 
+
+**Cierre del nivel**
+
+**Dialogos de Interaccion**
+
+- Creo que esta cerrada.
+- Esta no es la salida.
+
+1. Escenario 2(Lobby) "Welcome to the Back1200|\/|$":
 
 
 
 
 #### ***Personajes***
 
-Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc:
+Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc: 
 
 1.David->The Luckiest One (Cientifico)
-![Personaje|900](Personaje1.png)
+![Personaje|900](Personajes/Personaje1.png)
 
 2.Angel->The richest one (Ejecutivo)
 ![Personaje|900](Personaje2.png)
