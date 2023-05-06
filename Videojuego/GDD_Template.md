@@ -549,33 +549,20 @@ Stylistically, what kind of sound effects are you looking for? Do you want to ex
 
  Remember, auditory feedback should stand out from the music and other sound effects so the player hears it well. Volume, panning, and frequency/pitch are all important aspects to consider in both music _and_ sounds - so plan accordingly!
 
+ Para nuestro juego es necesario que el jugador se sienta dentro de la situacion en la que esté, que se pueda sentir como si el fuera quien esta viviendo dentro del juego, por lo tanto es necesaria la implementacion de efectos auditivos en el mismo. A continuación se presentan los sonidos que serán necesarios para ello:
+
 ### **Sounds Needed**
 
 1. Effects
-    1. Soft Footsteps (dirt floor)
-    2. Sharper Footsteps (stone floor)
-    3. Soft Landing (low vertical velocity)
-    4. Hard Landing (high vertical velocity)
-    5. Glass Breaking
-    6. Chest Opening
-    7. Door Opening
-2. Feedback
-    1. Relieved &quot;Ahhhh!&quot; (health)
-    2. Shocked &quot;Ooomph!&quot; (attacked)
-    3. Happy chime (extra life)
-    4. Sad chime (died)
-
-_(example)_
-
-### **Music Needed**
-
-1. Slow-paced, nerve-racking &quot;forest&quot; track
-2. Exciting &quot;castle&quot; track
-3. Creepy, slow &quot;dungeon&quot; track
-4. Happy ending credits track
-5. Rick Astley&#39;s hit #1 single &quot;Never Gonna Give You Up&quot;
-
-_(example)_
+    1. Musica en el inicio del juego.
+    2. Sonidos al caminar (dependiendo del suelo que este tocando este sera variable).
+    3. Sonido al abrir el menu de pausa.
+    4. Efecto de sonido al recoger un arma.
+    5. Efecto de sonido cuando recoja habilidades.
+    6. Sonido de abrir puerta.
+    7. Sonido al morir.
+    8. Sonido de los enemigos al aparecer y ser golpeados.
+    9. Entre otros que vayan surgiendo con el desarrollo del juego
 
 
 ## _Schedule_
