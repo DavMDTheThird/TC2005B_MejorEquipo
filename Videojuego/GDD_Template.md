@@ -59,7 +59,7 @@ Daniel Soult Gómez A01782985
 
 ##### ***Narrativa***
 
-Eres ______ saliendo de tu trabajo en SCP Inc (Safe Control Places "Guiño a Special Contaiment Provedures"). De camino a la salida comienzas a sentir un ambiente inquietante y tenso. Comienzas a tambalearte, tienes nauseas y vas perdiendo tu consiencia. Luego, ves una puerta al final de un pasillo largo; decides atravesar la puerta de manera apresurada.
+Eres ______ saliendo de tu trabajo en SCP Inc (Safe Control Places "Guiño a Special Contaiment Procedures"). De camino a la salida comienzas a sentir un ambiente inquietante y tenso. Comienzas a tambalearte, tienes nauseas y vas perdiendo tu consiencia. Luego, ves una puerta al final de un pasillo largo; decides atravesar la puerta de manera apresurada.
 
  No era lo que esperabas, ya que te encuentras en un es un espacio expansivo no euclidiano, que se asemeja a las habitaciones traseras de una tienda minorista. Todas las habitaciones en el Nivel 0 comparten las mismas características superficiales, como el papel tapiz monoamarillo gastado, la alfombra vieja y húmeda, los enchufes eléctricos dispersos y la iluminación fluorescente colocada de manera inconsistente. 
 
@@ -226,7 +226,7 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
       1. Seleccionar entre cuatro personajes
       2. Salida de pestaña
    2. Cargar Partida
-      1. Muestra las partidas creadas con anterioridad (max 3)
+      1. Muestra las partidas creadas con anterioridad (max 2)
    3. Logros
       1. Muestra los logros que obtuvo el jugador
       2. Muestra los easter eggs que obtuvo
@@ -243,7 +243,7 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
 2. Game Screen
    1. Menu de pausa 
    2. Inventario
-   3. Mapa
+   3. Mapa (por definir)
    4. Pantalla de juego completado
    5. Pantalla de juego de "Game Over"
 
@@ -254,15 +254,15 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
 
 How will the player interact with the game? Will they be able to choose the controls? What kind of in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
 
-Los controles van a cambiar dependiendo de la plataforma de videojuegos:
-
 Pc:
 
-    1. Movimento: w,a,s,d (Angel cree que es mejor con las flechas)
-    2. Interactuar con objetos: e
-    3. Abrir inventario: i
-    4. Utilizar objeto o arma: click izquierdo
-    5. Abrir mapa:m
+    1. Movimento: w,a,s,d
+    2. Correr: shift izquierdo
+    3. Interactuar con objetos y NPCs: e
+    4. Abrir inventario: i
+    5. Utilizar objeto o arma: click izquierdo
+    6. Cambiar arma: click derecho
+    7. Abrir mapa:m
 
 ### **Mechanics**
 
@@ -276,7 +276,7 @@ Movimiento basico: Tenemos planeado implementar el movimiento horizontal y vetic
 
 Movimiento avanzado: Tenemos planeado implementar la opcion de correr a traves de la tecla del "shift izquierdo". Esta mecanica le permitira al jugador evadir varios enemigos y moverse de manera rapida por el mapa.
 
-Combate: Tenemos planeado implementar la mecanica de combate cuerpo a cuerpo y a distancia dependiendo de la arma que este utilizando el jugador en su momento. Esta mecanica se podra utilizar al oprimir el boton izquierdo del mouse. 
+Combate: Tenemos planeado implementar la mecanica de combate cuerpo a cuerpo y a distancia dependiendo de la arma que este utilizando el jugador en su momento. Esta mecanica se podra utilizar al oprimir el boton izquierdo del mouse, al igual que rotar por las diferentes armas con click derecho.
 
 Interactuar: El jugador podra interactuar con el entorno y los distintos objetos consumibles a traves de la tecla E.
 
@@ -358,6 +358,38 @@ Los pasos o estado los cuales el jugador va a vivir o tendra que experimentar. B
    6. El jugador alcanza la salida hacia el siguiente escenario.
 
 2. Nivel de HUB:
+   1. Despues de la introduccion, el jugador despertará en la entrada de un pueblo.
+   2. En dicho pueblo, le dara la bienvenida de una forma desinteresada y despreciada.
+   3. Podra hablar con toda la gama de NPCs que estan dentro del area, de los cuales los mas importantes son:
+      1. La tienda
+      2. La bruja
+      3. Multitud alrededor de una ejecución
+      4. Un vikingo
+      5. Una serie de animales
+      6. E intentar hablar con una niña que corre de ti
+   4. Se dará a entender que para llegar al boss final, se requieren llaves para abrir la puerta.
+   5. El juego te dara dos opciones, aventurarte al bosque o entrar al hospital
+
+
+3. Bosque:
+   1. En la entrada te recivira el dueño de la tienda, y despues de una introduccion a las mecanicas, te dara la opcion del arma principal: ballesta o espada.
+   2.  Despues entraras al bosque obscuro, donde mataras mobs, obtendras recursos, y finalmente obtendras una de las llaves para el boss final.
+   3.  El gameplay y dificultad del bosque incrementará cada vez que se ingrese al bosque obscuro, y de esa manera la posibilidad de comprar mejores armas y desarrollar la historia.
+
+
+4. Hospital:
+   1. Se colocara el personaje en un ambiente hostil y de total supervivencia. Existe la obsuridad que asechará al personaje en todo momento (se pierden las armas si se ingresa al bosque primero).
+   2. En la entrada será recivido por un fantasma, dueño de su propia tienda, que le introducira a las mecanicas de la obscuridad y manejo de inventario.
+   3. En el hospital, el jugador nunca puede quedarse sin luz dado a que seria consumido por la obscuridad.
+   4. En este lugar estaran otros mobs que quieren igual consumir al personaje principal, pero con la ayuda de fuentes de luz y el movimiento del personaje, este escapara de ellos.
+   5. En este lugar, el personaje principal buscara varias secciones del hospital en busca de la llave que falta para el boss final.
+   6. Durante su recorrido podra encontrar mas información sobre que esta ocurriendo, al igual que recolectar items y dinero que le ayudaran a sobrevivir su estancia.
+
+5. Boss Final:
+   1. Al obtener ambas llaves, el jugador principal entra a la ultima etapa del juego, que combinara ambas mecanicas del hospital y bosque (la obscuridad y armas para pelear de regreso).
+   2. Morir en esta etapa del juego, acabará el juego y se obtendra el final donde pierde el personaje principal.
+   3. Matar al boss final y escapar acabará el juego con el final de escapar del glitch (backrooms).
+   4. O sentarse donde estaba el boss final, te convertirá en el nuevo boss final y se obtendrá el final malo, donde se recicla en sueño (como el bloodborne o dark souls).
 
 ## _Development_
 
@@ -375,7 +407,7 @@ En este apartado nos enfocamos en las diferentes clases u objetos/elementos que 
 2. Objetos Fisicos No Vivientes (Obstaculos):
    1. Muros
    2. Pisos
-   3. Amoblados o elementos de estetica
+   3. Amoblados o elementos de estética
    4. Plantas
    5. Puertas
    6. Ventanas
@@ -395,19 +427,28 @@ _(example)_
 Las clases derivadas son aquellas que definen a nuestra clases principales a un nivel mucho mas especifico:
 
 1. Jugador Principal
-    1. PlayerMain
-    2. PlayerUnlockable
+    1. The lucky one (más suerte)
+    2. The gambler (multiplicador de monedas)
+    3. The chosen one (alta vida y espacio de inventario)
+    4. The strong one (alto daño y capacidad de sprint)
 2. Jugadores no jugables (NPC)
-    1. EnemyWolf
-    2. EnemyGoblin
-    3. EnemyGuard (may drop key)
-    4. EnemyGiantRat
-    5. EnemyPrisoner
+    1. La bruja
+    2. The hanged man
+    3. Dueño de la tienda
+    4. Niña del pueblo
+    5. Vikingo
+    6. Multitud
+    7. Town´s men
 3. Enemigos (Phobias)
-    1. ObjectRock (pick-up-able, throwable)
-    2. ObjectChest (pick-up-able, throwable, spits gold coins with key)
-    3. ObjectGoldCoin (cha-ching!)
-    4. ObjectKey (pick-up-able, throwable)
+   1. Arañas
+   2. Arañas toxicas
+   3. Estatuas
+   4. Zombies
+   5. Zombies toxicos
+   6. Fantasmas
+   7. Personas locas
+   8. Occultist
+   
 4. Enemigos (Oscuridad)
     1. ObstacleWindow (destroyed with rock)
     2. ObstacleWall
@@ -417,7 +458,7 @@ Las clases derivadas son aquellas que definen a nuestra clases principales a un 
 6. Pisos
 7. Amoblados
 8. Plantas
-9. Puertas
+9.  Puertas
 10. Ventanas 
 11. Iluminacion
 12. Utencilios o Herramientas
@@ -455,13 +496,23 @@ Cada objeto consumible tendra cierta animacion o particulas para dar sensacion d
 
 1. Characters
     1. Human-like
-        1. Goblin (idle, walking, throwing)
-        2. Guard (idle, walking, stabbing)
-        3. Prisoner (walking, running)
+        1. Personaje #1 (idle, walking, attacking)
+        2. Personaje #2 (idle, walking, attacking)
+        3. Personaje #3 (idle, walking, attacking)
+        4. Personaje #4 (idle, walking, attacking)
+        5. Niña (idle, walking)
+        6. Vikingo (idle)
+        7. Dueño de tienda #1 (idle)
     2. Other
-        1. Wolf (idle, walking, running)
-        2. Giant Rat (idle, scurrying)
-        3. Main character pet -> crown (just fly with him)
+        1. Dueño de tienda #2 (idle)
+        2. Araña (idle, walking, attacking)
+        3. Arañas toxicas (idle, walking, attacking)
+        4. Estatuas (idle, walking, attacking)
+        5. Zombies (idle, walking, attacking)
+        6. Zombies toxicos (idle, walking, attacking)
+        7. Fantasmas (idle, walking, attacking)
+        8. Personas locas (idle, walking, attacking)
+        9. Occultist (idle, walking, attacking)
 2. Blocks
     1. Dirt
     2. Dirt/Grass
