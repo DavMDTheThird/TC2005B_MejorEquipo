@@ -223,12 +223,13 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
 
 1. Title Screen
    1. Nueva Partida
-      1. Crear personaje
+      1. Seleccionar entre cuatro personajes
       2. Salida de pestaña
    2. Cargar Partida
       1. Muestra las partidas creadas con anterioridad (max 3)
    3. Logros
-      1. Muestra los logros que obtuvo el juegador
+      1. Muestra los logros que obtuvo el jugador
+      2. Muestra los easter eggs que obtuvo
    4. Opciones
       1. General
       2. Video
@@ -243,8 +244,11 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
    1. Menu de pausa 
    2. Inventario
    3. Mapa
+   4. Pantalla de juego completado
+   5. Pantalla de juego de "Game Over"
 
-_(example)_
+
+
 
 ### **Controls**
 
@@ -264,6 +268,21 @@ Pc:
 
 Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
 
+**Debemos de dividir las mecanicas pasivas y activas para un mejor enfoque. Las pasivas son aquellas que se realizan automaticamente y las activas son expresadas a traves de los controle o teclas que debe de oprimir el jugador**
+
+Las mecanicas que tenemos planteadas para nuestro videojuego son las siguientes: 
+
+Movimiento basico: Tenemos planeado implementar el movimiento horizontal y vetical sobre un plano 2d. La mecanica se realizara con las w,a,s,d o con las flechas que se encunetran a mano derecha.
+
+Movimiento avanzado: Tenemos planeado implementar la opcion de correr a traves de la tecla del "shift izquierdo". Esta mecanica le permitira al jugador evadir varios enemigos y moverse de manera rapida por el mapa.
+
+Combate: Tenemos planeado implementar la mecanica de combate cuerpo a cuerpo y a distancia dependiendo de la arma que este utilizando el jugador en su momento. Esta mecanica se podra utilizar al oprimir el boton izquierdo del mouse. 
+
+Interactuar: El jugador podra interactuar con el entorno y los distintos objetos consumibles a traves de la tecla E.
+
+
+
+
 ## _Level Design_
 
 ---
@@ -272,10 +291,12 @@ _(Note : These sections can safely be skipped if they&#39;re not relevant, or yo
 
 ### **Themes**
 
-1. Forest
-    1. Mood
+En este apartado nos enfocamos en los diferentes niveles y las caracteristicas que cada uno posee:
+
+1. Introduccion/Tutorial:
+    1. Ambiente:
         1. Dark, calm, foreboding
-  2. Objects
+     2. Objetos y elementos:
         1. _Ambient_
             1. Fireflies
             2. Beams of moonlight
@@ -284,10 +305,22 @@ _(Note : These sections can safely be skipped if they&#39;re not relevant, or yo
             1. Wolves
             2. Goblins
             3. Rocks
-2. Castle
-    1. Mood
+2. Hub Principal
+    1. Ambiente:
+        1. Dark, calm, foreboding
+     2. Objetos y elementos:
+        1. _Ambient_
+            1. Fireflies
+            2. Beams of moonlight
+            3. Tall grass
+        2. _Interactive_
+            1. Wolves
+            2. Goblins
+            3. Rocks
+3. Hospital
+    1. Ambiente:
         1. Dangerous, tense, active
-    2. Objects
+    2. Objetos y elementos:
         1. _Ambient_
             1. Rodents
             2. Torches
@@ -297,19 +330,34 @@ _(Note : These sections can safely be skipped if they&#39;re not relevant, or yo
             2. Giant rats
             3. Chests
 
-_(example)_
+4. Bosque
+    1. Ambiente: 
+        1. Dangerous, tense, active
+    2. Objetos y elementos:
+        1. _Ambient_
+            1. Rodents
+            2. Torches
+            3. Suits of armor
+        2. _Interactive_
+            1. Guards
+            2. Giant rats
+            3. Chests
+
+
 
 ### **Game Flow**
 
-1. Player starts in forest
-2. Pond to the left, must move right
-3. To the right is a hill, player jumps to traverse it (&quot;jump&quot; taught)
-4. Player encounters castle - door&#39;s shut and locked
-5. There&#39;s a window within jump height, and a rock on the ground
-6. Player picks up rock and throws at glass (&quot;throw&quot; taught)
-7. … etc.
+Los pasos o estado los cuales el jugador va a vivir o tendra que experimentar. Basicamente, los pasos que debe de seguir para pasar el nivel:
 
-_(example)_
+1. Introduccion:
+   1. El jugador inicia en el nivel introductorio.
+   2. El juego se desplaza de la oficina principal y entra en un laberinto.
+   3. Recorre los diferentes pasillos y habitaciones, mientras aprende los controles basicos.
+   4. El jugador debe de encontrar e interactuar con diferentes elementos dentro del laberinto.
+   5. Cerca de la salida el jugador vive la experiencia de ser perseguido por una especie de ente o criatura.
+   6. El jugador alcanza la salida hacia el siguiente escenario.
+
+2. Nivel de HUB:
 
 ## _Development_
 
@@ -317,51 +365,91 @@ _(example)_
 
 ### **Abstract Classes / Components**
 
-1. BasePhysics
-    1. BasePlayer
-    2. BaseEnemy
-    3. BaseObject
-2. BaseObstacle
-3. BaseInteractable
+En este apartado nos enfocamos en las diferentes clases u objetos/elementos que tendra nuestro videojuego:
+
+1. Objetos Fisicos Vivientes:
+    1. Jugador principal
+    2. Jugadores no jugables (NPC)
+    3. Enemigos (Phobias)
+    4. Enemigos (Oscuridad)
+2. Objetos Fisicos No Vivientes (Obstaculos):
+   1. Muros
+   2. Pisos
+   3. Amoblados o elementos de estetica
+   4. Plantas
+   5. Puertas
+   6. Ventanas
+   7. Iluminacion (luces estaticas)
+   8.  Utencilios o herramientas
+3. Objetos Iteractivos o Especiales:
+   1. Objetos Consumibles
+   2. Dinero (Huesos)
+   3. Armas de Fuego
+   4. Armas de Luz
+   5. Easter Eggs
 
 _(example)_
 
 ### **Derived Classes / Component Compositions**
 
-1. BasePlayer
+Las clases derivadas son aquellas que definen a nuestra clases principales a un nivel mucho mas especifico:
+
+1. Jugador Principal
     1. PlayerMain
     2. PlayerUnlockable
-2. BaseEnemy
+2. Jugadores no jugables (NPC)
     1. EnemyWolf
     2. EnemyGoblin
     3. EnemyGuard (may drop key)
     4. EnemyGiantRat
     5. EnemyPrisoner
-3. BaseObject
+3. Enemigos (Phobias)
     1. ObjectRock (pick-up-able, throwable)
     2. ObjectChest (pick-up-able, throwable, spits gold coins with key)
     3. ObjectGoldCoin (cha-ching!)
     4. ObjectKey (pick-up-able, throwable)
-4. BaseObstacle
+4. Enemigos (Oscuridad)
     1. ObstacleWindow (destroyed with rock)
     2. ObstacleWall
     3. ObstacleGate (watches to see if certain buttons are pressed)
-5. BaseInteractable
+5. Muros
     1. InteractableButton
+6. Pisos
+7. Amoblados
+8. Plantas
+9. Puertas
+10. Ventanas 
+11. Iluminacion
+12. Utencilios o Herramientas
+13. Objetos Consumibles
+14. Dinero
+15. Armas de Fuego
+16. Armas de Luz
+17. Easter Eggs
 
 _(example)_
 
 ## _Graphics_
 
-2D con perspectiva desde arriba.
+2D con perspectiva desde arriba. El jugador utilizara una perspectiva top down , donde podra moverse de manera vertical y horizontal.
 
 ### **Style Attributes**
 
 What kinds of colors will you be using? Do you have a limited palette to work with? A post-processed HSV map/image? Consistency is key for immersion.
 
+Utilizaremos una paleta colores amplio. Sin embargo nos enfocaremos en colores oscuros u opacos para generar un ambiente tenso.
+
 What kind of graphic style are you going for? Cartoony? Pixel-y? Cute? How, specifically? Solid, thick outlines with flat hues? Non-black outlines with limited tints/shades? Emphasize smooth curvatures over sharp angles? Describe a set of general rules depicting your style here.
 
+El diseño de los personajes asi como el de los escenarios sera en pixel art (algunos dibujos estara dibijados en 16pixeles, 32pixeles o incluso mas para un mejor detalle).
+
+La estetica que tendra los escenarios y los personajes mostrara una apariencia cansada, terrorifica, lastimada, abandonada, etc.
+
 Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), are great for teaching the player how to play through trial and error, instead of scripting a lengthy tutorial. What kind of visual feedback are you going to use to let the player know they&#39;re interacting with something? That they \*can\* interact with something?
+
+Cada elemento viviente tendra animaciones para cada accion como correr, atacar, ser golpeado, interactuar, etc.
+
+Cada objeto consumible tendra cierta animacion o particulas para dar sensacion de que el objeto fue utilizado.
 
 ### **Graphics Needed**
 
