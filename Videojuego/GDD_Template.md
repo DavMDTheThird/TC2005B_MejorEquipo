@@ -14,7 +14,7 @@ Angel Adrian Afonso Castellanos A01782545
 
 Daniel Soult Gómez A01782985
 
-
+    
 
 ## _Index_
 
@@ -48,7 +48,6 @@ Daniel Soult Gómez A01782985
   - [_Sounds/Music_](#soundsmusic)
     - [**Style Attributes**](#style-attributes-1)
     - [**Sounds Needed**](#sounds-needed)
-    - [**Music Needed**](#music-needed)
   - [_Schedule_](#schedule)
 
 ## _Game Design_
