@@ -28,4 +28,10 @@ public class PinkyMove : MonoBehaviour
     {
         rb2d.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Poción de vida");
+        Destroy(GameObject.FindGameObjectWithTag("VidaPocion"));
+    }
 }
