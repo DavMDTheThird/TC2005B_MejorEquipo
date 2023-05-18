@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Inmobilario
+    uniqueID: 333003441
+    locked: 0

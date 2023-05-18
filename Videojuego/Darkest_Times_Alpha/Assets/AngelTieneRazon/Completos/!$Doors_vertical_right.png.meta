@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_0'
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 432
+        width: 12
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3822bb48829fce348b7c5e569a3faa08
+      internalID: -762172778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_1'
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 432
+        width: 12
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27f15b82aab9ad498e2eb8de5ced300
+      internalID: 1723630507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_2'
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 432
+        width: 12
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f74386bfe4604f4a9fff2385fa36927
+      internalID: -1714085906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_3'
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 291
+        width: 30
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a3205693f3f7c42b717768e2b475c9
+      internalID: -1182654674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_4'
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 291
+        width: 30
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e874e5ed8773eff4a965946d8c21f31c
+      internalID: 271790004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_5'
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 291
+        width: 30
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5693885fe53698f47b6d62109caf823f
+      internalID: -1449911235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_6'
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 162
+        width: 54
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d04bec464d44049b3314dd6b2f9563
+      internalID: -137703662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_7'
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 162
+        width: 54
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fa09bed0e1b4e4a8ac38bfd9072c22
+      internalID: 237798329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_8'
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 162
+        width: 54
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735bdb37bbe59684cb800fc09d6f85bf
+      internalID: 1753390021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_9'
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 39
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d35cd40fab50841a4a7d8594881537
+      internalID: 1352295332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_10'
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 39
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaf7e48e370a7846986b4365465ae0f
+      internalID: -1820760457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Doors_vertical_right_11'
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 39
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f74595b9b6cb6847b34c29ee73fbe58
+      internalID: 1253514660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Doors_vertical_right_0': -762172778
+      '!$Doors_vertical_right_1': 1723630507
+      '!$Doors_vertical_right_10': -1820760457
+      '!$Doors_vertical_right_11': 1253514660
+      '!$Doors_vertical_right_2': -1714085906
+      '!$Doors_vertical_right_3': -1182654674
+      '!$Doors_vertical_right_4': 271790004
+      '!$Doors_vertical_right_5': -1449911235
+      '!$Doors_vertical_right_6': -137703662
+      '!$Doors_vertical_right_7': 237798329
+      '!$Doors_vertical_right_8': 1753390021
+      '!$Doors_vertical_right_9': 1352295332
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
