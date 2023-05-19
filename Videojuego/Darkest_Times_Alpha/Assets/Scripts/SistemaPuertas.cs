@@ -10,7 +10,6 @@ public class SistemaPuertas : MonoBehaviour
     public bool mostarInteractuar;
     public bool mostrarRealizarAccion;
     public LayerMask personaje;//COntrolamos las capas del objeto personaje;
-
     [SerializeField] private Sprite puertaAbierta; //Cambio vacion que tendra la imagen de la puerta abierta
     // Start is called before the first frame update
     void Start()
@@ -27,8 +26,15 @@ public class SistemaPuertas : MonoBehaviour
         if(mostarInteractuar==true){
             interactuar.gameObject.SetActive(true);//Activa el objeto
         }
+        if(mostarInteractuar==false){
+            interactuar.gameObject.SetActive(false);
+        }
         if(mostrarRealizarAccion == true && Input.GetKeyDown(KeyCode.E)){
             realizarAccion.gameObject.SetActive(true);
+            
+        }
+        if(mostrarRealizarAccion==false){
+            realizarAccion.gameObject.SetActive(false);
         }
     }
 
