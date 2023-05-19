@@ -4,38 +4,44 @@ using UnityEngine;
 
 public class SistemaPuertas : MonoBehaviour
 {
-
-    public GameObject interactuar; //Objeto 
-    public GameObject realizarAccion;//Objeto
-    public bool mostarInteractuar;
-    public bool mostrarRealizarAccion;
-    public LayerMask personaje;//COntrolamos las capas del objeto personaje;
-    [SerializeField] private Sprite puertaAbierta; //Cambio vacion que tendra la imagen de la puerta abierta
+    public EfectosSonido efectoaudio;
+    [Header("Animacion")]
+    private Animator animator;
+    public bool JugadorCerca;
     // Start is called before the first frame update
     void Start()
     {
-        interactuar.gameObject.SetActive(false);//Inicializa el objeto en un estado de pausa o desactivado
-        realizarAccion.gameObject.SetActive(false);//Inicializa el objeto en un estado de pausa o desactivado
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        mostarInteractuar = Physics2D.OverlapCircle(this.transform.position,1f,personaje);//Detecta si hay una colision en un circulo plano en 2d
-        mostrarRealizarAccion = Physics2D.OverlapCircle(this.transform.position,1f,personaje);//Detecta si hay una colision en un circulo plano en 2d
-        if(mostarInteractuar==true){
-            interactuar.gameObject.SetActive(true);//Activa el objeto
+        if(Input.GetKeyDown(KeyCode.E) && JugadorCerca)
+        {
+            animator.SetBool("Abrir_puerta",true);
+            Destroy(GetComponent<BoxCollider2D>());
+            efectoaudio.GetComponent<AudioSource>().PlayOneShot(efectoaudio.sonido1);
         }
-        if(mostarInteractuar==false){
-            interactuar.gameObject.SetActive(false);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D otro)
+    {
+        if(otro.CompareTag("Player"))
+        {
+            JugadorCerca = true;
+
         }
-        if(mostrarRealizarAccion == true && Input.GetKeyDown(KeyCode.E)){
-            realizarAccion.gameObject.SetActive(true);
-            
-        }
-        if(mostrarRealizarAccion==false){
-            realizarAccion.gameObject.SetActive(false);
+    }
+
+    private void OnTriggerExit2D(Collider2D otro)
+    {
+        if (otro.CompareTag("Player"))
+        {
+            JugadorCerca = false;
         }
     }
 
 }
+ 
