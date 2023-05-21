@@ -21,10 +21,4 @@ public class SpawnPointStart : MonoBehaviour
         // Poner el jugador en el spawn correcto al inicio
         GameObject player = Instantiate(player_prefab, spwnPoint, rotation);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

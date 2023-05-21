@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//A lo mejor va a ser mas eficiente si solo agaramos el de abajo (espacio de memoria)
-//using System.Collections.Generic;
 
 public class DicSpawnPoints : MonoBehaviour
 {
