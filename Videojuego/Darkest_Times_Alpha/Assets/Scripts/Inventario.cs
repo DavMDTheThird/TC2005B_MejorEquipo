@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Inventario : MonoBehaviour
+public static class Inventario : MonoBehaviour
 {
     public List<GameObject> Bag = new List<GameObject>();
+    public ItemActivo;
     public GameObject inv;
     public bool Activar_inv;
     public GameObject Selector;
-    public int ID;
+    public short ID[Bag.Count];
 
 
     void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.CompareTag("Item"))
         {
-            for (int i=0; i < Bag.Count; i++)
+            for (int i=1; i < Bag.Count; i++)
             {
                 if (Bag[i].GetComponent<Image>().enabled == false)
                 {
@@ -28,7 +29,13 @@ public class Inventario : MonoBehaviour
         }
     }
 
-    public void Navegar()
+    public void changeItem_1()
+    {
+        .GetComponent<Image>().sprite = coll.GetComponent<SpriteRenderer>().sprite;   
+    }
+
+
+    /*public void Navegar()
     {
         if (Input.GetKeyDown(KeyCode.L) && ID < Bag.Count - 1)
         {
@@ -47,7 +54,7 @@ public class Inventario : MonoBehaviour
             ID += 3;
         }
         Selector.transform.position = Bag[ID].transform.position;
-    }
+    }*/
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +65,7 @@ public class Inventario : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Navegar();
+        //Navegar();
 
         if (Activar_inv)
         {
