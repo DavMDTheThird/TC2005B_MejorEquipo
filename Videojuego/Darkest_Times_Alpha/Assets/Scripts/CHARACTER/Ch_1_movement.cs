@@ -32,11 +32,36 @@ public class Ch_1_movement : MonoBehaviour
         rb2d.MovePosition(rb2d.position + movement * runSpeed * Time.fixedDeltaTime);
     }
 
-    //Esta funcion no debe de estar aqui, y debe de mejorarse que se borran los tags, entonces por si hay mas objetos del mismo tag no funciona.
-    //Tambien si se hace una colision con otro elemento con el mismo sitema de colider (como el el mueble) se borra la pocion.
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Pocion de vida");
-        Destroy(GameObject.FindGameObjectWithTag("VidaPocion"));
+        if (collision.gameObject.tag == "ObjetoRecogibleV")
+        {
+            Debug.Log("Poción de vida" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleE")
+        {
+            Debug.Log("Recogiste un escudo" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleS")
+        {
+            Debug.Log("Poción de Stamina" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleVel")
+        {
+            Debug.Log("Poción de Velocidad" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleA")
+        {
+            Debug.Log("Poción de Ataque" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
     }
 }

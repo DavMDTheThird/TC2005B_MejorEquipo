@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - VidaPocion
+  - ObjetoRecogibleV
+  - ObjetoRecogibleE
+  - ObjetoRecogibleS
+  - ObjetoRecogibleVel
+  - ObjetoRecogibleA
   layers:
   - Default
   - TransparentFX
