@@ -2,21 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_basic{
+
+//Esto no tenia el MonoBehaviour
+public class Player_basic
+{
     private short _hp;
+    private short _maxhp;
+    private short _lvl;
+    private short _xp;
     private short _lck;
     private short _atk;
-    private short _spd;
+    private float _spd;
     private short _stamina;
     private short _inventory;
     private short _money;
 
+    //Modificadores Get y Set de los stats del personaje
     public short HP{
         get{
             return _hp;
         }
         set{
             _hp = value;
+        }
+    }
+    public short MAXHP{
+        get{
+            return _maxhp;
+        }
+        set{
+            _maxhp = value;
+        }
+    }
+    public short LVL{
+        get{
+            return _lvl;
+        }
+        set{
+            _lvl = value;
+        }
+    }
+    public short XP{
+        get{
+            return _xp;
+        }
+        set{
+            _xp = value;
         }
     }
     public short LCK{
@@ -35,7 +66,7 @@ public class Player_basic{
             _atk = value;
         }
     }
-    public short SPD{
+    public float SPD{
         get{
             return _spd;
         }
@@ -67,20 +98,26 @@ public class Player_basic{
             _money = value;
         }
     }
-    
+
     /// <summary>
     /// Constructor de jugador basico.
     /// </summary>
     /// <param name="HP">First value</param>
-    /// <param name="LUCK">Second value</param>
-    /// <param name="Atack">Third value</param>
+    /// <param name="MAXHP">First value</param>
+    /// <param name="Level">First value</param>
+    /// <param name="xp">First value</param>
+    /// <param name="Luck">Second value</param>
+    /// <param name="Attack">Third value</param>
     /// <param name="Speed">Fourth value</param>
     /// <param name="Stamina">Fifth value</param>
     /// <param name="Inventory">Sixth value</param>
     /// <param name="Money">Seventh value</param>
     /// <returns> Crea un jugador base</returns>
-    public Player_basic(short hp, short lck, short atk, short spd, short stamina, short inventory, short money){
+    public Player_basic(short hp, short maxhp, short lvl, short xp, short lck, short atk, float spd, short stamina, short inventory, short money){
         HP = hp;
+        MAXHP = maxhp;
+        LVL = lvl;
+        XP = xp;
         LCK = lck;
         ATK = atk;
         SPD = spd;
@@ -89,14 +126,29 @@ public class Player_basic{
         Money = money;
     }
 
+    public Player_basic()
+    {
+        HP = 0;
+        MAXHP = 0;
+        LVL = 0;
+        XP = 0;
+        LCK = 0;
+        ATK = 0;
+        SPD = 0;
+        Stamina = 0;
+        Inventory = 0;
+        Money = 0;
+    }
 
     public void Info(){
-        Debug.Log("Health is " + HP);
-        Debug.Log("Luck is " + LCK);
-        Debug.Log("Atack is " + ATK);
-        Debug.Log("Speed is " + SPD);
-        Debug.Log("Stamina is " + Stamina);
-        Debug.Log("Inventory Space is " + Inventory);
-        Debug.Log("Money is " + Money);
+        Debug.Log("Health is " + HP + " out of " + MAXHP + "\n" +
+                  "Current level: " + LVL + " next level at " + XP + " xp\n" +
+                  "Luck is " + LCK + "\n" +
+                  "Attack is " + ATK + "\n" +
+                  "Speed is " + SPD + "\n" +
+                  "Stamina is " + Stamina + "\n" +
+                  "Inventory Space is " + Inventory + "\n" +
+                  "Money is " + Money);
     }
+
 }
