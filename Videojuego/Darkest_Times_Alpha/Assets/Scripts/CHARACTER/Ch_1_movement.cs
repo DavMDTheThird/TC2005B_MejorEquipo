@@ -7,6 +7,7 @@ public class Ch_1_movement : MonoBehaviour
     Vector2 movement;
 
     public float runSpeed = 2f;
+    public float runSprint = 2f;
 
     Rigidbody2D rb2d;
     public Animator animator;
@@ -30,7 +31,14 @@ public class Ch_1_movement : MonoBehaviour
     private void FixedUpdate()
     {
         rb2d.MovePosition(rb2d.position + movement * runSpeed * Time.fixedDeltaTime);
+        
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            rb2d.MovePosition(rb2d.position + movement * runSprint * Time.fixedDeltaTime);
+        }
+        
     }
+
 
     //Esta funcion no debe de estar aqui, y debe de mejorarse que se borran los tags, entonces por si hay mas objetos del mismo tag no funciona.
     //Tambien si se hace una colision con otro elemento con el mismo sitema de colider (como el el mueble) se borra la pocion.
