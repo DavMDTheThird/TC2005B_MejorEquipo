@@ -5,24 +5,20 @@ using System.IO;
 
 public class Player_stats : MonoBehaviour
 {
-    Player_basic player;
-    json_ReadWrite json;
+    //Player_basic playerBSC;
+    public bool babyCharacter = true;
+    Player_basic playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 4.5f, 5, 5, 0);
 
     void Start()
     {
-        player = new Player_basic();
-        json = new json_ReadWrite();
-
         if (File.Exists(Application.dataPath + "/changeScene.json"))
         {
             Debug.Log("Si existe previa instancia, iniciando player");
-            player = json.LoadFromJson();
+            playerBSC = LoadFromJson();
         }
         else
         {
-            Debug.Log("No existio previa instancia, iniciando player inicial");
-            //Aqui van los datos iniciales con los que iniciara el personaje
-            player = new Player_basic(10, 10, 0, 0, 50, 2, 4.5f, 5, 5, 0);
+            Debug.Log("No existio previa instancia, ERROR ERROR");
         }
     }
 
@@ -34,26 +30,53 @@ public class Player_stats : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.G))
         {
-            Debug.Log("A: " + player.name); 
-            player.Info();
-            Debug.Log("B");
+            playerBSC.Info();
         }
         if (Input.GetKeyUp(KeyCode.Y))
         {
             GetMoney(10);
         }
+        if (Input.GetKeyUp(KeyCode.U))
+        {
+            SaveToJson();
+        }
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            LoadFromJson();
+        }
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 4.5f, 5, 5, 0);
+        }
     }
 
     public void TakeDamage(short damage)
     {
-        player.HP -= damage;
-        Debug.Log(transform.name + " took: " + damage + " damage. HP now: " + player.HP);
+        playerBSC.HP -= damage;
+        Debug.Log(transform.name + " took: " + damage + " damage. HP now: " + playerBSC.HP);
     }
 
     public void GetMoney(short money)
     {
-        player.Money += money;
-        Debug.Log(transform.name + " gain: " + money + " money. Total money now: " + player.Money);
+        playerBSC.Money += money;
+        Debug.Log(transform.name + " gain: " + money + " money. Total money now: " + playerBSC.Money);
+    }
+
+    public void SaveToJson()
+    {
+        string json = JsonUtility.ToJson(playerBSC, true);
+        File.WriteAllText(Application.dataPath + "/changeScene.json", json);
+        Debug.Log("Se guardo Exitosamente");
+    }
+
+    public Player_basic LoadFromJson()
+    {
+        string json = File.ReadAllText(Application.dataPath + "/changeScene.json");
+        Player_basic player = JsonUtility.FromJson<Player_basic>(json);
+
+        Debug.Log("Se cargo Exitosamente");
+        //playerBSC.Info();
+        return player;
     }
 
 

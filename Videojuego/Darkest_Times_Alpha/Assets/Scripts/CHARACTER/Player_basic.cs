@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 //Esto no tenia el MonoBehaviour
-public class Player_basic : MonoBehaviour
+public class Player_basic
 {
     private short _hp;
     private short _maxhp;
