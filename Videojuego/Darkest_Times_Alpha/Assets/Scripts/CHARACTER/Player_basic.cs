@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_basic
+
+//Esto no tenia el MonoBehaviour
+public class Player_basic : MonoBehaviour
 {
     private short _hp;
     private short _maxhp;
@@ -124,14 +126,29 @@ public class Player_basic
         Money = money;
     }
 
-    public void Info(){
-        Debug.Log("Health is " + HP + " out of " + MAXHP);
-        Debug.Log("Current level: " + LVL + " next level at " + XP + " xp");
-        Debug.Log("Luck is " + LCK);
-        Debug.Log("Attack is " + ATK);
-        Debug.Log("Speed is " + SPD);
-        Debug.Log("Stamina is " + Stamina);
-        Debug.Log("Inventory Space is " + Inventory);
-        Debug.Log("Money is " + Money);
+    public Player_basic()
+    {
+        HP = 0;
+        MAXHP = 0;
+        LVL = 0;
+        XP = 0;
+        LCK = 0;
+        ATK = 0;
+        SPD = 0;
+        Stamina = 0;
+        Inventory = 0;
+        Money = 0;
     }
+
+    public void Info(){
+        Debug.Log("Health is " + HP + " out of " + MAXHP + "\n" +
+                  "Current level: " + LVL + " next level at " + XP + " xp\n" +
+                  "Luck is " + LCK + "\n" +
+                  "Attack is " + ATK + "\n" +
+                  "Speed is " + SPD + "\n" +
+                  "Stamina is " + Stamina + "\n" +
+                  "Inventory Space is " + Inventory + "\n" +
+                  "Money is " + Money);
+    }
+
 }

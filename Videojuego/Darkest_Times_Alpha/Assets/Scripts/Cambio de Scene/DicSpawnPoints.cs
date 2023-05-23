@@ -13,12 +13,31 @@ public class DicSpawnPoints : MonoBehaviour
 
     public Dictionary<string, float[][]> myDictionary;
 
-    //Lugares con sus respectivas coordenadas
-    float[][] prueba_SPs =
+    //Scene con sus respectivas coordenadas
+    float[][] Prueba_NPC_HUB =
     {
         new float[] { 0, 0, 0 },
-        new float[] { 3, 3, 0 },
-        new float[] { -1, -1, 0 }
+        new float[] { 0, 4, 0 },
+        new float[] { 7, 0, 0 }
+    };
+    float[][] Prueba_transision_1 =
+    {
+        new float[] { 0, 0, 0 },
+        new float[] { 0, -4, 0 },
+        new float[] { 7, 0, 0 }
+    };
+    float[][] Prueba_transision_2 =
+    {
+        new float[] { 0, 0, 0 },
+        new float[] { 0, -4, 0 },
+        new float[] { -7, 0, 0 }
+        
+    };
+    float[][] Prueba_transision_3 =
+    {
+        new float[] { 0, 0, 0 },
+        new float[] { 0, 4, 0 },
+        new float[] { -7, 0, 0 }
     };
 
 
@@ -38,6 +57,9 @@ public class DicSpawnPoints : MonoBehaviour
         // Inicializar el diccionario
         myDictionary = new Dictionary<string, float[][]>();
         // Agreagar todos los puntos al diccionario (complejidad constante O(1))
-        myDictionary.Add("prueba", prueba_SPs);
+        myDictionary.Add("Prueba_NPC_HUB", Prueba_NPC_HUB);
+        myDictionary.Add("Prueba_transision_1", Prueba_transision_1);
+        myDictionary.Add("Prueba_transision_2", Prueba_transision_2);
+        myDictionary.Add("Prueba_transision_3", Prueba_transision_3);
     }
 }

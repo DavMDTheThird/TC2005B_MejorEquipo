@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - VidaPocion
+  - Scene_Changer
   layers:
   - Default
   - TransparentFX
