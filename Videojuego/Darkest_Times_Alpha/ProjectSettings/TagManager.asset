@@ -5,11 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - VidaPocion
+<<<<<<< HEAD
   - ObjetoRecogibleV
   - ObjetoRecogibleE
   - ObjetoRecogibleS
   - ObjetoRecogibleVel
   - ObjetoRecogibleA
+=======
+  - Scene_Changer
+  - Item
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
