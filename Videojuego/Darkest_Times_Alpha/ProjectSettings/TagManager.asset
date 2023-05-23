@@ -6,6 +6,7 @@ TagManager:
   tags:
   - VidaPocion
   - Item
+  - Inventario
   layers:
   - Default
   - TransparentFX
