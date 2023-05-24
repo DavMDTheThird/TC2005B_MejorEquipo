@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 8ff183ff8ba46354a92bb1437b134b35
+=======
 guid: a03336240b4349343af1853c2c5ddf62
+>>>>>>> main
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +50,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> main
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 16
+>>>>>>> main
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -61,13 +77,21 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+<<<<<<< HEAD
+  ignorePngGamma: 0
+=======
   ignorePngGamma: 1
+>>>>>>> main
   applyGammaDecoding: 0
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 1024
+>>>>>>> main
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -103,6 +127,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
+    sprites: []
+=======
     sprites:
     - serializedVersion: 2
       name: TX Tileset Grass_0
@@ -5480,6 +5507,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> main
     outline: []
     physicsShape: []
     bones: []
@@ -5490,6 +5518,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       TX Tileset Grass_0: 1901382159
       TX Tileset Grass_1: -441334012
@@ -5747,6 +5778,7 @@ TextureImporter:
       TX Tileset Grass_97: -1234919315
       TX Tileset Grass_98: -635902683
       TX Tileset Grass_99: -1186175351
+>>>>>>> main
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

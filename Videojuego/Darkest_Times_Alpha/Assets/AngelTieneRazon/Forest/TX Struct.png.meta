@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: cfa7f51e23c644b4bb2b37ea0b3f45c9
+=======
 guid: d49094553101dd0479c2dacec4a113c3
+>>>>>>> main
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +50,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> main
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 16
+>>>>>>> main
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,10 +83,17 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+=======
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+>>>>>>> main
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,6 +126,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
+    sprites: []
+=======
     sprites:
     - serializedVersion: 2
       name: TX Struct_0
@@ -4346,6 +4372,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> main
     outline: []
     physicsShape: []
     bones: []
@@ -4356,6 +4383,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       TX Struct_0: 185018884
       TX Struct_1: -454091798
@@ -4559,6 +4589,7 @@ TextureImporter:
       TX Struct_97: 911910425
       TX Struct_98: -15747503
       TX Struct_99: -15638548
+>>>>>>> main
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
