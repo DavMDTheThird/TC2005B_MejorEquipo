@@ -48,8 +48,11 @@ public class Ch_1_movement : MonoBehaviour
         //Look
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        float angle = Mathf.Atan2(mousePos.y - transform.position.y, mousePos.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-        transform.localRotation = Quaternion.Euler(0, 0, angle);
+        //float angle = Mathf.Atan2(mousePos.y - transform.position.y, mousePos.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+        //transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+        animator.SetFloat("Look_x", mousePos.x - transform.position.x);
+        animator.SetFloat("Look_y", mousePos.y - transform.position.y);
 
         //Gun
         if (Input.GetMouseButtonDown(0))
