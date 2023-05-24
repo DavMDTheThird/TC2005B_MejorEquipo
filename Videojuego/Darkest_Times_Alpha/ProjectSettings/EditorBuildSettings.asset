@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Menu/Menu.unity
     guid: fc15683a51fd34a878d029b0032a5ff7
   - enabled: 1
     path: Assets/Scenes/Menu/CharacterSelect.unity
     guid: b43383b012863481c9c99c7175174329
+  - enabled: 1
+    path: Assets/Scenes/Tienda.unity
+    guid: 9b324a39893017b47ad7ef6fb6e17a21
+  - enabled: 1
+    path: Assets/Scenes/HablarNPC.unity
+    guid: 64c8044ba5667eb4f86f05850e01e021
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: d563ceeaa78ba164a9f058c0d910d6b3
+  - enabled: 1
+    path: Assets/Scenes/DentroTienda.unity
+    guid: 0a4cb3a1329f19943961900d8d1865eb
   m_configObjects: {}
