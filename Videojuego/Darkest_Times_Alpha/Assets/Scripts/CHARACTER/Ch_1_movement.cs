@@ -16,7 +16,7 @@ public class Ch_1_movement : MonoBehaviour
     [SerializeField] private GameObject BulletPrefab;
     [SerializeField] private Transform firingPoint;
 
-    [SerializeField] private float fireRate = 0.5f;
+    //[SerializeField] private float fireRate = 0.5f;
 
 
     //Player Animation
@@ -73,8 +73,6 @@ public class Ch_1_movement : MonoBehaviour
         
     }
 
-<<<<<<< HEAD
-=======
 
     private void Shoot()
     {
@@ -82,9 +80,6 @@ public class Ch_1_movement : MonoBehaviour
     }
 
 
-    //Esta funcion no debe de estar aqui, y debe de mejorarse que se borran los tags, entonces por si hay mas objetos del mismo tag no funciona.
-    //Tambien si se hace una colision con otro elemento con el mismo sitema de colider (como el el mueble) se borra la pocion.
->>>>>>> main
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "ObjetoRecogibleV")
