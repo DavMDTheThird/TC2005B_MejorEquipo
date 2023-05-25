@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - personaje
   - 
   - 
   - 
@@ -40,4 +40,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 4037775353
+    locked: 0
+  - name: Inmobilario
+    uniqueID: 333003441
+    locked: 0
+  - name: Inmobilario2
+    uniqueID: 1524540145
+    locked: 0
+  - name: Personaje
+    uniqueID: 1436809597
+    locked: 0
+  - name: Armas
+    uniqueID: 460445211
+    locked: 0
+  - name: Inmobilario3
+    uniqueID: 945810971
     locked: 0
