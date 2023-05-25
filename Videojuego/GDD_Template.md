@@ -48,7 +48,6 @@ Daniel Soult Gómez A01782985
   - [_Sounds/Music_](#soundsmusic)
     - [**Style Attributes**](#style-attributes-1)
     - [**Sounds Needed**](#sounds-needed)
-    - [**Music Needed**](#music-needed)
   - [_Schedule_](#schedule)
 
 ## _Game Design_
@@ -231,21 +230,27 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
       1. Muestra los logros que obtuvo el jugador
       2. Muestra los easter eggs que obtuvo
    4. Opciones
-      1. General
-      2. Video
-      3. Brillo
-      4. Sonido
-      5. Controles 
-      6. Lenguaje
+      1. Brillo
+      2. Sonido
+      3. Controles 
+      4. Lenguaje
    5. Creditos
    6. Salida del juego
 
-2. Game Screen
-   1. Menu de pausa 
-   2. Inventario
-   3. Mapa (por definir)
-   4. Pantalla de juego completado
-   5. Pantalla de juego de "Game Over"
+2. Pantalla de pausa:
+    1. Continuar
+    2. Reiniciar
+    3. Salir al menu
+
+3. Pantalla (Tutorial):
+   1. Escena Principal
+   2. Dialogos
+   3. Pausa
+
+4. Pantalla (Lobby):
+   1. Escena Principal
+   2. Dialogos
+   3. 
 
 
 
