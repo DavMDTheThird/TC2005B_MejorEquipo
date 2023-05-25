@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: c76b53ed25af0214cbda15124dabd88d
+=======
 guid: 4ea909a06c8b9944abdaf73944d5986e
+>>>>>>> main
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +50,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> main
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 16
+>>>>>>> main
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +83,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 1024
+>>>>>>> main
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -103,6 +123,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
+    sprites: []
+=======
     sprites:
     - serializedVersion: 2
       name: TX Tileset Wall_0
@@ -4136,6 +4159,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> main
     outline: []
     physicsShape: []
     bones: []
@@ -4146,6 +4170,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       TX Tileset Wall_0: 1506709401
       TX Tileset Wall_1: -1592967717
@@ -4339,6 +4366,7 @@ TextureImporter:
       TX Tileset Wall_97: -1467700551
       TX Tileset Wall_98: 1653859521
       TX Tileset Wall_99: -1329463586
+>>>>>>> main
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

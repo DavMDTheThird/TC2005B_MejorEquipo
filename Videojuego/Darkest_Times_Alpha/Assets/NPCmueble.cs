@@ -8,17 +8,20 @@ public class NPCmueble : MonoBehaviour
     public GameObject PanelDialogo;
     public Text TextoDialogo;
     public string[] dialogo;
-    private int index;
+    private int index = 0;
     public float velocidadTexto;
     public bool JugadorCerca;
     public GameObject BotonCont;
+    public GameObject Panel_opciones;
+
+    [SerializeField] private GameObject MarcaDialogo;
 
     private void OnTriggerEnter2D(Collider2D otro)
     {
         if(otro.CompareTag("Player"))
         {
             JugadorCerca = true;
-
+            MarcaDialogo.SetActive(true);
         }
     }
 
@@ -28,6 +31,7 @@ public class NPCmueble : MonoBehaviour
         {
             JugadorCerca = false;
             noTexto();
+            MarcaDialogo.SetActive(false);
         }
     }
 
@@ -45,6 +49,7 @@ public class NPCmueble : MonoBehaviour
             {
                 PanelDialogo.SetActive(true);
                 StartCoroutine(Escribiendo());
+                MarcaDialogo.SetActive(false);
             }
         }
 
@@ -73,7 +78,15 @@ public class NPCmueble : MonoBehaviour
     public void LineaSiguiente()
     {
         BotonCont.SetActive(false);
-
+        
+        //En este indice se va a poner las cuatro opciones
+        if (index == 0)
+        {
+            PanelDialogo.SetActive(false);
+            Panel_opciones.SetActive(true);
+        }
+        
+        
         if(index < dialogo.Length-1)
         {
             index++;
