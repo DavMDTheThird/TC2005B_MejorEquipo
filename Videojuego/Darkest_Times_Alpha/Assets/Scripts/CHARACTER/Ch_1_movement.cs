@@ -64,6 +64,10 @@ public class Ch_1_movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Codigo par que no se mueva en diagonal mas rapido
+        rb2d.velocity = new Vector2(movement.x, movement.y).normalized * runSpeed;
+
+        // Codigo para el Sprint
         rb2d.MovePosition(rb2d.position + movement * runSpeed * Time.fixedDeltaTime);
         
         if (Input.GetKey(KeyCode.LeftShift))
@@ -79,12 +83,12 @@ public class Ch_1_movement : MonoBehaviour
         Instantiate(BulletPrefab, firingPoint.position, firingPoint.rotation);
     }
 
-
+    // Diferentes coliciones y eventos
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "ObjetoRecogibleV")
         {
-            Debug.Log("Poción de vida" + collision.gameObject.name);
+            Debug.Log("Poci?n de vida" + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
 
@@ -96,19 +100,19 @@ public class Ch_1_movement : MonoBehaviour
 
         if (collision.gameObject.tag == "ObjetoRecogibleS")
         {
-            Debug.Log("Poción de Stamina" + collision.gameObject.name);
+            Debug.Log("Poci?n de Stamina" + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
 
         if (collision.gameObject.tag == "ObjetoRecogibleVel")
         {
-            Debug.Log("Poción de Velocidad" + collision.gameObject.name);
+            Debug.Log("Poci?n de Velocidad" + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
 
         if (collision.gameObject.tag == "ObjetoRecogibleA")
         {
-            Debug.Log("Poción de Ataque" + collision.gameObject.name);
+            Debug.Log("Poci?n de Ataque" + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
     }
