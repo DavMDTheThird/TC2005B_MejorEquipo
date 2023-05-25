@@ -31,6 +31,8 @@ Daniel Soult Gómez A01782985
       - [***Personajes***](#personajes)
       - [***Generos***](#generos)
     - [**Gameplay**](#gameplay)
+    - [**Obstaculos**](#obstaculos)
+    - [**Estrategia**](#estrategia)
     - [**Mindset**](#mindset)
   - [_Technical_](#technical)
     - [**Screens**](#screens)
@@ -48,7 +50,6 @@ Daniel Soult Gómez A01782985
   - [_Sounds/Music_](#soundsmusic)
     - [**Style Attributes**](#style-attributes-1)
     - [**Sounds Needed**](#sounds-needed)
-    - [**Music Needed**](#music-needed)
   - [_Schedule_](#schedule)
 
 ## _Game Design_
@@ -76,46 +77,46 @@ Son las preguntas que te invaden la cabeza. Conforme avanzas en los diferentes e
 
 1. Escenario 1(Epilogo) "Welcome to the #H$3@1?L#": 
    
--Al fin acabé con mi turno. (Expresa cansancio).
+**-Al fin acabé con mi turno. (Expresa cansancio).**
 
 De pronto suena una radio que emite un mensaje únicamente para miembros de la empresa SCP (Safe Control Places: Empresa encargada de reducir accidentes de trabajo como una de seguridad industrial).
 
--A todos los trabajadores, por favor, regresar inmediatamente a su casa debido a una falla en el sistema. Deberán volver hasta nuevo aviso.
+**-A todos los trabajadores, por favor, regresar inmediatamente a su casa debido a una falla en el sistema. Deberán volver hasta nuevo aviso.**
 
--No otra vez. Ya es la cuarta falla en este mes.
+**-No otra vez. Ya es la cuarta falla en este mes.**
 
--Debo volver lo antes posible. Mi capibara (Zack) me está esperando. Debe estar hambriento y preocupado.
+**-Debo volver lo antes posible. Mi capibara (Zack) me está esperando. Debe estar hambriento y preocupado.**
 
 El jugador sale del cuarto principal y se dirige hacia la salida. Conforme el jugador avanza, el ambiente del lugar irá cambiando a la forma de un laberinto. Cada vez que se acerque a la puerta correcta, la atmósfera lo hará entrar en pánico (Los caminos tendrán un diseño glitcheado y tétrico).
 
--Vaya, no me acordaba de que este lugar tuviera tantos pasillos.
-¿Desde cuándo las paredes son de color _____? Algo anda mal. (Se muestra preocupado).
+**-Vaya, no me acordaba de que este lugar tuviera tantos pasillos.
+¿Desde cuándo las paredes son de color _____? Algo anda mal. (Se muestra preocupado).**
 
 Más adelante se encuentra con un cartel de publicidad de su compañía.
 
--SCP (Safe Control Places): La mejor decisión de tu vida. Desde que entré a esta empresa, no he vuelto a sonreír.
+**-SCP (Safe Control Places): La mejor decisión de tu vida. Desde que entré a esta empresa, no he vuelto a sonreír.**
 
 Luego encuentra otro cartel que indica que están reclutando personal.
 
--SCP te necesita. Llámanos ya. No entiendo por qué siguen reclutando a nuevo personal si ellos son los responsables de despedir a casi 10 trabajadores por mes.
+**-SCP te necesita. Llámanos ya. No entiendo por qué siguen reclutando a nuevo personal si ellos son los responsables de despedir a casi 10 trabajadores por mes.**
 
--Pero, ¿qué...? ¿Dónde está la salida? (Se encuentra asustado y enojado).
+**-Pero, ¿qué...? ¿Dónde está la salida? (Se encuentra asustado y enojado).**
 
 El jugador se acerca al pasillo final, la música se apaga, la iluminación comienza a titilar y varios jumpscare aparecen para darle tensión al ambiente.
 
--¿Qué está sucediendo? (Se encuentra asustado).
+**-¿Qué está sucediendo? (Se encuentra asustado).**
 
 Al frente aparece una persona sin cara, pero luego desaparece.
 
--¿Quién está ahí? (Se encuentra enojado, asustado y lo dice en tono agresivo).
+**-¿Quién está ahí? (Se encuentra enojado, asustado y lo dice en tono agresivo).**
 
--¿Quienquiera que esté haciendo esto, para de una maldita vez.
+**-¿Quienquiera que esté haciendo esto, para de una maldita vez.**
 
 De pronto, la persona sin cara aparece detrás del jugador y comienza a perseguirlo mientras se escucha una música de fondo de miedo.
 
--¡Alto, alto, aléjate de mí! ¡No des un paso más! ¡ALTO!
+**-¡Alto, alto, aléjate de mí! ¡No des un paso más! ¡ALTO!**
 
--¡Ah! (De asombro y alivio). Ahí está la salida.
+**-¡Ah! (De asombro y alivio). Ahí está la salida.**
 
 El jugador llega a la salida que lo llevará al siguiente escenario.
 
@@ -126,30 +127,109 @@ El jugador llega a la salida que lo llevará al siguiente escenario.
 - Creo que esta cerrada.
 - Esta no es la salida.
 
-1. Escenario 2(Lobby) "Welcome to the Back1200|\/|$":
+2. Escenario 2(Lobby) "Welcome to the Back1200|\/|$":
+   
+EL personaje se encuentra desconsertado en el lobby por lo que comienza a explorar sus alrededores. Se da cuenta que hay 3 lugares: un bosque, un hospital y una especie de puerta de salida.
 
+A lo lejos divisa a 5 personajes (NPC).
 
+A lo lejos divisa una tienda.
 
+**-Logre escapar de esa cosa.**
+
+**-Donde estoy?**
+
+**-Que es este lugar**
+
+Señal para explorar por el mapa. En el lobby hay 10 notas de empleado pasados que pasaron por las mismas circunstancias para llegar al lobby.
+
+Opcion 1: El jugador se dirige al nivel del hospital.
+
+**-Por que hay un hospital aca?**
+
+**-Talvez pueda conseguir alimentos. Siento que llevo dias sin comer y talvez la llave.**
+
+Entra en el hospital
+
+Opcion 2: El jugador entra al bosque:
+
+INGRESAR TEXTO
+
+Opcion 3: Se dirige a la puerta de salida
+
+**-Oh, la salida**
+
+**-Parece que esta cerrada. Creo que necesita dos llaves para abrirse**
+
+**Cierre de nivel**
+
+**Dialogos de Interaccion**
+
+- 1. Nota: No se cuanto tiempo llevo en este lugar dias,meses o incluso años ya perdi la cuenta. Lo unico de que me acuerdo es de haber visto a alguien parecido a mi pero sin cara.
+
+- 2. Nota: Siento que estos lugares no tienen salida como si alguna manera fueran infinitos. Debo de conseguir las llaves para abrir la puerta.
+
+- 3. Nota: Ya no puedo soportarlo mas, quiero que esto acabe pronto. Ya se , si agarro el arma que vi en el bosque , tal vez pueda .....
+
+- 4. Nota: AHHHHHHHHHHHHHHHH, quiero borrar esas imagenes de mi mente, nunca habia visto algo asi. Quiero volver a mi casa mi familia me esta esperando PORFAVOR.
+
+- 5. Nota: He encontrado una serie de símbolos extraños en las paredes de este laberinto interminable. Parecen formar un patrón, pero no logro descifrar su significado. Cada vez que los miro, siento una extraña sensación de inquietud.
+
+- 6. Nota: Escucho voces susurrantes en los pasillos, pero nunca puedo encontrar a nadie. Las palabras son incomprensibles, pero me llenan de miedo y paranoia. No sé si son reales o simplemente producto de mi mente deteriorada.
+
+- 7. Nota: Me encontre unos cuerpos en un hospital con un uniforme que parecia tener el logo de mi empresa. Creo que SCP es una fachada para algo mas oscuro.
+
+- 8.  Nota: Los sonidos en este lugar son ensordecedores y discordantes. Gritos desgarradores, risas macabras y susurros inquietantes llenan el aire. Parece que el laberinto está vivo con el sonido de la locura y el tormento.
+
+- 9. Hay una presencia siniestra que acecha en las sombras. Puedo sentir sus ojos fijos en mí, observándome constantemente. Cada vez que intento escapar, su presencia se intensifica, recordándome que no estoy solo en este laberinto oscuro.
+
+- 10. Cada vez que cierro los ojos, me encuentro en un recuerdo del pasado. Son fragmentos de mi vida que se repiten una y otra vez. No importa cuánto intente evitarlos, siempre regreso a esos momentos dolorosos. Estoy atrapado en mis propios recuerdos.
+
+- NPC1: INGRESAR TEXTO
+- NPC2: INGRESAR TEXTO
+- NPC3: INGRESAR TEXTO
+- NPC4: INGRESAR TEXTO
+- NPC5: INGRESAR TEXTO
 
 #### ***Personajes***
 
 Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc: 
 
 1.David->The Luckiest One (Cientifico)
-![Personaje|900](Personajes/Personaje1.png)
+
+    Stats:
+    1.Hp: 3 corazones
+    2.Lck:
+    3.Stamina: 5 seg
+    4.Atk: 1
+    5.x Multiplier: x 1
 
 2.Angel->The richest one (Ejecutivo)
-![Personaje|900](Personaje2.png)
+
+    Stats:
+    1.Hp: 3 corazones
+    2.Lck:
+    3.Stamina: 5 seg
+    4.Atk: 1
+    5.x Multiplier: x 3
 
 3.Daniel->The fastest one (Mecanico o Plomero)
-![Personaje|900](Personaje4.png)
+
+    Stats:
+    1.Hp: 3 corazones
+    2.Lck:
+    3.Stamina: 10 seg
+    4.Atk: 1
+    5.x Multiplier: x 1
 
 4.Juan->The rudest one (Guardia de seguridad)
-![Personaje|900](Personaje3.png)
 
-Plan A: Los personajes contaran con un inicio y final distintos. Tambien contara con habilidades y stats diferentes.
-
-Plan B:Los personajes contaran con habilidades y stats diferentes.
+    Stats:
+    1.Hp: 4 corazones
+    2.Lck:
+    3.Stamina: 5 seg
+    4.Atk: 2 atk
+    5.x Multiplier: x 1
 
 
 #### ***Generos***
@@ -173,8 +253,6 @@ Es un RPG (Role-Playing Game) que contiene elementos o generos como:
 
 ### **Gameplay**
 
-What should the gameplay be like? 
-
 El gameplay debe de contener elementos del RPG.
 
 1. El jugador podra elegir entre cuatro personajes. Cada personaje tiene stats diferentes.
@@ -183,29 +261,32 @@ El gameplay debe de contener elementos del RPG.
 
 3. Interaccion con el mundo: El jugador podra interactuar con los escenario, npc y objetos del juego.
 
-4. Progresion de personaje: El jugador podra mejorar las stats del personaje equipandolo con mejores objetos o consumiendo varios consumibles.
+4. Progresion de personaje: El jugador podra intercambiar entre mejores objetos o consumiendo varios consumibles para que se facilite las misiones.
 
-What is the goal of the game, and what kind of obstacles are in the way?
+5. Sobrevivir: El jugador debe de utilizar las armas y objetos que tenga a su dispocicion para sobrevivir por los diferentes niveles.
+
+### **Obstaculos**
 
 La meta de juego es sobrevivir y escapar de los backrooms (en una cierta cantidad de tiempo o cronometro) utilizando las herremientas que se encuentran en los distintos escenarios. Debes de realizar varias misiones principales para recolectar varias llaves con las cuales podras abrir la puerta al boss final. 
 
 Los obstaculos que se encuntran en nuestro videojuego son varios puzzles que se deben de resolver para abrir diferentes zonas. Luego, los principales obstaculos son los diferentes enemigos (fobias) y la oscuridad que intentara asesinar al jugador.
 
+El jugador encontrara enemigos basados en oscuridad y puzzles dentro del nivel del hospital. Debera de pasarlos para encontrar una de las llaves para abrir la salida.
+
+El jugador encontrara enemigos basados en las fobias dentro del nivel del bosque. Debera de pasarlos para encontrar una de las llaves para abrir la salida.
+
+
 ![Fotografia de una idea de los obstaculos](https://i.ytimg.com/vi/5bc8on9ujxQ/maxresdefault.jpg)
 
 ![Fotografia de una idea de los obstaculos](https://itstimetoescape.com/wp-content/uploads/2021/04/Tut_E-800-min.jpg)
 
- What tactics should the player use to overcome them?
+### **Estrategia**
 
 Sobrevivir, escapar, aprender, apostar y pelear de regreso son palabras clave a lo largo del desarrollo de la historia.  El jugador deberá utilizar todas las herramientas a su disposición para lograr sobrevivir, por lo que la escasez de estos, y la toma de decisiones del jugador a la hora de interactuar con el mundo repercutirán el desarrollo de la historia.
-
-Dicho lo anterior, como queremos meter al jugador a un juego que no contiene tantos números y stats, para no desviarnos de la tensión y realidad, la ganancia de experiencia e incremento de nivel se hará de una forma escondida de segundo plano, pero de igual forma se le hara saber al jugador.
 
 ![Fotografia de videojuegos de Binding of isaac referencia hacia un gameplay parecido](https://imgs.search.brave.com/wv4ztwWMCFwYdh1IIjY3_NDzGnm11SxvOFKGNh9I4e4/rs:fit:960:540:1/g:ce/aHR0cHM6Ly9tZXRp/bWVnYW1lci5maWxl/cy53b3JkcHJlc3Mu/Y29tLzIwMTQvMTEv/aXNhYWNfaGVhZHRy/YXVtYS5wbmc)
 
 ### **Mindset**
-
-What kind of mindset do you want to provoke in the player? Do you want them to feel powerful, or weak? Adventurous, or nervous? Hurried, or calm? How do you intend to provoke those emotions?
 
 El jugador se debe de sentir confundido, intrigado, atento, analítico, cuidadoso y aventurero pero con cierto nerviosismo.
 Estas emociones se van a conseguir al poner el jugador en diferentes situaciones que implican su supervivencia, junto con el pensamiento de ahorro de recursos dado a que serán limitados.
