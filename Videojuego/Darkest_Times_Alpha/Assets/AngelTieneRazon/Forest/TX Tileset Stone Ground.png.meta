@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: cf58692108ff2194cad13f66a648444b
+=======
 guid: bf382a7f89fe09446a0e10f67d9f7206
+>>>>>>> main
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +50,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> main
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 16
+>>>>>>> main
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +83,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 1024
+>>>>>>> main
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -103,6 +123,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
+    sprites: []
+=======
     sprites:
     - serializedVersion: 2
       name: TX Tileset Stone Ground_0
@@ -4304,6 +4327,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> main
     outline: []
     physicsShape: []
     bones: []
@@ -4314,6 +4338,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       TX Tileset Stone Ground_0: 793769544
       TX Tileset Stone Ground_1: -1711503659
@@ -4515,6 +4542,7 @@ TextureImporter:
       TX Tileset Stone Ground_97: -350820470
       TX Tileset Stone Ground_98: 29719304
       TX Tileset Stone Ground_99: 619645837
+>>>>>>> main
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

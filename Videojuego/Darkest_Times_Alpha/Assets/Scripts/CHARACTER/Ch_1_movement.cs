@@ -16,7 +16,7 @@ public class Ch_1_movement : MonoBehaviour
     [SerializeField] private GameObject BulletPrefab;
     [SerializeField] private Transform firingPoint;
 
-    [SerializeField] private float fireRate = 0.5f;
+    //[SerializeField] private float fireRate = 0.5f;
 
 
     //Player Animation
@@ -48,8 +48,11 @@ public class Ch_1_movement : MonoBehaviour
         //Look
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        float angle = Mathf.Atan2(mousePos.y - transform.position.y, mousePos.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-        transform.localRotation = Quaternion.Euler(0, 0, angle);
+        //float angle = Mathf.Atan2(mousePos.y - transform.position.y, mousePos.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+        //transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+        animator.SetFloat("Look_x", mousePos.x - transform.position.x);
+        animator.SetFloat("Look_y", mousePos.y - transform.position.y);
 
         //Gun
         if (Input.GetMouseButtonDown(0))
@@ -61,6 +64,10 @@ public class Ch_1_movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Codigo par que no se mueva en diagonal mas rapido
+        rb2d.velocity = new Vector2(movement.x, movement.y).normalized * runSpeed;
+
+        // Codigo para el Sprint
         rb2d.MovePosition(rb2d.position + movement * runSpeed * Time.fixedDeltaTime);
         
         if (Input.GetKey(KeyCode.LeftShift))
@@ -76,12 +83,37 @@ public class Ch_1_movement : MonoBehaviour
         Instantiate(BulletPrefab, firingPoint.position, firingPoint.rotation);
     }
 
-
-    //Esta funcion no debe de estar aqui, y debe de mejorarse que se borran los tags, entonces por si hay mas objetos del mismo tag no funciona.
-    //Tambien si se hace una colision con otro elemento con el mismo sitema de colider (como el el mueble) se borra la pocion.
+    // Diferentes coliciones y eventos
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Pocion de vida");
-        Destroy(GameObject.FindGameObjectWithTag("VidaPocion"));
+        if (collision.gameObject.tag == "ObjetoRecogibleV")
+        {
+            Debug.Log("Poci?n de vida" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleE")
+        {
+            Debug.Log("Recogiste un escudo" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleS")
+        {
+            Debug.Log("Poci?n de Stamina" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleVel")
+        {
+            Debug.Log("Poci?n de Velocidad" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+
+        if (collision.gameObject.tag == "ObjetoRecogibleA")
+        {
+            Debug.Log("Poci?n de Ataque" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
     }
 }
