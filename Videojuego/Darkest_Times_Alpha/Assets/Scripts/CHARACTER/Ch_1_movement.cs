@@ -16,7 +16,7 @@ public class Ch_1_movement : MonoBehaviour
     [SerializeField] private GameObject BulletPrefab;
     [SerializeField] private Transform firingPoint;
 
-    [SerializeField] private float fireRate = 0.5f;
+    //[SerializeField] private float fireRate = 0.5f;
 
 
     //Player Animation
