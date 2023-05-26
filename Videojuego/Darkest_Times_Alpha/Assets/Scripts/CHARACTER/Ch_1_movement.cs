@@ -16,8 +16,9 @@ public class Ch_1_movement : MonoBehaviour
     [SerializeField] private GameObject BulletPrefab;
     [SerializeField] private Transform firingPoint;
 
-    //[SerializeField] private float fireRate = 0.5f;
-
+    [Range(0.1f, 2f)]
+    [SerializeField] private float fireRate = 0.5f;
+    private float fireTimer;
 
     //Player Animation
     Rigidbody2D rb2d;
@@ -55,9 +56,15 @@ public class Ch_1_movement : MonoBehaviour
         animator.SetFloat("Look_y", mousePos.y - transform.position.y);
 
         //Gun
-        if (Input.GetMouseButtonDown(0))
+        // Dispara cada cierto tiempo
+        if (Input.GetMouseButtonDown(0) && fireTimer < 0f)
         {
             Shoot();
+            fireTimer = fireRate;
+        }
+        else
+        {   //Para reducir el tiempo antes del siguiente disparo (mabe agregar un coroutine para el sonido)
+            fireTimer -= Time.deltaTime;
         }
     }
 
