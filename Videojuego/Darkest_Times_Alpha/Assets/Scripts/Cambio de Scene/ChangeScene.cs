@@ -8,12 +8,15 @@ public class ChangeScene : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.otherCollider.CompareTag("Scene_Changer"))
+        if (collision.collider.gameObject.CompareTag("Player"))
         {
             Player_stats playerBSC = collision.collider.gameObject.GetComponent<Player_stats>();
             playerBSC.SaveToJson();
 
             SceneManager.LoadScene(sceneIndex);
         }
+
+
+        
     }
 }

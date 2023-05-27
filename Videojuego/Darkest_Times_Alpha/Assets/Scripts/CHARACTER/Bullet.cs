@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {   //Para que se destruya la bala cuando le da a un enemigo, implementar mabe el stay.
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
 }
