@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 254ad354d5486eb49bf5f42397b6d657
+guid: be963540ff03802468f40c4eed2afb36
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7570,8 +7570,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TX Props_0: -64651740
-      TX Props_1: -1725794138
       TX Props_10: 85731437
       TX Props_100: 573541661
       TX Props_101: -137975208
@@ -7925,6 +7923,10 @@ TextureImporter:
       TX Props_97: 1914037710
       TX Props_98: 1342341525
       TX Props_99: 2072448922
+      TX Props_0: -332160853
+      TX Props_1: 1600282337
+      TX Props_2: -1782879210
+      TX Props_3: 759546473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
