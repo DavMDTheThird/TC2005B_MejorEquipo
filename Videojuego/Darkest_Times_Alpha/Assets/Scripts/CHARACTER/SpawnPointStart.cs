@@ -16,15 +16,14 @@ public class SpawnPointStart : MonoBehaviour
     {
         // Get the currently active scene and Get the name of the active scene
         Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
 
         // Accesar el diccionario con los spawn points del scene
-        float[][] spwnPoints = DicSpawnPoints.Instance.myDictionary[sceneName];
+        float[][] spwnPoints = DicSpawnPoints.Instance.myDictionary[currentScene.name];
         // Cambiar el array de spawn points a solo el que queremos en un Vector3
         Vector3 spwnPoint = new Vector3(spwnPoints[id_spwnPoint][0], spwnPoints[id_spwnPoint][1], spwnPoints[id_spwnPoint][2]);
 
 
         // Poner el jugador en el spawn correcto al inicio
-        GameObject player = Instantiate(player_prefab, spwnPoint, rotation);
+        Instantiate(player_prefab, spwnPoint, rotation);
     }
 }
