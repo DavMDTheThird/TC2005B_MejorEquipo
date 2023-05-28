@@ -8,7 +8,7 @@ public class ChangeScene : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Scene_Changer"))
+        if (collision.collider.CompareTag("Player"))
         {
             Player_stats playerBSC = collision.collider.gameObject.GetComponent<Player_stats>();
             playerBSC.SaveToJson();
