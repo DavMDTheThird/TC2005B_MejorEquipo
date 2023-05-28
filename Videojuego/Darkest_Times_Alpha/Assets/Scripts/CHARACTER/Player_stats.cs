@@ -11,7 +11,7 @@ public class Player_stats : MonoBehaviour
 
     void Start()
     {
-        if (File.Exists(Application.dataPath + "/changeScene.json"))
+        /*if (File.Exists(Application.dataPath + "/changeScene.json"))
         {
             Debug.Log("Si existe previa instancia, iniciando player");
             playerBSC = LoadFromJson();
@@ -19,7 +19,7 @@ public class Player_stats : MonoBehaviour
         else
         {
             Debug.Log("No existio previa instancia, ERROR ERROR");
-        }
+        }*/
     }
 
 
