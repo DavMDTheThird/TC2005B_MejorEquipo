@@ -4,7 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - VidaPocion
+  - ObjetoRecogibleV
+  - ObjetoRecogibleE
+  - ObjetoRecogibleS
+  - ObjetoRecogibleVel
+  - ObjetoRecogibleA
   - Scene_Changer
+  - Enemigos
   layers:
   - Default
   - TransparentFX
@@ -14,7 +21,7 @@ TagManager:
   - UI
   - personaje
   - Enemigos
-  - 
+  - Bullets
   - 
   - 
   - 
