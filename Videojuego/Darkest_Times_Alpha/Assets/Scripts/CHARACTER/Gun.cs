@@ -4,57 +4,31 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public Transform target; // Reference to the GameObject to rotate around
-    public float rotationSpeed = 1f;
-    public float distance = 5f; // Fixed distance from the target
-
-    // Estas variables me ayudaran a mantener el curson pegado al personaje
-    float maxX = 800f;
-    float minX = 500f;
-    float maxY = 400f;
-    float minY = 100f;
-
-
-    void Start()
-    {
-        
-    }
+    public Transform player; // Reference to the GameObject to rotate around
+    public float distance = 1f; // Fixed distance from the target
 
     void Update()
     {
-        //-------------- Posicion del arma respecto al mouse ---------------
+        //-------------- Posicion del arma respecto al mouse 
         Vector3 mousePos = Input.mousePosition;
-        Vector3 center = new Vector3((minX + maxX) / 2f, (minY + maxY) / 2f, 0f);
-        Vector3 clampedMousePos = center + Vector3.ClampMagnitude(mousePos - center, Mathf.Min((maxX - minX) / 2f, (maxY - minY) / 2f));
+        Vector3 playerPosition = player.transform.position;
+        Vector3 desiredPosition = playerPosition + (mousePos - Camera.main.WorldToScreenPoint(playerPosition)).normalized * distance;
 
-        Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(clampedMousePos.x, clampedMousePos.y, transform.position.z));
-        transform.position = target.position + (worldMousePosition - target.position).normalized * distance;
+        transform.position = desiredPosition;
 
 
 
         //-------------- Rotacion del arma respecto al mouse ---------------
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = mousePos - player.transform.position;
 
-        float angle = Mathf.Atan2(mousePos.y - transform.position.y, mousePos.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-
-        transform.localRotation = Quaternion.Euler(0, 0, angle);  
+        // Para que no rote (el arma) si es que el mouse lo pone sobre el personaje
+        if (direction.magnitude > distance)
+        {
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
     }
 }
 //------Cosas a hablar------
 /*Para que el arma no se vaya mas alla del personaje, se tiene que poner el follow speed de la camara instantaneo, practicamente.*/
-
-
-
-//----------Version pasada de posicion del arma------
-//Vector3 mousePos = Input.mousePosition;
-
-//mousePos.x = Mathf.Clamp(mousePos.x, minX, maxX);
-//mousePos.y = Mathf.Clamp(mousePos.y, minY, maxY);
-
-//Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, transform.position.z));
-// Calculate the direction from the target to the mouse position
-//Vector3 direction = worldMousePosition - target.position;
-// Normalize the direction vector and multiply it by the desired distance
-//Vector3 desiredPosition = target.position + direction.normalized * distance;
-// Set the position of the GameObject to the desired position
-//transform.position = desiredPosition;
