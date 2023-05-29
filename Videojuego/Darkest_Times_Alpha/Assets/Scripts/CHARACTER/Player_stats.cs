@@ -11,7 +11,7 @@ public class Player_stats : MonoBehaviour
 
     void Start()
     {
-        if (File.Exists(Application.dataPath + "/changeScene.json"))
+        /*if (File.Exists(Application.dataPath + "/changeScene.json"))
         {
             Debug.Log("Si existe previa instancia, iniciando player");
             playerBSC = LoadFromJson();
@@ -19,9 +19,12 @@ public class Player_stats : MonoBehaviour
         else
         {
             Debug.Log("No existio previa instancia, ERROR ERROR");
-        }
+        }*/
     }
 
+
+
+    // Testing
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.T))
@@ -50,6 +53,10 @@ public class Player_stats : MonoBehaviour
         }
     }
 
+
+
+
+    // Player interactions
     public void TakeDamage(short damage)
     {
         playerBSC.HP -= damage;
@@ -62,6 +69,10 @@ public class Player_stats : MonoBehaviour
         Debug.Log(transform.name + " gain: " + money + " money. Total money now: " + playerBSC.Money);
     }
 
+
+
+
+    // Json Stuff
     public void SaveToJson()
     {
         string json = JsonUtility.ToJson(playerBSC, true);

@@ -1,0 +1,2621 @@
+fileFormatVersion: 2
+guid: 9bb3473de122ef04b8be0357d9ac66b1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Silla
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4324f7e1c7671047af134078c3654aa
+      internalID: 523843086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 354
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439b27e40dfbcfa47a2997a8e3339c07
+      internalID: -1106521639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 362
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2a4f6bb9d7c47449df3ef378fd8006
+      internalID: -847774876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 354
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d2982cfad711844b1bca9308e936d0
+      internalID: -2115425452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 362
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa4777fc4720a34aaf47594949d4687
+      internalID: -269650325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 362
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcecc1c599f2b3944b7dbaf8c15600b2
+      internalID: 515283240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_5
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 362
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf88f9a2c9aba2044a94329a35fee17b
+      internalID: 517275860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 368
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a3f56e247136a448573e83fe81d8b2
+      internalID: 1380895830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 368
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087b1f8d1190de1448c374e5290d1d16
+      internalID: -776466793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 368
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be3c92e6ed0d2f4fbdb82d440e4713c
+      internalID: 1649405178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_9
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 368
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df55c343bdbeca4c8a2ace0a79f477f
+      internalID: -1582061918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_10
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 370
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34caadfebb2938747abd9b0710a3f8d2
+      internalID: -1913808114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_11
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 362
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fe5b6274433144da61720b8c546db9
+      internalID: -484919393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 359
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a9a0d6b8378fb4db5daa4befc30d71
+      internalID: 696861357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 366
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c2c5141addaa645b36cd3d71289e80
+      internalID: -519619253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_14
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 342
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac03a9ade7a68f40aec5bad1f1a41d5
+      internalID: -1072091074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 342
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f53df7deda9434796a0324d713bba3
+      internalID: -1894950364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_16
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 342
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c52d71761f74b4baeb527b7ba10a4f
+      internalID: 546977268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_17
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 342
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafbd40ac4037d1499469bdad3e847c8
+      internalID: -911063621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_18
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 352
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7172ef245e0c8d4baa3790de0eb99d1
+      internalID: -1307652844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_19
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 350
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824779188e8ecd40a1f9e565480e882
+      internalID: -1997136379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 128
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7cb3f6379af5d49806951f4709bf08
+      internalID: -1339854389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 340
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7894bd4886350a4894391d30d13637b
+      internalID: -1380596249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_22
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 340
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a52be062d7a4d44182c705873dcc8c2
+      internalID: -977891554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_23
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 313
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64777fc307d002647810b3225d4a4346
+      internalID: 1125560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_24
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 313
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c8869e9d3d0af4289c31483bb61cb9
+      internalID: -346310808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_25
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 336
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85741abdae93170419b2a769b2acde44
+      internalID: -1958030828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_26
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 334
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f5e30a5e27f454a8cd2df70865c283
+      internalID: 1157953894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_27
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 328
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737b8242a792fc446bfc436e42098501
+      internalID: -11819157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_28
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 327
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcd0110ddd31d64bb60d0bfae1b0393
+      internalID: -487380610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_29
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 307
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597e3b9e49dbf2443822fbe58e264cfe
+      internalID: -396594894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_30
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 309
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ec8bac7f2bf024b8816cfffe0dec7e
+      internalID: 849302362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_31
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 308
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6cf52abff35e74cb881002fe346b15
+      internalID: 1056472717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_32
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 308
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c5e9e35e18bbd4d8d6a954387d735d
+      internalID: -11456377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 274
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af917daf27b20344b49ce4597af6ad3
+      internalID: -1069477002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 282
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21438b2d2b02cc54e8801d05f3a45661
+      internalID: -1772765631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 274
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58031cd789f616842ba8e22447792054
+      internalID: 38504255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 282
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc941a2a6ffff9c4d9ca9f3a30acf1fc
+      internalID: -2106949989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_37
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 279
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa336014b2e2d4489acc89642a3d618
+      internalID: 1824155437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_38
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 279
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d980d1e1ded6e94419dc99d34cb7c9b8
+      internalID: -1574449835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 302
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ace163224e219042b01923bf0126b17
+      internalID: -1653364301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_40
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 302
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c599adf835ef9419d2b8ed2eb95260
+      internalID: 645316707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 278
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43c81e4aad9a41489c4a08bb7cf8310
+      internalID: -2017568545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_42
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 279
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998cc7c301701fb4e9a519c895cf3923
+      internalID: 812857818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_43
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 275
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43cf5ee9f11c7540afa74af1f821037
+      internalID: 1530717431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_44
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 273
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40aca3ce7a9ceb42b784606245822d6
+      internalID: 2132832391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_45
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 258
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539a930ec93e8ef47bb26724b35b558c
+      internalID: 307383773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 264
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0a7aeed0eec454b87ac9e8283f7a9c
+      internalID: 1942677800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 128
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22267417bffa3247b54cf5a7cb8a691
+      internalID: -1083575024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_48
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 235
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40900ade7d9683b4d8589c8e5d5e8d6d
+      internalID: 1649196247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_49
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 235
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94119251b5538a47aba9d8e7ef4040a
+      internalID: 1912908615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_50
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 246
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ca30b31309d7c4eadfdf978c01a4f8
+      internalID: 411659873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_51
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 246
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13e5f7ab38816d4aa6288afb0ca0d53
+      internalID: 1639018488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_52
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 243
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d7be8db88050d4f9626fc6ec171e9e
+      internalID: -479101871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_53
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 228
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc25e8b5725a2b43858b649b346e0ac
+      internalID: 69004281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_54
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 214
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81aa295fd3cb97439842ea52441d33b
+      internalID: 2133768011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_55
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 214
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd3a6302f9e2da4aa6a97094fe88f0e
+      internalID: -1031579983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_56
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 211
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69679c992f6498046a9c25d8c966422f
+      internalID: -700289394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_57
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 228
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b87784445caaf541b3d370e5c144a14
+      internalID: -1666529639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_58
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 228
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd1f77b0e2af4f44880c704b939f065
+      internalID: 1741121446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_59
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 208
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb541b7d2d8b7d43a315d6b5dff65e2
+      internalID: -942837445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_60
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 194
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388e3e4be86cb8543b2fb29f1cad20f7
+      internalID: -1856784209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 202
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a826a3f46ace941a9ef807e4a26452
+      internalID: 803860496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_62
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 222
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6952cfdf4546beb44a6a29bb2a09ca43
+      internalID: -51042292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_63
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 222
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a36c476b3a2e34b8f5259f14a92d13
+      internalID: -1087748491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_64
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 222
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf330c433df66e24b8b59c0a7c1eb62e
+      internalID: -1389627009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 193
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6723c18c233c8ea4f82fe3946d1ca087
+      internalID: 402712033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_66
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 187
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3380fc6b1394f7478d844d57c2015bd
+      internalID: -1235596179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_67
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 187
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cb02bcf96ce804f8640ea6024ef042
+      internalID: 271695449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 177
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca35f4474e56f7f4c8db5841b185018b
+      internalID: 243253119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_69
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 177
+        width: 67
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f709a13d268ec704ab3a1aaabdc82b0e
+      internalID: -1510904224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_70
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffda17beb66a85c45b037ef94d55d42c
+      internalID: 1568602237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_71
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761d3c0cf35804d41b353beed4bc4082
+      internalID: 1330891404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 161
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7780d76815c46cf489c92ac33559f40a
+      internalID: 1093506385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_73
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 144
+        width: 86
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30a2c5b8b6b31242900fea00200da53
+      internalID: 1184988324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_74
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 139
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6687d4e69f61a4468b90c831c2d741f
+      internalID: 1030681787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_75
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 139
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77aad770cca802844a80a9ccd18d51ad
+      internalID: 1159364142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_76
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 138
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a3ccdc52d952344b221a660104a10d
+      internalID: 398573261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_77
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 137
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320185af34f4003459059fc3e434cd42
+      internalID: -1431458845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_78
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 165
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9421ee9d09f0b994bb2ce08c152577d2
+      internalID: -1961768253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_79
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 129
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b17e5548217df49854e7dc41b99f97
+      internalID: 1890384724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 145
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d695ccd1cdbf44689b991eea6326ac
+      internalID: -1515894249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_81
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 145
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a84ddde642752c4cb867ef359a3e873
+      internalID: 131454862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_82
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 147
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0ff885b7d1c154d92ba343912dcc24
+      internalID: -1095279170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_83
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 115
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b992c7e827da943b62e89dcfa35003
+      internalID: 2105030240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_84
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 124
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7f17f2364ec524eb8d1db48e323fe1
+      internalID: 659444496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 122
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da3e439ac2f2134ca45bbb8b680ecee
+      internalID: -450441744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_86
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 119
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4890d2b50d90daf43a3d003d0e3c6083
+      internalID: 2137466923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_87
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 122
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48733d30da9785147a5460b5453c1796
+      internalID: 1856667566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_88
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 122
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962e02669b0651f49ad46562833aeb11
+      internalID: -768257175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_89
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 106
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4f03f33da446640ac9fea72278ef85
+      internalID: -389305835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_90
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 115
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fcb111532172d4f919c208235d4b8e
+      internalID: -1606134992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_91
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 98
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10d94eaa6765e646a695ce970481377
+      internalID: -286325350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_92
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 102
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cacfe747811dc3449346a391361ad71
+      internalID: 519839573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_93
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 100
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af83ba259017744d8ad2dc97c8227b3
+      internalID: -622529988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_94
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 90
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1970bbaa9413a7440be427e6a7a69d4d
+      internalID: 1874005982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_95
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 87
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e918fbda861d71745ab102207b4b4ea2
+      internalID: 1439085984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_96
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 90
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ecbcbbe103dcf4c8b3ef04e2f44f7e
+      internalID: 1873026383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_97
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 89
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bcb26193c58c94c939ff5aeaaac600
+      internalID: 1833430127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_98
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 72
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45340fa0fad8b304e82a9730b24efa94
+      internalID: 2099016390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_99
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 70
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaac4f2cee722d4bab17e014f161340
+      internalID: 2032892216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_100
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 58
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5512e3ca99f8d4e99647f08a1a2ba0
+      internalID: 1816939347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_101
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 55
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d769473126bc9204b8eb86986369ef48
+      internalID: -1863711534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_102
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 70
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb3ad658848d4e41abc1842116c8794
+      internalID: 358491371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_103
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 59
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3bf27a70026544bb8f0307717d4038
+      internalID: -141584601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_104
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 74
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623c7e4ebbf558e4f888af69f9c5cb70
+      internalID: -132832679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_105
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 40
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ee3f7c33b9a28439b8330c629e14a9
+      internalID: 1228480909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_106
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 40
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347d9c9a86624ce4e9f70fbe9006232b
+      internalID: 1027069488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_107
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 25
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a31392901fc164c81308db13b9c9fd
+      internalID: 611084603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_108
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 8
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b759709cdf979e40ab46a83ad037fee
+      internalID: -2147124645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_109
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 8
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff4cd7e80171384988bcfc5b6d8722e
+      internalID: 268160504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_110
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 6
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce650fde38b4a94489b605cb7ee067b
+      internalID: -1096500304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34_Office_interiors_111
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 6
+        width: 52
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03deebe111a37664fbdc7fd6018ccd4c
+      internalID: 535624634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      34_Office_interiors_0: -1106521639
+      34_Office_interiors_1: -847774876
+      34_Office_interiors_10: -1913808114
+      34_Office_interiors_100: 1816939347
+      34_Office_interiors_101: -1863711534
+      34_Office_interiors_102: 358491371
+      34_Office_interiors_103: -141584601
+      34_Office_interiors_104: -132832679
+      34_Office_interiors_105: 1228480909
+      34_Office_interiors_106: 1027069488
+      34_Office_interiors_107: 611084603
+      34_Office_interiors_108: -2147124645
+      34_Office_interiors_109: 268160504
+      34_Office_interiors_11: -484919393
+      34_Office_interiors_110: -1096500304
+      34_Office_interiors_111: 535624634
+      34_Office_interiors_12: 696861357
+      34_Office_interiors_13: -519619253
+      34_Office_interiors_14: -1072091074
+      34_Office_interiors_15: -1894950364
+      34_Office_interiors_16: 546977268
+      34_Office_interiors_17: -911063621
+      34_Office_interiors_18: -1307652844
+      34_Office_interiors_19: -1997136379
+      34_Office_interiors_2: -2115425452
+      34_Office_interiors_20: -1339854389
+      34_Office_interiors_21: -1380596249
+      34_Office_interiors_22: -977891554
+      34_Office_interiors_23: 1125560
+      34_Office_interiors_24: -346310808
+      34_Office_interiors_25: -1958030828
+      34_Office_interiors_26: 1157953894
+      34_Office_interiors_27: -11819157
+      34_Office_interiors_28: -487380610
+      34_Office_interiors_29: -396594894
+      34_Office_interiors_3: -269650325
+      34_Office_interiors_30: 849302362
+      34_Office_interiors_31: 1056472717
+      34_Office_interiors_32: -11456377
+      34_Office_interiors_33: -1069477002
+      34_Office_interiors_34: -1772765631
+      34_Office_interiors_35: 38504255
+      34_Office_interiors_36: -2106949989
+      34_Office_interiors_37: 1824155437
+      34_Office_interiors_38: -1574449835
+      34_Office_interiors_39: -1653364301
+      34_Office_interiors_4: 515283240
+      34_Office_interiors_40: 645316707
+      34_Office_interiors_41: -2017568545
+      34_Office_interiors_42: 812857818
+      34_Office_interiors_43: 1530717431
+      34_Office_interiors_44: 2132832391
+      34_Office_interiors_45: 307383773
+      34_Office_interiors_46: 1942677800
+      34_Office_interiors_47: -1083575024
+      34_Office_interiors_48: 1649196247
+      34_Office_interiors_49: 1912908615
+      34_Office_interiors_5: 517275860
+      34_Office_interiors_50: 411659873
+      34_Office_interiors_51: 1639018488
+      34_Office_interiors_52: -479101871
+      34_Office_interiors_53: 69004281
+      34_Office_interiors_54: 2133768011
+      34_Office_interiors_55: -1031579983
+      34_Office_interiors_56: -700289394
+      34_Office_interiors_57: -1666529639
+      34_Office_interiors_58: 1741121446
+      34_Office_interiors_59: -942837445
+      34_Office_interiors_6: 1380895830
+      34_Office_interiors_60: -1856784209
+      34_Office_interiors_61: 803860496
+      34_Office_interiors_62: -51042292
+      34_Office_interiors_63: -1087748491
+      34_Office_interiors_64: -1389627009
+      34_Office_interiors_65: 402712033
+      34_Office_interiors_66: -1235596179
+      34_Office_interiors_67: 271695449
+      34_Office_interiors_68: 243253119
+      34_Office_interiors_69: -1510904224
+      34_Office_interiors_7: -776466793
+      34_Office_interiors_70: 1568602237
+      34_Office_interiors_71: 1330891404
+      34_Office_interiors_72: 1093506385
+      34_Office_interiors_73: 1184988324
+      34_Office_interiors_74: 1030681787
+      34_Office_interiors_75: 1159364142
+      34_Office_interiors_76: 398573261
+      34_Office_interiors_77: -1431458845
+      34_Office_interiors_78: -1961768253
+      34_Office_interiors_79: 1890384724
+      34_Office_interiors_8: 1649405178
+      34_Office_interiors_80: -1515894249
+      34_Office_interiors_81: 131454862
+      34_Office_interiors_82: -1095279170
+      34_Office_interiors_83: 2105030240
+      34_Office_interiors_84: 659444496
+      34_Office_interiors_85: -450441744
+      34_Office_interiors_86: 2137466923
+      34_Office_interiors_87: 1856667566
+      34_Office_interiors_88: -768257175
+      34_Office_interiors_89: -389305835
+      34_Office_interiors_9: -1582061918
+      34_Office_interiors_90: -1606134992
+      34_Office_interiors_91: -286325350
+      34_Office_interiors_92: 519839573
+      34_Office_interiors_93: -622529988
+      34_Office_interiors_94: 1874005982
+      34_Office_interiors_95: 1439085984
+      34_Office_interiors_96: 1873026383
+      34_Office_interiors_97: 1833430127
+      34_Office_interiors_98: 2099016390
+      34_Office_interiors_99: 2032892216
+      Silla: 523843086
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
