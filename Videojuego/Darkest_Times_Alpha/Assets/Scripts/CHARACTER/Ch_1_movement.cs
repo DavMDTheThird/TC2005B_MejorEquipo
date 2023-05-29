@@ -128,7 +128,7 @@ public class Ch_1_movement : MonoBehaviour
         }
         if (collision.gameObject.tag == "Item")
         {
-            Debug.Log("Poci?n de Ataque" + collision.gameObject.name);
+            Debug.Log("Se agarro un item: " + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
     }
