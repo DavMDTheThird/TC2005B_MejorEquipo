@@ -5281,6 +5281,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      TX Plant_0: -593414653
+      TX Plant_1: -97321405
+      TX Plant_10: 681283207
+      TX Plant_11: 265833844
       TX Plant_111: -931639652
       TX Plant_112: 1188199574
       TX Plant_113: -427459343
@@ -5512,31 +5516,6 @@ TextureImporter:
       TX Plant_97: -1955274799
       TX Plant_98: -1001803577
       TX Plant_99: -58788407
-      TX Plant_0: -593414653
-      TX Plant_1: -97321405
-      TX Plant_10: 681283207
-      TX Plant_11: 265833844
-      TX Plant_12: -1125778534
-      TX Plant_13: 1398922316
-      TX Plant_14: -784578672
-      TX Plant_15: 1945607213
-      TX Plant_16: 1149401411
-      TX Plant_17: 1581572491
-      TX Plant_18: 475135238
-      TX Plant_19: -1027718417
-      TX Plant_2: -1647124495
-      TX Plant_20: -444801536
-      TX Plant_21: 1710134600
-      TX Plant_22: 1512415695
-      TX Plant_23: 2087418963
-      TX Plant_24: -219593120
-      TX Plant_3: -799631728
-      TX Plant_4: 343050210
-      TX Plant_5: 295670848
-      TX Plant_6: -1621808953
-      TX Plant_7: -514594829
-      TX Plant_8: -1346131076
-      TX Plant_9: -1580773404
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

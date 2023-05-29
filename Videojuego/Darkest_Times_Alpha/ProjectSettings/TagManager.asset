@@ -12,6 +12,7 @@ TagManager:
   - ObjetoRecogibleA
   - Scene_Changer
   - Enemigos
+  - Item
   layers:
   - Default
   - TransparentFX

@@ -25,7 +25,9 @@ public class Ch_1_movement : MonoBehaviour
     Rigidbody2D rb2d;
     public Animator animator;
 
-    
+    //Inventory
+    public InventorySlot inv_functions;
+
 
 
 
@@ -120,6 +122,11 @@ public class Ch_1_movement : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "ObjetoRecogibleA")
+        {
+            Debug.Log("Poci?n de Ataque" + collision.gameObject.name);
+            Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+        if (collision.gameObject.tag == "Item")
         {
             Debug.Log("Poci?n de Ataque" + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
