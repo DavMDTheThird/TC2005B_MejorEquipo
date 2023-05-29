@@ -8,8 +8,6 @@ public class Vidas: MonoBehaviour
     public GameObject[] hearts;
     private int life;
 
-    private float checkPointPositionX, checkPointPositionY;
-
     // Start is called before the first frame update
     void Start()
     {
