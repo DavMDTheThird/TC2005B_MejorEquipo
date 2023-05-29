@@ -11,6 +11,7 @@ TagManager:
   - ObjetoRecogibleVel
   - ObjetoRecogibleA
   - Scene_Changer
+  - Item
   - Enemigos
   - linterna
   - antorcha
