@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Pruebas David/Prueba_transision_3.unity
     guid: 8dde9e39e67dd41cfaaf39df79fef424
   - enabled: 1
-    path: Assets/Scenes/Lobby.unity
+    path: Assets/Scenes/PrincipalScenes/Lobby.unity
     guid: 9f10791f45685904a927621bf0dbf8e8
   m_configObjects: {}
