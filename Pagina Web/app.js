@@ -30,15 +30,15 @@ app.get('/', (request,response)=>{
 
 // Se necesita cambiar 
 app.get('/api/users', async (request, response)=>{
-    let connection = null
+    let connection = null  //This variable will be used to hold the database connection object.
 
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('select * from users')
+        const [results, fields] = await connection.execute('select * from users')//La busqueda
 
-        console.log(`${results.length} rows returned`)
-        console.log(results)
+        //console.log(`${results.length} rows returned`)
+        //console.log(results)
         response.json(results)
     }
     catch(error)
@@ -64,10 +64,9 @@ app.get('/api/users/:id', async (request, response)=>
     try
     {
         connection = await connectToDB()
-
         const [results_user, _] = await connection.query('select * from users where id_users= ?', [request.params.id])
         
-        console.log(`${results_user.length} rows returned`)
+        //console.log(`${results_user.length} rows returned`)
         response.json(results_user)
     }
     catch(error)
@@ -96,7 +95,7 @@ app.post('/api/users', async (request, response)=>{
 
         const [results, fields] = await connection.query('insert into users set ?', request.body)
         
-        console.log(`${results.affectedRows} row inserted`)
+        //console.log(`${results.affectedRows} row inserted`)
         response.json({'message': "Data inserted correctly.", "id": results.insertId})
     }
     catch(error)
