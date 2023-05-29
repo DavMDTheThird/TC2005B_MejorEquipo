@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -7570,6 +7582,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      TX Props_0: -332160853
+      TX Props_1: 1600282337
       TX Props_10: 85731437
       TX Props_100: 573541661
       TX Props_101: -137975208
@@ -7923,10 +7937,6 @@ TextureImporter:
       TX Props_97: 1914037710
       TX Props_98: 1342341525
       TX Props_99: 2072448922
-      TX Props_0: -332160853
-      TX Props_1: 1600282337
-      TX Props_2: -1782879210
-      TX Props_3: 759546473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

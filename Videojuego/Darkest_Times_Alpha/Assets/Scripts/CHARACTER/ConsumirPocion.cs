@@ -9,8 +9,9 @@ public class ConsumirPocion : MonoBehaviour
     public enum ObjetosPociones
     {
         Stamina,
-        Velocidad,
-        Ataque
+        Vida,
+        Ataque,
+        Escudo
     };
 
     public void UsarObjetos()
@@ -20,11 +21,14 @@ public class ConsumirPocion : MonoBehaviour
             case ObjetosPociones.Stamina:
                 Debug.Log("Consumir pocion stamina");
                 break;
-            case ObjetosPociones.Velocidad:
-                Debug.Log("Consumir pocion velocidad");
+            case ObjetosPociones.Vida:
+                Debug.Log("Consumir pocion vida");
                 break;
             case ObjetosPociones.Ataque:
                 Debug.Log("Consumir pocion ataque");
+                break;
+            case ObjetosPociones.Escudo:
+                Debug.Log("Consumir escudo");
                 break;
         }
 
