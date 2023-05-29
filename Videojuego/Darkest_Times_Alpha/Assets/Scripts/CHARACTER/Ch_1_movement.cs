@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ch_1_movement : MonoBehaviour
 {
     //Player
+    Player_stats playerStats;
     Vector2 movement;
 
     public float runSpeed = 2f;
@@ -32,6 +33,7 @@ public class Ch_1_movement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        playerStats = GetComponent<Player_stats>();
     }
 
 
@@ -123,4 +125,15 @@ public class Ch_1_movement : MonoBehaviour
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemigos")
+        {
+            Debug.Log("Te hizo daino: " + collision.gameObject.name);
+            playerStats.TakeDamage(1);
+            //Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        }
+    }
+
 }

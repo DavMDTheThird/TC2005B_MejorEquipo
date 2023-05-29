@@ -30,6 +30,7 @@ Daniel Soult Gómez A01782985
       - [***Historia y Dialogos***](#historia-y-dialogos)
       - [***Personajes***](#personajes)
       - [***Generos***](#generos)
+        - [**Subgeneros**](#subgeneros)
     - [**Gameplay**](#gameplay)
     - [**Obstaculos**](#obstaculos)
     - [**Estrategia**](#estrategia)
@@ -135,35 +136,14 @@ A lo lejos divisa a 5 personajes (NPC).
 
 A lo lejos divisa una tienda.
 
-**-Logre escapar de esa cosa.**
+El jugador escogera entre cuatro personajes principales con una historia y stats diferentes.
 
-**-Donde estoy?**
+1. Samurai - David
+2. Futbolista - Angel
+3. - Juanpa
+4. - Daniel
 
-**-Que es este lugar**
-
-Señal para explorar por el mapa. En el lobby hay 10 notas de empleado pasados que pasaron por las mismas circunstancias para llegar al lobby.
-
-Opcion 1: El jugador se dirige al nivel del hospital.
-
-**-Por que hay un hospital aca?**
-
-**-Talvez pueda conseguir alimentos. Siento que llevo dias sin comer y talvez la llave.**
-
-Entra en el hospital
-
-Opcion 2: El jugador entra al bosque:
-
-INGRESAR TEXTO
-
-Opcion 3: Se dirige a la puerta de salida
-
-**-Oh, la salida**
-
-**-Parece que esta cerrada. Creo que necesita dos llaves para abrirse**
-
-**Cierre de nivel**
-
-**Dialogos de Interaccion**
+**Poner 4 historias**
 
 - 1. Nota: No se cuanto tiempo llevo en este lugar dias,meses o incluso años ya perdi la cuenta. Lo unico de que me acuerdo es de haber visto a alguien parecido a mi pero sin cara.
 
@@ -195,54 +175,54 @@ Opcion 3: Se dirige a la puerta de salida
 
 Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc: 
 
-1.David->The Luckiest One (Cientifico)
+1.David->Samurai->Espada
 
     Stats:
-    1.Hp: 3 corazones
-    2.Lck:
-    3.Stamina: 5 seg
-    4.Atk: 1
-    5.x Multiplier: x 1
+    1.Hp: 10
+    2.Lck: 60%
+    3.Stamina: 3
+    4.x Atk: 5
+    5.x Monedas: 1.0
 
-2.Angel->The richest one (Ejecutivo)
-
-    Stats:
-    1.Hp: 3 corazones
-    2.Lck:
-    3.Stamina: 5 seg
-    4.Atk: 1
-    5.x Multiplier: x 3
-
-3.Daniel->The fastest one (Mecanico o Plomero)
+2.Angel->Futbolista->Bate
 
     Stats:
-    1.Hp: 3 corazones
-    2.Lck:
-    3.Stamina: 10 seg
-    4.Atk: 1
-    5.x Multiplier: x 1
+    1.Hp: 8
+    2.Lck: 70%
+    3.Stamina: 5
+    4.Atk: 5
+    5.x Monedas: 2
 
-4.Juan->The rudest one (Guardia de seguridad)
+3.Daniel->
 
     Stats:
-    1.Hp: 4 corazones
-    2.Lck:
-    3.Stamina: 5 seg
-    4.Atk: 2 atk
-    5.x Multiplier: x 1
+    1.Hp: 6
+    2.Lck: 85%
+    3.Stamina: 3
+    4.Atk: 4
+    5.x Monedas: 1.5
+
+4.Juan->
+
+    Stats:
+    1.Hp: 6
+    2.Lck: 80%
+    3.Stamina: 3
+    4.Atk: 4
+    5.x Monedas: 1.0
 
 
 #### ***Generos***
 
 Es un RPG (Role-Playing Game) que contiene elementos o generos como:
 
-1. Plataformer: Este genero se presenta en la introduccion y desenlace de la historia.
+##### **Subgeneros**
+
+1. Shooter: Este genero se encuentra en uno de los escenarios o espacios liminales.
    
-2. Shooter: Este genero se encuentra en uno de los escenarios o espacios liminales.
+2. Survival Horror: Este genero se encuentra en uno de los escenarios o espacios liminales.
    
-3. Survival Horror: Este genero se encuentra en uno de los escenarios o espacios liminales.
-   
-4. Roguelike, Shooter, Survival RPG: Es el subgenero principal de nuestro videojuego. Se basa en mazmorras aleatorias con combate a larga distancia.
+3. Roguelike, Shooter, Survival RPG: Es el subgenero principal de nuestro videojuego. Se basa en mazmorras aleatorias con combate a larga distancia.
 
 
 ![Fotografia de una idea sobre roguelike](https://static.wikia.nocookie.net/bindingofisaac/images/4/43/Habitaci%C3%B3n_Home.png/revision/latest?cb=20221002180239&path-prefix=es)
@@ -261,19 +241,19 @@ El gameplay debe de contener elementos del RPG.
 
 3. Interaccion con el mundo: El jugador podra interactuar con los escenario, npc y objetos del juego.
 
-4. Progresion de personaje: El jugador podra intercambiar entre mejores objetos o consumiendo varios consumibles para que se facilite las misiones.
+4. Progresion de personaje/mundo: El jugador podra intercambiar entre mejores objetos o consumiendo varios consumibles para que se facilite las misiones.
 
 5. Sobrevivir: El jugador debe de utilizar las armas y objetos que tenga a su dispocicion para sobrevivir por los diferentes niveles.
 
 ### **Obstaculos**
 
-La meta de juego es sobrevivir y escapar de los backrooms (en una cierta cantidad de tiempo o cronometro) utilizando las herremientas que se encuentran en los distintos escenarios. Debes de realizar varias misiones principales para recolectar varias llaves con las cuales podras abrir la puerta al boss final. 
+La meta de juego es sobrevivir y escapar de los backrooms utilizando las herremientas que se encuentran en los distintos escenarios. Debes de realizar varias misiones principales para recolectar varias llaves con las cuales podras abrir la puerta al boss final. 
 
 Los obstaculos que se encuntran en nuestro videojuego son varios puzzles que se deben de resolver para abrir diferentes zonas. Luego, los principales obstaculos son los diferentes enemigos (fobias) y la oscuridad que intentara asesinar al jugador.
 
-El jugador encontrara enemigos basados en oscuridad y puzzles dentro del nivel del hospital. Debera de pasarlos para encontrar una de las llaves para abrir la salida.
+El jugador encontrara enemigos y puzzles dentro de los diferentes niveles. Debera de pasarlos para encontrar una de las llaves para abrir la salida.
 
-El jugador encontrara enemigos basados en las fobias dentro del nivel del bosque. Debera de pasarlos para encontrar una de las llaves para abrir la salida.
+
 
 
 ![Fotografia de una idea de los obstaculos](https://i.ytimg.com/vi/5bc8on9ujxQ/maxresdefault.jpg)
@@ -332,10 +312,22 @@ A lo largo de la historia, existen dos caminos que puede tomar, por lo que en un
 4. Pantalla (Lobby):
    1. Escena Principal
    2. Dialogos
-   3. 
+   3. Pausa
 
+5. Pantalla (Hospital):
+   1. Escena Principal
+   2. Dialogos
+   3. Pausa
 
+6. Pantalla (Bosque):
+   1. Escena Principal
+   2. Dialogos
+   3. Pausa
 
+7. Pantalla (Final):
+   1. Escena Principal
+   2. Dialogos
+   3. Pausa
 
 ### **Controls**
 
@@ -346,35 +338,33 @@ Pc:
     1. Movimento: w,a,s,d
     2. Correr: shift izquierdo
     3. Interactuar con objetos y NPCs: e
-    4. Abrir inventario: i
+    4. Abrir inventario: f
     5. Utilizar objeto o arma: click izquierdo
     6. Cambiar arma: click derecho
-    7. Abrir mapa:m
 
 ### **Mechanics**
 
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+**Debemos de dividir las mecanicas pasivas y activas para un mejor enfoque. Las pasivas son aquellas que se realizan automaticamente y las activas son expresadas a traves de los controles o teclas que debe de oprimir el jugador**
 
-**Debemos de dividir las mecanicas pasivas y activas para un mejor enfoque. Las pasivas son aquellas que se realizan automaticamente y las activas son expresadas a traves de los controle o teclas que debe de oprimir el jugador**
+Las mecanicas activas que tenemos planteadas para nuestro videojuego son las siguientes: 
 
-Las mecanicas que tenemos planteadas para nuestro videojuego son las siguientes: 
+1. Movimiento basico: Tenemos planeado implementar el movimiento horizontal y vetical sobre un plano 2d. La mecanica se realizara con las w,a,s,d o con las flechas que se encunetran a mano derecha.
 
-Movimiento basico: Tenemos planeado implementar el movimiento horizontal y vetical sobre un plano 2d. La mecanica se realizara con las w,a,s,d o con las flechas que se encunetran a mano derecha.
+2. Movimiento avanzado: Tenemos planeado implementar la opcion de correr a traves de la tecla del "shift izquierdo". Esta mecanica le permitira al jugador evadir varios enemigos y moverse de manera rapida por el mapa.
 
-Movimiento avanzado: Tenemos planeado implementar la opcion de correr a traves de la tecla del "shift izquierdo". Esta mecanica le permitira al jugador evadir varios enemigos y moverse de manera rapida por el mapa.
+3. Combate: Tenemos planeado implementar la mecanica de combate cuerpo a cuerpo y a distancia dependiendo de la arma que este utilizando el jugador en su momento. Esta mecanica se podra utilizar al oprimir el boton izquierdo del mouse, al igual que rotar por las diferentes armas con click derecho.
 
-Combate: Tenemos planeado implementar la mecanica de combate cuerpo a cuerpo y a distancia dependiendo de la arma que este utilizando el jugador en su momento. Esta mecanica se podra utilizar al oprimir el boton izquierdo del mouse, al igual que rotar por las diferentes armas con click derecho.
+4. Consumir Objetos: Tenemos planeado que el jugador pueda consumir varios de los objetos consumibles (vida, escudo, stamina, atk) utilizando el click izquierdo.
 
-Interactuar: El jugador podra interactuar con el entorno y los distintos objetos consumibles a traves de la tecla E.
+5. Interactuar: El jugador podra interactuar con el entorno y los distintos objetos a traves de la tecla E.
+   
+Las mecanicas pasivas que tenemos planteadas para nuestro videojuego son las siguientes:
 
+1. Recolectar objetos: El jugador podra recoger varios de los objetos del juego unicamente pasando por encima de estos.
 
-
-
+2. Dropeo de Items: Los enemigos al morir doprearan objetos.
+   
 ## _Level Design_
-
----
-
-_(Note : These sections can safely be skipped if they&#39;re not relevant, or you&#39;d rather go about it another way. For most games, at least one of them should be useful. But I&#39;ll understand if you don&#39;t want to use them. It&#39;ll only hurt my feelings a little bit.)_
 
 ### **Themes**
 
@@ -383,52 +373,66 @@ En este apartado nos enfocamos en los diferentes niveles y las caracteristicas q
 1. Introduccion/Tutorial:
     1. Ambiente:
         1. Dark, calm, foreboding
+        2. Escenario Oficina
      2. Objetos y elementos:
         1. _Ambient_
-            1. Fireflies
-            2. Beams of moonlight
-            3. Tall grass
+            1. Escritorios
+            2. Sillas
+            3. Maquinas exprendedoras
+            4. Pizarrones
+            5. Sofas
+            6. Macetas
         2. _Interactive_
-            1. Wolves
-            2. Goblins
-            3. Rocks
-2. Hub Principal
+            1. Puertas
+            2. NPC Mueble
+2. Lobby:
     1. Ambiente:
-        1. Dark, calm, foreboding
+        1. Calm, broad, warm
      2. Objetos y elementos:
         1. _Ambient_
-            1. Fireflies
-            2. Beams of moonlight
-            3. Tall grass
+            1. Arboles
+            2. Caminos
+            3. Pilares
+            4. Flores
+            5. Fuentes
+            6. Sillas
         2. _Interactive_
-            1. Wolves
-            2. Goblins
-            3. Rocks
-3. Hospital
+            1. Tienda
+            2. Notas
+            3. NPC
+3. Hospital:
     1. Ambiente:
         1. Dangerous, tense, active
     2. Objetos y elementos:
         1. _Ambient_
-            1. Rodents
-            2. Torches
-            3. Suits of armor
+            1. Camillas
+            2. Sillas
+            3. Agujas
+            4. Cortinas
+            5. Herramientas medicas
         2. _Interactive_
-            1. Guards
-            2. Giant rats
-            3. Chests
-
-4. Bosque
+            1. Armas de Luz
+            2. Enemigos
+            3. Puertas
+            4. Cofres
+4. Bosque:
     1. Ambiente: 
         1. Dangerous, tense, active
     2. Objetos y elementos:
         1. _Ambient_
-            1. Rodents
-            2. Torches
-            3. Suits of armor
+            1. Arboles
+            2. Telarañas
+            3. Estatuas
+            4. Agua
+            5. Esqueletos
+            6. Arbustos
+            7. Rocas
+            8. Caminos
+            9. Antorchas
         2. _Interactive_
-            1. Guards
-            2. Giant rats
-            3. Chests
+            1. Armas
+            2. Enemigos
+            3. Cofres
 
 
 
@@ -445,8 +449,8 @@ Los pasos o estado los cuales el jugador va a vivir o tendra que experimentar. B
    6. El jugador alcanza la salida hacia el siguiente escenario.
 
 2. Nivel de HUB:
-   1. Despues de la introduccion, el jugador despertará en la entrada de un pueblo.
-   2. En dicho pueblo, le dara la bienvenida de una forma desinteresada y despreciada.
+   1. Despues de la introduccion, el jugador despertará en la entrada de un ruinas/bosque.
+   2. El jugador esta desconcertado y confundido.
    3. Podra hablar con toda la gama de NPCs que estan dentro del area, de los cuales los mas importantes son:
       1. La tienda
       2. La bruja
@@ -459,24 +463,24 @@ Los pasos o estado los cuales el jugador va a vivir o tendra que experimentar. B
 
 
 3. Bosque:
-   1. En la entrada te recivira el dueño de la tienda, y despues de una introduccion a las mecanicas, te dara la opcion del arma principal: ballesta o espada.
-   2.  Despues entraras al bosque obscuro, donde mataras mobs, obtendras recursos, y finalmente obtendras una de las llaves para el boss final.
-   3.  El gameplay y dificultad del bosque incrementará cada vez que se ingrese al bosque obscuro, y de esa manera la posibilidad de comprar mejores armas y desarrollar la historia.
+   1. En la entrada te atiende el dueño de la tienda, y despues de una introduccion a las mecanicas, te dara la opcion del arma principal de acuerdo al personaje que el jugador escogio.(se pierden las armas si se ingresa al hospital primero).
+   2.  Despues entraras al bosque obscuro, donde mataras mobs y obtendras recursos.
+   3.  El jugador debera de recorrer 3 mazmorras para conseguir una de las llaves para el boss final.
+   4.  El gameplay y dificultad del bosque incrementará cada vez que se ingrese al bosque obscuro, y de esa manera la posibilidad de comprar mejores armas y desarrollar la historia.
+   5. Durante su recorrido podra encontrar mas información sobre que esta ocurriendo, al igual que recolectar items y dinero que le ayudaran a sobrevivir su estancia.
 
 
 4. Hospital:
    1. Se colocara el personaje en un ambiente hostil y de total supervivencia. Existe la obsuridad que asechará al personaje en todo momento (se pierden las armas si se ingresa al bosque primero).
-   2. En la entrada será recivido por un fantasma, dueño de su propia tienda, que le introducira a las mecanicas de la obscuridad y manejo de inventario.
-   3. En el hospital, el jugador nunca puede quedarse sin luz dado a que seria consumido por la obscuridad.
-   4. En este lugar estaran otros mobs que quieren igual consumir al personaje principal, pero con la ayuda de fuentes de luz y el movimiento del personaje, este escapara de ellos.
-   5. En este lugar, el personaje principal buscara varias secciones del hospital en busca de la llave que falta para el boss final.
-   6. Durante su recorrido podra encontrar mas información sobre que esta ocurriendo, al igual que recolectar items y dinero que le ayudaran a sobrevivir su estancia.
+   2. En el hospital, el jugador nunca puede quedarse sin luz dado a que seria consumido por la obscuridad.
+   3. En este lugar estaran otros mobs que quieren igual consumir al personaje principal, pero con la ayuda de fuentes de luz y el movimiento del personaje, este escapara de ellos.
+   4.El jugador debera de recorrer 3 mazmorras para conseguir una de las llaves para el boss final.
+   5. Durante su recorrido podra encontrar mas información sobre que esta ocurriendo, al igual que recolectar items y dinero que le ayudaran a sobrevivir su estancia.
 
 5. Boss Final:
    1. Al obtener ambas llaves, el jugador principal entra a la ultima etapa del juego, que combinara ambas mecanicas del hospital y bosque (la obscuridad y armas para pelear de regreso).
    2. Morir en esta etapa del juego, acabará el juego y se obtendra el final donde pierde el personaje principal.
-   3. Matar al boss final y escapar acabará el juego con el final de escapar del glitch (backrooms).
-   4. O sentarse donde estaba el boss final, te convertirá en el nuevo boss final y se obtendrá el final malo, donde se recicla en sueño (como el bloodborne o dark souls).
+   3. Matar al boss final, descubrir la causa de los backrooms y escapar acabará el juego con el final de escapar del glitch (backrooms).
 
 ## _Development_
 
@@ -507,17 +511,15 @@ En este apartado nos enfocamos en las diferentes clases u objetos/elementos que 
    4. Armas de Luz
    5. Easter Eggs
 
-_(example)_
-
 ### **Derived Classes / Component Compositions**
 
 Las clases derivadas son aquellas que definen a nuestra clases principales a un nivel mucho mas especifico:
 
 1. Jugador Principal
-    1. The lucky one (más suerte)
-    2. The gambler (multiplicador de monedas)
-    3. The chosen one (alta vida y espacio de inventario)
-    4. The strong one (alto daño y capacidad de sprint)
+    1. Samurai
+    2. Futbolista
+    3. F
+    4. F
 2. Jugadores no jugables (NPC)
     1. La bruja
     2. The hanged man
@@ -529,33 +531,44 @@ Las clases derivadas son aquellas que definen a nuestra clases principales a un 
 3. Enemigos (Phobias)
    1. Arañas
    2. Arañas toxicas
-   3. Estatuas
-   4. Zombies
-   5. Zombies toxicos
-   6. Fantasmas
-   7. Personas locas
-   8. Occultist
-   
 4. Enemigos (Oscuridad)
-    1. ObstacleWindow (destroyed with rock)
-    2. ObstacleWall
-    3. ObstacleGate (watches to see if certain buttons are pressed)
+    1. Clumps
+    2. Smilers
 5. Muros
-    1. InteractableButton
+    1.Muros oficina
+    2.Muros lobby (Arboles)
+    3.Muros hospital
+    4.Muros bosque (Arboles)
 6. Pisos
-7. Amoblados
-8. Plantas
-9.  Puertas
-10. Ventanas 
-11. Iluminacion
-12. Utencilios o Herramientas
-13. Objetos Consumibles
-14. Dinero
-15. Armas de Fuego
-16. Armas de Luz
-17. Easter Eggs
-
-_(example)_
+    1.Pisos oficina
+    2.Pisos lobby (Arboles)
+    3.Pisos hospital
+    4.Pisos bosque (Arboles)
+7. Decorativos
+   1. Amoblados
+   2. Plantas
+   3.  Puertas
+   4.  Ventanas 
+   5.  Iluminacion
+   6.  Utencilios o Herramientas
+8.  Objetos Consumibles
+    1.  Vida
+    2.  Escudo
+    3.  Stamina
+    4.  Atk
+9.  Dinero
+    1.  Huesos
+10. Armas
+    1. Rifle
+    2. Ballesta
+    3. Espada
+    4. Bate
+    5. Baston
+11. Armas de Luz
+    1.  Linterna
+    2.  Antorcha
+    3.  Mechero
+    4.  Pistola de Bengalas
 
 ## _Graphics_
 
@@ -563,17 +576,11 @@ _(example)_
 
 ### **Style Attributes**
 
-What kinds of colors will you be using? Do you have a limited palette to work with? A post-processed HSV map/image? Consistency is key for immersion.
-
 Utilizaremos una paleta colores amplio. Sin embargo nos enfocaremos en colores oscuros u opacos para generar un ambiente tenso.
-
-What kind of graphic style are you going for? Cartoony? Pixel-y? Cute? How, specifically? Solid, thick outlines with flat hues? Non-black outlines with limited tints/shades? Emphasize smooth curvatures over sharp angles? Describe a set of general rules depicting your style here.
 
 El diseño de los personajes asi como el de los escenarios sera en pixel art (algunos dibujos estara dibijados en 16pixeles, 32pixeles o incluso mas para un mejor detalle).
 
 La estetica que tendra los escenarios y los personajes mostrara una apariencia cansada, terrorifica, lastimada, abandonada, etc.
-
-Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), are great for teaching the player how to play through trial and error, instead of scripting a lengthy tutorial. What kind of visual feedback are you going to use to let the player know they&#39;re interacting with something? That they \*can\* interact with something?
 
 Cada elemento viviente tendra animaciones para cada accion como correr, atacar, ser golpeado, interactuar, etc.
 

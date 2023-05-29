@@ -11,6 +11,7 @@ TagManager:
   - ObjetoRecogibleVel
   - ObjetoRecogibleA
   - Scene_Changer
+  - Enemigos
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - UI
   - personaje
   - Enemigos
-  - 
+  - Bullets
   - 
   - 
   - 
