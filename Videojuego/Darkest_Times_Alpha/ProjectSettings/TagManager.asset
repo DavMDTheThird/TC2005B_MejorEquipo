@@ -11,8 +11,11 @@ TagManager:
   - ObjetoRecogibleVel
   - ObjetoRecogibleA
   - Scene_Changer
-  - Enemigos
   - Item
+  - Enemigos
+  - linterna
+  - antorcha
+  - mechero
   layers:
   - Default
   - TransparentFX

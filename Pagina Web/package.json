@@ -1,0 +1,16 @@
+{
+  "name": "pagina-web",
+  "version": "1.0.0",
+  "description": "Creacion del videojuego, pagina web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David md",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.3.2",
+    "nodemon": "^2.0.22"
+  }
+}
