@@ -13,6 +13,9 @@ TagManager:
   - Scene_Changer
   - Item
   - Enemigos
+  - linterna
+  - antorcha
+  - mechero
   layers:
   - Default
   - TransparentFX
