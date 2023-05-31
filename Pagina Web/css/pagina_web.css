@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Rubik+Wet+Paint&family=Silkscreen&family=Waiting+for+the+Sunrise&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://preview.redd.it/cqfu2y2aojv61.jpg?width=960&crop=smart&auto=webp&s=f2f80cb07fa81a95a6a847a192fc0819297c9bbd);
+    background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+    background-position: center center; /* Para que la imagen esté centrada */
+    background-attachment: fixed; /* Para evitar que la imagen se mueva */
+    color: white;
+    font-family: 'Cormorant SC', serif;
+}
+
+/* ------------------------------Parte de la barra de navegación--------------------------- */
+.menu{
+    background-color: #00000055;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 3%;
+}
+.menu .tec_logo img{
+    width: auto;
+    height: 60px;
+    transition: all 0.3s;
+}
+.menu .tec_logo{
+    cursor: pointer;
+}
+.menu .tec_logo:hover{
+    transform: scale(1.2);
+}
+.menu .nav_links{
+    list-style: none;
+}
+.menu .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.menu .nav_links li:hover{
+    transform: scale(1.1);
+}
+.menu .nav_links a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Silkscreen', fantasy;
+}
+.menu .nav_links a:hover{
+    color: #FF4500;
+}
+.menu .play button{
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: rgb(125, 41, 41);
+    border: 2px solid rgb(125, 41, 41);
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+.menu .play button:hover{
+    background: none;
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+
+/* ------------------------Fin barra de navegación---------------------------- */
+
+/* -----------------------Empieza encabezado (Título)------------------------ */
+.encabezado_titulo{
+    display: flexbox;
+    color: white;
+    text-align: center;
+    height: 100%;
+    font-size: 50px;
+    background: none;
+    justify-content: center;
+    padding: 10px;
+    padding: 50px 50px;
+    font-family: 'Silkscreen', fantasy;
+}
+
+#titulo {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 100px;
+    /*color: #FF4500; /* Color naranja oscuro */
+    text-shadow: 2px 2px 4px #000; /* Sombra de texto */
+    letter-spacing: 4px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    color: #802e2e; /* Color del texto */
+    padding: 10px;;
+}
+
+
+/* -------------------------------Fin encabezado----------------------------- */
+
+.his{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #1c1919;
+    padding: 20px 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_his{
+    font-size: 50px;
+    font-family: 'Silkscreen', fantasy;
+    color: #FF4500;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.his .img_backrooms img{
+    width: 20px;
+    height: auto;
+}
+
+/* ----------------------------Información de proyecto INTRO--------------------- */
+.info_intro{
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #1c1919;
+    padding: 20px 20px;
+    border-radius: 20px;
+    */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+#introTitulo{
+    font-size: 50px;
+    font-family: 'Silkscreen', fantasy;
+    color: #FF4500;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.intro{
+    background: rgba(90, 87, 87, 0.486);
+    border-radius: 20px;
+    padding: 10px;
+}
+#methTitulo{
+    font-size: 50px;
+    font-family: 'Silkscreen', fantasy;
+    color: #FF4500;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.meth{
+    background: rgba(90, 87, 87, 0.486);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* ------------------------Fin de Información INTRO------------------------------- */
+  
