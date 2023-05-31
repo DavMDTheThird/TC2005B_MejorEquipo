@@ -105,7 +105,7 @@ CREATE TABLE clase(
 id_clase INT NOT NULL UNIQUE AUTO_INCREMENT comment "Llave primaria",
 clase VARCHAR(45) NOT NULL comment "Clases: comun, rara, epica, legendaria",
 tipo VARCHAR(45) NOT NULL comment "Tipo: arma u objeto",
-ocurrencia INT NOT NULL comment "Cual es la probabilidad de que aparezca",
+ocurrencia INT NOT NULL comment "Cual es la probabilidad de que aparezc	a",
 PRIMARY KEY (id_clase))
 ENGINE=InnoDB;
 
