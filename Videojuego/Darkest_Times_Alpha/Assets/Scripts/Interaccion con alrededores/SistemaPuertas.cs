@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SistemaPuertas : MonoBehaviour
 {
+    [SerializeField] private GameObject MarcaDialogo;
+
     public EfectosSonido efectoaudio;
     [Header("Animacion")]
     private Animator animator;
@@ -22,6 +24,7 @@ public class SistemaPuertas : MonoBehaviour
             animator.SetBool("Abrir_puerta",true);
             Destroy(GetComponent<BoxCollider2D>());
             efectoaudio.GetComponent<AudioSource>().PlayOneShot(efectoaudio.sonido1);
+            MarcaDialogo.SetActive(false);
         }
 
     }
@@ -31,6 +34,7 @@ public class SistemaPuertas : MonoBehaviour
         if(otro.CompareTag("Player"))
         {
             JugadorCerca = true;
+            MarcaDialogo.SetActive(true);
 
         }
     }
@@ -40,6 +44,7 @@ public class SistemaPuertas : MonoBehaviour
         if (otro.CompareTag("Player"))
         {
             JugadorCerca = false;
+            MarcaDialogo.SetActive(false);
         }
     }
 
