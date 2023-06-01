@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SistemaPuertas : MonoBehaviour
+public class SistemaPuertas2 : MonoBehaviour
 {
     [Header("Icono")]
     [SerializeField] private GameObject MarcaDialogo;
@@ -27,15 +27,15 @@ public class SistemaPuertas : MonoBehaviour
         {
             if (Abierta)
             {
-                animator.SetBool("Abrir_puerta", false);
-                animator.SetBool("Cerrar_Puerta",true);
+                animator.SetBool("Abrir", false);
+                animator.SetBool("Cerrar",true);
                 GetComponent<BoxCollider2D>().enabled = true;
                 Abierta = false;
             }
             else
             {
-                animator.SetBool("Abrir_puerta", true);
-                animator.SetBool("Cerrar_Puerta",false);
+                animator.SetBool("Abrir", true);
+                animator.SetBool("Cerrar",false);
                 GetComponent<BoxCollider2D>().enabled = false;
                 Abierta = true;
             }
@@ -67,4 +67,3 @@ public class SistemaPuertas : MonoBehaviour
     }
 
 }
- 
