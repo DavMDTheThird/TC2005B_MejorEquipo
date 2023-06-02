@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 322868296592437575}
   - component: {fileID: 322868296592437574}
   - component: {fileID: 322868296592437625}
+  - component: {fileID: 548403561913555996}
   m_Layer: 0
   m_Name: Hueso
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 322868296592437624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.75, y: -2.39, z: 4.6918836}
-  m_LocalScale: {x: 0.3025, y: 0.2167, z: 1}
+  m_LocalScale: {x: 0.13940108, y: 0.09986186, z: 0.46083}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,3 +126,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8674846, y: 1.9344734}
   m_EdgeRadius: 0
+--- !u!114 &548403561913555996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322868296592437624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dde4458a891d146982905bed7f0a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido1: {fileID: 8300000, guid: 22dc0786fe49a3a43975e54c9acc7053, type: 3}
