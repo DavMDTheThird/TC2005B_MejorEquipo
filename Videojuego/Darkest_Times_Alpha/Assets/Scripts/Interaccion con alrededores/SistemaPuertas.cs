@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class SistemaPuertas : MonoBehaviour
 {
+    [Header("Icono")]
+    [SerializeField] private GameObject MarcaDialogo;
+    [Header("Sonido")]
     public EfectosSonido efectoaudio;
-    [Header("Animacion")]
+    [Header("Animacio y Accion")]
     private Animator animator;
     public bool JugadorCerca;
+    public bool Abierta;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,20 +21,38 @@ public class SistemaPuertas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && JugadorCerca)
+    if (Input.GetKeyDown(KeyCode.E))
+    {
+        if (JugadorCerca)
         {
-            animator.SetBool("Abrir_puerta",true);
-            Destroy(GetComponent<BoxCollider2D>());
+            if (Abierta)
+            {
+                animator.SetBool("Abrir_puerta", false);
+                animator.SetBool("Cerrar_Puerta",true);
+                GetComponent<BoxCollider2D>().enabled = true;
+                Abierta = false;
+            }
+            else
+            {
+                animator.SetBool("Abrir_puerta", true);
+                animator.SetBool("Cerrar_Puerta",false);
+                GetComponent<BoxCollider2D>().enabled = false;
+                Abierta = true;
+            }
+            
             efectoaudio.GetComponent<AudioSource>().PlayOneShot(efectoaudio.sonido1);
+            MarcaDialogo.SetActive(false);
         }
-
     }
+    }
+
 
     private void OnTriggerEnter2D(Collider2D otro)
     {
         if(otro.CompareTag("Player"))
         {
             JugadorCerca = true;
+            MarcaDialogo.SetActive(true);
 
         }
     }
@@ -40,6 +62,7 @@ public class SistemaPuertas : MonoBehaviour
         if (otro.CompareTag("Player"))
         {
             JugadorCerca = false;
+            MarcaDialogo.SetActive(false);
         }
     }
 

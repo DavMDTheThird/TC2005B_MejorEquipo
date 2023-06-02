@@ -10,4 +10,5 @@ public class VendedorTienda : MonoBehaviour
     {
         tienda.SetActive(true);
     }
+
 }

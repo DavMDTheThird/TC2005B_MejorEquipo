@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PausaMenu : MonoBehaviour
 {
     public GameObject PausePanel;
+    public GameObject Hueso;
 
     // Update is called once per frame
     void Update()
@@ -16,12 +17,14 @@ public class PausaMenu : MonoBehaviour
     public void Pause()
     {
         PausePanel.SetActive(true);
+        Hueso.SetActive(false);
         Time.timeScale = 0;
     }
 
     public void Continue()
     {
         PausePanel.SetActive(false);
+        Hueso.SetActive(true);
         Time.timeScale = 1;
     }
 
