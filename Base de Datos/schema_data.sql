@@ -166,4 +166,3 @@ INSERT INTO checkpoint VALUES
 (9,9,9,"checkpoint bosque1"),
 (10,10,10,"checkpoint lobby2");
 COMMIT;
-

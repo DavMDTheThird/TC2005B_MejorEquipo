@@ -30,3 +30,14 @@ SELECT nombre, precio FROM darkesttimes.objeto
 WHERE precio = (SELECT MAX(precio) FROM objeto);
 SELECT * FROM objeto_caro;
 DROP VIEW objeto_caro;
+
+-- Busquedas que se implementaran para el videojuego
+-- 5. obtener el ultimo checkpoint registrado para aparecer en pantalla, nos ayudara en cambio de scene
+SELECT * FROM
+
+
+
+
+
+
+
