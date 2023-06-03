@@ -37,8 +37,8 @@ app.get('/api/user_maxWins', async (request, response)=>{
         connection = await connectToDB()
         const [results, fields] = await connection.execute('SELECT usuario, Juego_completado  FROM darkesttimes.usuario WHERE Juego_completado = (SELECT MAX(Juego_completado) FROM usuario);')//La busqueda
 
-        // console.log(`${results.length} rows returned`)
-        // console.log(results)
+        console.log(`${results.length} rows returned`)
+        console.log(results)
         response.json(results)
     }
     catch(error)

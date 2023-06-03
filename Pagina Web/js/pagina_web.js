@@ -9,7 +9,7 @@ function main()
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/users/${dataObj['userID']}`,{
+        let response = await fetch(`http://localhost:5000/api/user_maxWins`,{
             method: 'GET'
         })
         
@@ -17,7 +17,7 @@ function main()
         {
             let results = await response.json()
         
-            if(results.length > 0)
+            /*if(results.length > 0)
             {
                 const headers = Object.keys(results[0])
                 const values = Object.values(results)
@@ -46,13 +46,13 @@ function main()
     
                 const container = document.getElementById('getResultsID')
                 container.innerHTML = ''
-                container.appendChild(table)
+                // container.appendChild(table)
             }
             else
             {
                 const container = document.getElementById('getResultsID')
                 container.innerHTML = 'No results to show.'
-            }
+            }*/
         }
         else{
             getResults.innerHTML = response.status
