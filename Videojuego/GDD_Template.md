@@ -140,7 +140,7 @@ El jugador escogera entre cuatro personajes principales con una historia y stats
 
 1. Samurai - David
 2. Futbolista - Angel
-3. - Juanpa
+3. Arqueologo Juanpa
 4. - Daniel
 
 **Poner 4 historias**
@@ -164,12 +164,6 @@ El jugador escogera entre cuatro personajes principales con una historia y stats
 - 9. Hay una presencia siniestra que acecha en las sombras. Puedo sentir sus ojos fijos en mí, observándome constantemente. Cada vez que intento escapar, su presencia se intensifica, recordándome que no estoy solo en este laberinto oscuro.
 
 - 10. Cada vez que cierro los ojos, me encuentro en un recuerdo del pasado. Son fragmentos de mi vida que se repiten una y otra vez. No importa cuánto intente evitarlos, siempre regreso a esos momentos dolorosos. Estoy atrapado en mis propios recuerdos.
-
-- NPC1: INGRESAR TEXTO
-- NPC2: INGRESAR TEXTO
-- NPC3: INGRESAR TEXTO
-- NPC4: INGRESAR TEXTO
-- NPC5: INGRESAR TEXTO
 
 #### ***Personajes***
 
@@ -440,7 +434,7 @@ En este apartado nos enfocamos en los diferentes niveles y las caracteristicas q
 
 Los pasos o estado los cuales el jugador va a vivir o tendra que experimentar. Basicamente, los pasos que debe de seguir para pasar el nivel:
 
-1. Introduccion:
+1. Tutorial:
    1. El jugador inicia en el nivel introductorio.
    2. El juego se desplaza de la oficina principal y entra en un laberinto.
    3. Recorre los diferentes pasillos y habitaciones, mientras aprende los controles basicos.
@@ -448,7 +442,7 @@ Los pasos o estado los cuales el jugador va a vivir o tendra que experimentar. B
    5. Cerca de la salida el jugador vive la experiencia de ser perseguido por una especie de ente o criatura.
    6. El jugador alcanza la salida hacia el siguiente escenario.
 
-2. Nivel de HUB:
+2. Lobby:
    1. Despues de la introduccion, el jugador despertará en la entrada de un ruinas/bosque.
    2. El jugador esta desconcertado y confundido.
    3. Podra hablar con toda la gama de NPCs que estan dentro del area, de los cuales los mas importantes son:
@@ -518,8 +512,8 @@ Las clases derivadas son aquellas que definen a nuestra clases principales a un 
 1. Jugador Principal
     1. Samurai
     2. Futbolista
-    3. F
-    4. F
+    3. Arqueologo
+    4. NULL
 2. Jugadores no jugables (NPC)
     1. La bruja
     2. The hanged man
