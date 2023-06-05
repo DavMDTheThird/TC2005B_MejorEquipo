@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Rubik+Wet+Paint&family=Silkscreen&family=Waiting+for+the+Sunrise&display=swap');
 
+@keyframes animacion{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +19,8 @@
 }
 
 body {
-    background-image: url(https://preview.redd.it/cqfu2y2aojv61.jpg?width=960&crop=smart&auto=webp&s=f2f80cb07fa81a95a6a847a192fc0819297c9bbd);
+    background-image: url(../imagenes/fondoPrincipal.png);
+    /*background-image: url(https://preview.redd.it/cqfu2y2aojv61.jpg?width=960&crop=smart&auto=webp&s=f2f80cb07fa81a95a6a847a192fc0819297c9bbd);*/
     background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
     background-repeat: no-repeat; /* Para evitar que la imagen se repita */
     background-position: center center; /* Para que la imagen esté centrada */
@@ -26,15 +39,15 @@ body {
     height: 85px;
     padding: 5px 3%;
 }
-.menu .tec_logo img{
+.menu .personaje_game img{
     width: auto;
     height: 60px;
     transition: all 0.3s;
 }
-.menu .tec_logo{
+.menu .personaje_game{
     cursor: pointer;
 }
-.menu .tec_logo:hover{
+.menu .personaje_game:hover{
     transform: scale(1.2);
 }
 .menu .nav_links{
@@ -97,6 +110,40 @@ body {
     color: #802e2e; /* Color del texto */
     padding: 10px;;
 }
+
+/*##################################### Estadisticas ##########################################*/
+.statistics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 75vh; */
+}
+.buttons{
+    display: flex;
+    flex-direction: row;     
+}
+
+.button{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
+.submitButton {
+    /* width: 200px; */
+    height: 30px;
+    font-size: 15px;
+  }
+
+.answearStatistics{
+    /* height: 100%; */
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding-top: 10fr;
+    padding-bottom: 10fr;
+}
+
+
 
 /*##################################### Comienzo Historia ##########################################*/
 .his{
@@ -177,6 +224,12 @@ body {
     border-radius: 20px;
     padding: 10px;
 }
+#img_meth{
+    width: 50vw;
+    height: 25vw;
+    padding: 10px;
+    margin: 20px;
+}
 
 
 /*##################################### Espacio de Video Juego ##########################################*/
@@ -196,7 +249,7 @@ body {
 .titulo_video{
     font-family: 'Silkscreen', fantasy;
     color: #802e2e;
-    font-size: 30px;
+    font-size: 50px;
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -224,7 +277,7 @@ body {
     font-family: 'Silkscreen', fantasy;
     color: #802e2e;
     align-items: center;
-    font-size: 30px;
+    font-size: 50px;
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -233,6 +286,146 @@ body {
     font-size: 20px;
     padding: 10px;
 
+}
+
+/* ################################## Controles ###########################################*/
+#titulo_controles{
+    display: flex;
+    font-family: 'Silkscreen', fantasy;
+    font-size: 50px;
+    color: #802e2e;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0.5vw;
+    justify-content: center;
+}
+.controles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(90, 87, 87, 0.486);
+    padding: 20px 20px;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+}
+.game_controles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2%;
+    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#img_teclas{
+    width: 100%;
+    height: 20vw;
+    padding: 10%;
+    margin: 2%;
+    
+}
+#img_teclas2{
+    width: 100%;
+    height: 20vw;
+    padding: 10%;
+    margin: 2%;
+    
+}
+#img_teclaE{
+    width: 100%;
+    height: 20vw;
+    padding: 10%;
+    margin: 2%;
+    
+}
+#letraE{
+    font-size: 35px;
+    font-family: 'Silkscreen', fantasy;
+    color: #802e2e;
+    text-shadow: 2px 2px 4px #000;
+}
+.texto_controles{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+}
+#gif_personaje{
+    width: 40vw;
+    height: 20vw;
+    margin: 2%;
+}
+#img_mouse{
+    width: 100%;
+    height: 30vw;
+    padding: 30%;
+    margin: 2%;
+}
+
+/* #################################### Resultados ######################################*/
+.res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #1c1919c7;
+    padding: 20px 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+}
+.estilo_resultados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 10px;
+}
+.titulo_resultados{
+    font-size: 50px;
+    font-family: 'Silkscreen', fantasy;
+    color: #802e2e;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.contenido_resultados{
+    font-size: 20px;
+}
+#img_backrooms{
+    width: 700px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* #################################### Conclusiones ###################################*/
+.conclusiones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #1c1919c7;
+    padding: 20px 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+}
+.fotos_nosotros{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 10px;
 }
 
 /*##################################### Footer ##########################################*/
@@ -249,4 +442,5 @@ footer {
     width: 50px;
     height: 50px;
     margin: 10px;
+    cursor: pointer;
 }
