@@ -25,6 +25,9 @@ public class Ch_1_movement : MonoBehaviour
     Rigidbody2D rb2d;
     public Animator animator;
 
+    //Canvas
+    Canvas heartsCanvas;
+
     
 
 
