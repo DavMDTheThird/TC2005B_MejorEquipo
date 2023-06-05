@@ -12,10 +12,13 @@ public class CameraZoom : MonoBehaviour
 
     public float Speed;
 
+    public float Out;
+
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
+
     }
 
 
@@ -27,7 +30,7 @@ public class CameraZoom : MonoBehaviour
         }
         else
         {
-            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 15, Speed);
+            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, Out, Speed);
         }
         
     }

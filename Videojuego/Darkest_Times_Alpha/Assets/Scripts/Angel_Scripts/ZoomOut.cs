@@ -6,6 +6,8 @@ public class ZoomOut : MonoBehaviour
 {
     public Camera mainCamera;
 
+    public float Speed;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
