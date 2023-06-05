@@ -15,6 +15,7 @@ public class Player_basic
     private float _spd;
     private short _stamina;
     private short _inventory;
+    private float _TimesMoney;
     private short _money;
 
     //Modificadores Get y Set de los stats del personaje
@@ -90,6 +91,17 @@ public class Player_basic
             _inventory = value;
         }
     }
+    public float TimesMoney
+    {
+        get
+        {
+            return _TimesMoney;
+        }
+        set
+        {
+            _TimesMoney = value;
+        }
+    }
     public short Money{
         get{
             return _money;
@@ -113,7 +125,7 @@ public class Player_basic
     /// <param name="Inventory">Sixth value</param>
     /// <param name="Money">Seventh value</param>
     /// <returns> Crea un jugador base</returns>
-    public Player_basic(short hp, short maxhp, short lvl, short xp, short lck, short atk, float spd, short stamina, short inventory, short money){
+    public Player_basic(short hp, short maxhp, short lvl, short xp, short lck, short atk, float spd, short stamina, short inventory, float timesMoney, short money){
         HP = hp;
         MAXHP = maxhp;
         LVL = lvl;
@@ -123,6 +135,7 @@ public class Player_basic
         SPD = spd;
         Stamina = stamina;
         Inventory = inventory;
+        TimesMoney = timesMoney;
         Money = money;
     }
 
@@ -137,6 +150,7 @@ public class Player_basic
         SPD = 0;
         Stamina = 0;
         Inventory = 0;
+        TimesMoney = 0;
         Money = 0;
     }
 
@@ -148,7 +162,7 @@ public class Player_basic
                   "Speed is " + SPD + "\n" +
                   "Stamina is " + Stamina + "\n" +
                   "Inventory Space is " + Inventory + "\n" +
-                  "Money is " + Money);
+                  "Money is " + Money + " increased by: " + TimesMoney +"\n");
     }
 
 }
