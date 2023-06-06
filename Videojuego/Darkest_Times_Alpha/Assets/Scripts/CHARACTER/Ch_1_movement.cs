@@ -25,9 +25,10 @@ public class Ch_1_movement : MonoBehaviour
     Rigidbody2D rb2d;
     public Animator animator;
 
-    //Inventory
-    public InventorySlot inv_functions;
+    //Canvas
+    Canvas heartsCanvas;
 
+    
 
 
 

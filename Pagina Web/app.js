@@ -35,10 +35,94 @@ app.get('/api/user_maxWins', async (request, response)=>{
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT usuario, Juego_completado  FROM darkesttimes.usuario WHERE Juego_completado = (SELECT MAX(Juego_completado) FROM usuario);')//La busqueda
+        const [results, fields] = await connection.execute('SELECT usuario, Juego_completado FROM darkesttimes.usuario ORDER BY Juego_completado DESC LIMIT 5;')//La busqueda
 
-        // console.log(`${results.length} rows returned`)
-        // console.log(results)
+        console.log(`${results.length} rows returned`)
+        console.log(results)
+        response.json(results)
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+//------------------------------ Busqueda de mobs con mas muertes causadas ------------------------------
+app.get('/api/mobs_mostKills', async (request, response)=>{
+    let connection = null  //This variable will be used to hold the database connection object.
+
+    try
+    {
+        connection = await connectToDB()
+        const [results, fields] = await connection.execute('SELECT nombre, asesinatos FROM darkesttimes.enemigo ORDER BY asesinatos DESC LIMIT 5;')//La busqueda
+
+        console.log(`${results.length} rows returned`)
+        console.log(results)
+        response.json(results)
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+//------------------------------ Busqueda de usuarios con mas tiempo gastado jugando ------------------------------
+app.get('/api/user_mostGeek', async (request, response)=>{
+    let connection = null  //This variable will be used to hold the database connection object.
+
+    try
+    {
+        connection = await connectToDB()
+        const [results, fields] = await connection.execute('SELECT usuario, horas_jugadas FROM darkesttimes.usuario ORDER BY horas_jugadas DESC LIMIT 10;')//La busqueda
+
+        console.log(`${results.length} rows returned`)
+        console.log(results)
+        response.json(results)
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+//------------------------------ Busqueda de usuarios con mas easter eggs ------------------------------
+app.get('/api/user_easterEggs', async (request, response)=>{
+    let connection = null  //This variable will be used to hold the database connection object.
+
+    try
+    {
+        connection = await connectToDB()
+        const [results, fields] = await connection.execute('SELECT usuario, easter_eggs FROM darkesttimes.usuario ORDER BY easter_eggs DESC LIMIT 10;')//La busqueda
+
+        console.log(`${results.length} rows returned`)
+        console.log(results)
         response.json(results)
     }
     catch(error)
@@ -57,8 +141,46 @@ app.get('/api/user_maxWins', async (request, response)=>{
     }
 })
 
-//------------------------------ Busqueda de usuario con mas veces superado el juego ------------------------------
-app.get('/api/user/', async (request, response)=>
+//////////////
+//Videojuego//------------------------------------------------------------------------------------------
+/////////////
+
+app.get('/api/juego/checkpoint', async (request, response)=>{
+    let connection = null  //This variable will be used to hold the database connection object.
+
+    try
+    {
+        connection = await connectToDB()
+        const [results, fields] = await connection.execute('SELECT usuario, easter_eggs FROM darkesttimes.usuario ORDER BY easter_eggs DESC LIMIT 1;')//La busqueda
+
+        console.log(`${results.length} rows returned`)
+        console.log(results)
+        response.json(results)
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+
+
+
+
+
+
+//------------------------------ Ejemplos ------------------------------
+/*app.get('/api/user/', async (request, response)=>
 {
     let connection = null
 
@@ -84,7 +206,7 @@ app.get('/api/user/', async (request, response)=>
             console.log("Connection closed succesfully!")
         }
     }
-})
+})*/
 
 /*app.post('/api/users', async (request, response)=>{
 
