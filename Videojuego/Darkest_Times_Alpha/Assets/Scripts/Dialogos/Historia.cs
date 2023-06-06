@@ -18,7 +18,9 @@ public class Historia : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(cercaTrigger && Input.GetKeyDown(KeyCode.E)){
+        if(cercaTrigger)
+        {
+            if(cercaTrigger && Input.GetKeyDown(KeyCode.E)){
             if(!dialogoInicio){
                 StartDialogue();
             }else if(dialogoTexto.text == dialogoLinea[numeroLinea]){
@@ -30,6 +32,7 @@ public class Historia : MonoBehaviour
             }
             }
         }
+    }
    
 
     private void StartDialogue(){

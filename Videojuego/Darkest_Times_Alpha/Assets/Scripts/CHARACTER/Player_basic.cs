@@ -12,7 +12,7 @@ public class Player_basic
     private short _xp;
     private short _lck;
     private short _atk;
-    private float _spd;
+    private float _spd; //Borrar 
     private short _stamina;
     private short _inventory;
     private float _TimesMoney;
