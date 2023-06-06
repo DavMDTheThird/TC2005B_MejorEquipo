@@ -1,6 +1,6 @@
-DROP SCHEMA IF EXISTS darkesttimes_test;
-CREATE SCHEMA darkesttimes_test;
-USE darkesttimes_test;
+DROP SCHEMA IF EXISTS darkesttimes_BD;
+CREATE SCHEMA darkesttimes_BD;
+USE darkesttimes_BD;
 
 -- Tabla usuario
 CREATE TABLE usuarios(
