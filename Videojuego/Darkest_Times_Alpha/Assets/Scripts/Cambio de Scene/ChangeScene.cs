@@ -10,10 +10,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            Player_stats playerBSC = collision.collider.gameObject.GetComponent<Player_stats>();
-            playerBSC.SaveToJson();
-
-            SceneManager.LoadScene(sceneIndex);
+//Agregar codigo de camio de scene mandar al bd
         }
     }
 }
