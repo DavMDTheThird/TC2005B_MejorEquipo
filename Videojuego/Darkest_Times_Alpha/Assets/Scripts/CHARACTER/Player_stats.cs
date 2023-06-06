@@ -68,20 +68,6 @@ public class Player_stats : MonoBehaviour
         playerBSC.Money += money;
         Debug.Log(transform.name + " gain: " + money + " money. Total money now: " + playerBSC.Money);
     }
-    public void QueryCheckpoint()
-    {
-        StartCoroutine(GetCheckpoint());
-    }
-
-    public void InsertNewCheckpoint()
-    {
-        StartCoroutine(AddCheckpoint());
-    }
-    IEnumerator GetCheckpoint()
-    {
-        using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
-        {
-            yield return www.SendWebRequest();
 
     public void ShowHearts()
     {
