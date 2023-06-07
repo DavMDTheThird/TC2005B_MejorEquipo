@@ -12,15 +12,16 @@ public class TiendaUI : MonoBehaviour
 
     public void AdquirirObjeto(string objeto)
     {
-        //PrecioObjeto(objeto);
+        PrecioObjeto(objeto);
 
-        //if (precioObjeto <= totalMonedas && totalObjetos < 5)
-        //{
-        //  totalObjetos++;
-        //  totalMonedas -= precioObjeto;
-        //}
-        GameObject equipo = (GameObject)Resources.Load(objeto); // va dentro del if
-        Instantiate(equipo, Vector3.zero, Quaternion.identity, panelEquipo.transform); // va dentro del if
+        if (precioObjeto <= totalMonedas && totalObjetos < 5)
+        {
+            totalObjetos++;
+            totalMonedas -= precioObjeto;
+            GameObject equipo = (GameObject)Resources.Load(objeto); // va dentro del if
+            Instantiate(equipo, Vector3.zero, Quaternion.identity, panelEquipo.transform); // va dentro del if
+        }
+        
     }
 
     public void PrecioObjeto(string objeto)
