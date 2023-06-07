@@ -12,7 +12,7 @@ sr.reveal('.controles', {
     distance: '400px'
 });
 
-sr.reveal('.imagenComienzo', {
+sr.reveal('#img_backrooms', {
     rotate:
     {
         x:1,
