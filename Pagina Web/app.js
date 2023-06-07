@@ -16,7 +16,7 @@ async function connectToDB()
         host:'localhost',
         user:'test_API',
         password:'Hola_123',
-        database:'darkesttimes'
+        database:'darkesttimes_BD'
     })
 }
 
