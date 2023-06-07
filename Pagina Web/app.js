@@ -35,7 +35,7 @@ app.get('/api/user_maxWins', async (request, response)=>{
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT usuario, Juego_completado FROM darkesttimes.usuario ORDER BY Juego_completado DESC LIMIT 5;')//La busqueda
+        const [results, fields] = await connection.execute('SELECT * FROM usuarios_juegosGanados LIMIT 5;')//La busqueda
 
         console.log(`${results.length} rows returned`)
         console.log(results)
@@ -63,7 +63,7 @@ app.get('/api/mobs_mostKills', async (request, response)=>{
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT nombre, asesinatos FROM darkesttimes.enemigo ORDER BY asesinatos DESC LIMIT 5;')//La busqueda
+        const [results, fields] = await connection.execute('SELECT * FROM mobs_masAsesinatos LIMIT 5;')//La busqueda
 
         console.log(`${results.length} rows returned`)
         console.log(results)
@@ -85,13 +85,13 @@ app.get('/api/mobs_mostKills', async (request, response)=>{
     }
 })
 //------------------------------ Busqueda de usuarios con mas tiempo gastado jugando ------------------------------
-app.get('/api/user_mostGeek', async (request, response)=>{
+app.get('/api/user_masViciados', async (request, response)=>{
     let connection = null  //This variable will be used to hold the database connection object.
 
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT usuario, horas_jugadas FROM darkesttimes.usuario ORDER BY horas_jugadas DESC LIMIT 10;')//La busqueda
+        const [results, fields] = await connection.execute('SELECT * FROM usuario_viciado LIMIT 10;')//La busqueda
 
         console.log(`${results.length} rows returned`)
         console.log(results)
@@ -112,14 +112,14 @@ app.get('/api/user_mostGeek', async (request, response)=>{
         }
     }
 })
-//------------------------------ Busqueda de usuarios con mas easter eggs ------------------------------
-app.get('/api/user_easterEggs', async (request, response)=>{
+//------------------------------ Busqueda de usuarios mas muertes ------------------------------
+app.get('/api/user_masMalo', async (request, response)=>{
     let connection = null  //This variable will be used to hold the database connection object.
 
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT usuario, easter_eggs FROM darkesttimes.usuario ORDER BY easter_eggs DESC LIMIT 10;')//La busqueda
+        const [results, fields] = await connection.execute('SELECT * FROM usuario_masMalo LIMIT 10;')//La busqueda
 
         console.log(`${results.length} rows returned`)
         console.log(results)
