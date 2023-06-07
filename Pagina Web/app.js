@@ -16,7 +16,7 @@ async function connectToDB()
         host:'localhost',
         user:'test_API',
         password:'Hola_123',
-        database:'darkesttimes_BD'
+        database:'darkesttimes_bd'
     })
 }
 
@@ -177,9 +177,9 @@ app.post('/api/addUser', async (request, response)=>{
 
     let connection = null
     
-    nombre_request = request.body.nombre
-    correo_request = request.body.correo
-    contrasenia_request = request.body.contraseña
+    let nombre_request = request.body.nombre
+    let correo_request = request.body.correo
+    let contraseña_request = request.body.contraseña
     
     try
     {    
@@ -188,7 +188,7 @@ app.post('/api/addUser', async (request, response)=>{
         const [results, fields] = await connection.query('INSERT INTO usuarios SET ?', {
             nombre: nombre_request,
             correo: correo_request,
-            contraseña: contrasenia_request,
+            contraseña: contraseña_request,
             horas_jugadas: 0,
             juegos_completados: 0,
             muertes_totales: 0

@@ -51,6 +51,10 @@ public class Player_stats : MonoBehaviour
         {
             ShowHearts();
         }
+        if (Input.GetKeyUp(KeyCode.L))
+        {
+            Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id"));
+        }
     }
 
 
