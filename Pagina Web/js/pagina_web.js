@@ -23,8 +23,8 @@ function main()
             let results = await response.json()
 
             //Informacion recolectada:
-            const id_usuario = results.map(item => item.usuario);
-            const gamesWon = results.map(item => item.Juego_completado);
+            const id_usuario = results.map(item => item.nombre);
+            const gamesWon = results.map(item => item.juegos_completados);
   
             // Create Chart.js bar chart
             var ctx = document.getElementById('charts').getContext('2d');
@@ -77,7 +77,7 @@ function main()
             let results = await response.json()
 
             //Informacion recolectada:
-            const mob_name = results.map(item => item.nombre);
+            const mob_name = results.map(item => item.nombre_enemigo);
             const timesKilled = results.map(item => item.asesinatos);
   
             // Create Chart.js bar chart
@@ -135,7 +135,7 @@ function main()
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/user_mostGeek`,{
+        let response = await fetch(`http://localhost:5000/api/user_masViciados`,{
             method: 'GET'
         })
         
@@ -144,7 +144,7 @@ function main()
             let results = await response.json()
 
             //Informacion recolectada:
-            const usuario = results.map(item => item.usuario);
+            const usuario = results.map(item => item.nombre);
             const horas = results.map(item => item.horas_jugadas);
   
             // Create Chart.js bar chart
@@ -201,7 +201,7 @@ function main()
 
 
     //----------------------
-    document.getElementById('formSelectUserEasterEggs').onsubmit = async (e) =>
+    document.getElementById('formSelectUserMasMalo').onsubmit = async (e) =>
     {
         e.preventDefault()
 
@@ -209,12 +209,12 @@ function main()
         const container = document.getElementById('getResultsID')
         container.innerHTML = '<canvas id = "charts"></canvas>'
 
-        const data = new FormData(formSelectUserEasterEggs)
+        const data = new FormData(formSelectUserMasMalo)
         const dataObj = Object.fromEntries(data.entries())
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/user_easterEggs`,{
+        let response = await fetch(`http://localhost:5000/api/user_masMalo`,{
             method: 'GET'
         })
         
@@ -223,8 +223,8 @@ function main()
             let results = await response.json()
 
             //Informacion recolectada:
-            const id_usuario = results.map(item => item.usuario);
-            const EasterEggs = results.map(item => item.easter_eggs);
+            const id_usuario = results.map(item => item.nombre);
+            const muertes = results.map(item => item.muertes_totales);
   
             // Create Chart.js bar chart
             var ctx = document.getElementById('charts').getContext('2d');
@@ -235,7 +235,7 @@ function main()
                     labels: id_usuario,
                     datasets: [{
                         // label: 'Total Games Compleated',
-                        data: EasterEggs,
+                        data: muertes,
                         backgroundColor: ['rgb(127, 127, 127)',
                         'rgb(140, 86, 75)',
                         'rgb(214, 39, 40)',

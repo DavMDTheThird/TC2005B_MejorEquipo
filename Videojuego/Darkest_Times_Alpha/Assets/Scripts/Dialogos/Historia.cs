@@ -5,15 +5,13 @@ using TMPro;
 
 public class Historia : MonoBehaviour
 {
-    private bool cercaTrigger;
-    private bool dialogoInicio;
-    private int numeroLinea;
-    private float typingTime = 0.05f;
-    [SerializeField] private GameObject dialogoPanel;
-    [SerializeField] private TMP_Text dialogoTexto;
-    [SerializeField,TextArea(4,6)] private string[] dialogoLinea;
-    [Header("Icono")]
-    [SerializeField] private GameObject MarcaDialogo;
+    private bool cercaTrigger; //Verifica si el jugador esta en el trigger
+    private bool dialogoInicio; //Verifica si el dialogo ya inicio
+    private int numeroLinea; //Numero de la linea del parrafo
+    private float typingTime = 0.05f; //Velocidad con que sale el texto
+    [SerializeField] private GameObject dialogoPanel; //Panel donde se despliega el dialogo
+    [SerializeField] private TMP_Text dialogoTexto; //Texto o dialogo
+    [SerializeField,TextArea(4,6)] private string[] dialogoLinea; //Numero de parrafos con 4 a 6 lineas 
 
     // Update is called once per frame
     void Update()
@@ -28,14 +26,13 @@ public class Historia : MonoBehaviour
                 StopAllCoroutines();
                 dialogoTexto.text = dialogoLinea[numeroLinea];
             }
-            }
         }
+    }
    
 
     private void StartDialogue(){
         dialogoInicio = true;
         dialogoPanel.SetActive(true);
-        MarcaDialogo.SetActive(false);
         numeroLinea = 0;
         Time.timeScale = 0f;
         StartCoroutine(ShowLine());
@@ -65,8 +62,10 @@ public class Historia : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D objeto){
         if(objeto.gameObject.CompareTag("Player")){
             cercaTrigger = true;
-            MarcaDialogo.SetActive(true);
             Debug.Log("Se inicia diaologo");
+            if(!dialogoInicio){
+                StartDialogue();
+            }
         }
         
     }
@@ -74,8 +73,8 @@ public class Historia : MonoBehaviour
     private void OnTriggerExit2D(Collider2D objeto){
         if(objeto.gameObject.CompareTag("Player")){
             cercaTrigger = false;
-            MarcaDialogo.SetActive(false);
             Debug.Log("No se inicia");
+            Destroy(this.gameObject);
         }
     }
 }

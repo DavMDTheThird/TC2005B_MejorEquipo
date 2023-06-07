@@ -5,13 +5,15 @@ USE darkesttimes_BD;
 -- Tabla usuario
 CREATE TABLE usuarios(
 id_usuario INT UNSIGNED NOT NULL UNIQUE AUTO_INCREMENT comment "Llave primaria",
+nombre VARCHAR(45) NOT NULL comment "Nombre del personaje",
 correo VARCHAR(45) NOT NULL comment "Correo del usuario",
 contraseña VARCHAR(45) NOT NULL comment "Password",
 horas_jugadas SMALLINT NOT NULL comment "Horas que lleva dela sesion",
-juego_completado SMALLINT NOT NULL comment "Veces en las que se termino el juego",
+juegos_completados SMALLINT NOT NULL comment "Veces en las que se termino el juego",
 muertes_totales SMALLINT NOT NULL comment "Veces que perdio el jugador",
 PRIMARY KEY (id_usuario)
 )ENGINE=InnoDB;
+
 
 -- Tabla de personaje
 CREATE TABLE personaje(
@@ -30,6 +32,7 @@ muertes SMALLINT NOT NULL comment "Muertes que lleva el personaje",
 PRIMARY KEY (id_personaje))
 ENGINE=InnoDB;
 
+
 -- Tabla inventario
 CREATE TABLE inventario(
 id_inventario INT UNSIGNED NOT NULL UNIQUE AUTO_INCREMENT comment "Llave primaria",
@@ -47,6 +50,7 @@ rifle BOOL NOT NULL,
 PRIMARY KEY (id_inventario)
 )ENGINE=InnoDB;
 
+
 -- Tabla de Nivel
 CREATE TABLE nivel(
 id_nivel INT UNSIGNED NOT NULL UNIQUE AUTO_INCREMENT comment "LLave primaria",
@@ -63,7 +67,7 @@ id_usuario INT UNSIGNED NOT NULL comment "Llave foranea",
 id_personaje INT UNSIGNED NOT NULL comment "Llave foranea",
 id_inventario INT UNSIGNED NOT NULL comment "Llave foranea",
 id_nivel INT UNSIGNED NOT NULL comment "Llave foranea",
-fecha datetime NOT NULL,
+fecha date NOT NULL,
 PRIMARY KEY (id_checkpoint),
 CONSTRAINT fk_id_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario) ON DELETE RESTRICT ON UPDATE CASCADE,
 CONSTRAINT fk_id_personaje FOREIGN KEY (id_personaje) REFERENCES personaje (id_personaje) ON DELETE RESTRICT ON UPDATE CASCADE,
