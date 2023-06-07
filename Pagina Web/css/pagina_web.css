@@ -51,6 +51,8 @@ body {
     align-items: center;
     height: 85px;
     padding: 5px 3%;
+    position: sticky;
+    top: 0;
 }
 .menu .personaje_game img{
     width: auto;
@@ -129,42 +131,35 @@ body {
 }
 
 /*##################################### Estadisticas ##########################################*/
-.statistics{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* height: 75vh; */
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-}
 
-.button{
-    /*margin-right: 20px;
-    margin-left: 20px;
-    padding: 20px;*/
+
+.statistics_menu{
+    display: flex;
     justify-content: space-evenly;
-
-}
-.submitButton {
-    /* width: 200px; */
-    height: 30px;
-    font-size: 15px;
-    font-family: 'Silkscreen', fantasy;
-    justify-items: center;
-  }
-
-.answearStatistics{
-    /* height: 100%; */
-    width: 50%;
     align-items: center;
-    text-align: center;
-    padding-top: 10fr;
-    padding-bottom: 10fr;
+    height: 85px;
+    padding: 5px 3%;
 }
-
-.statistics .submitButton{
+.statistics_menu .nav_links1{
+    list-style: none;
+}
+.statistics_menu .nav_links1 li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.statistics_menu .nav_links1 li:hover{
+    transform: scale(1.1);
+}
+.statistics_menu .nav_links1 {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Silkscreen', fantasy;
+}
+.statistics_menu .nav_links1 :hover{
+    color: #802e2e;
+}
+.statistics_menu .submitButton{
     font-weight: 700;
     color: black;
     padding: 9px 25px;
@@ -174,12 +169,63 @@ body {
     cursor: pointer;
     transform: all 0.3s ease 0s;
 }
-.statistics .submitButton:hover{
+.statistics_menu .submitButton:hover{
     background: none;
     color: white;
     border: 2px solid white;
     transform: scale(1.1);
 }
+
+
+
+
+
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    /*margin-right: 20px;*/
+    margin-left: 20px;
+    padding: 20px;
+    justify-content: space-around;
+
+}
+.submitButton {
+    /* width: 200px; */
+    height: 100%;
+    font-size: 15px;
+    font-family: 'Silkscreen', fantasy;
+    justify-items: center;
+  }
+
+.answearStatistics{
+    /* height: 100%; */
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 10fr;
+    padding-bottom: 10fr;
+}
+
+#RespuestasTablas{
+    font-size: 50px;
+    font-family: 'Silkscreen', fantasy;
+    color: #802e2e;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: rgba(90, 87, 87, 0.486);
+    border-radius: 20px;
+}
+  
 
 
 
@@ -241,6 +287,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
+    border: solid 2px #802e2e;
 }
 #introTitulo{
     font-size: 50px;
@@ -254,6 +301,8 @@ body {
     background: rgba(90, 87, 87, 0.486);
     border-radius: 20px;
     padding: 10px;
+    border: solid 2px #802e2e;
+    width: auto;
 }
 #methTitulo{
     font-size: 50px;
@@ -267,6 +316,8 @@ body {
     background: #1c1919c7;
     border-radius: 20px;
     padding: 10px;
+    border: solid 2px #802e2e;
+    width: auto;
 }
 #img_meth{
     width: 50vw;
@@ -303,7 +354,7 @@ body {
 /*##################################### Información Nosotros ##########################################*/
 .info_nosotros{
     display: flex;
-    justify-content: end;
+    /*justify-content: end;*/
     height: 100%;
     background-color: #1c1919c7;
     padding: 20px 20px;
@@ -313,13 +364,21 @@ body {
     margin: 2px;
 }
 .info{
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin: 10px;
     align-items: end;
     border: solid 2px #802e2e;
-    justify-content: end;
+    justify-content: end;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
 }
 .titulo_nosotros{
     font-size: 50px;
@@ -328,10 +387,6 @@ body {
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 4px;
     text-transform: uppercase;
-}
-.tex_nosotros{
-    font-size: 20px;
-    
 }
 
 /* ################################## Controles ###########################################*/
