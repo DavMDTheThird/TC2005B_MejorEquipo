@@ -11,7 +11,7 @@ using UnityEngine.AI;
 
 [RequireComponent (typeof (NavMeshAgent))]
 
-public class Movement : MonoBehaviour
+public class MovementIA : MonoBehaviour
 {
     [SerializeField] Transform target;
 
