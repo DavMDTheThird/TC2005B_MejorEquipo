@@ -3082,9 +3082,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261674b685a4b654abfcd1a4413de230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 1000
-  objectToFollow: {fileID: 810357324}
-  yOffset: 0
+  target: {fileID: 810357324}
+  smoothing: 1000
+  yOffset: 4
+  maxPosition: {x: 69.3, y: 79.91}
+  minPosition: {x: -78.35, y: -10}
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46044,7 +46046,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 135111183
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 1753608684, guid: ccad73f273cd6432d8e578cf46ec25a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
