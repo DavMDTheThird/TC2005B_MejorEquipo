@@ -16,6 +16,7 @@ TagManager:
   - linterna
   - antorcha
   - mechero
+  - Vida
   layers:
   - Default
   - TransparentFX
