@@ -40,7 +40,7 @@ public class Cofre : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !itemPicked)
+        if (Input.GetKeyDown(KeyCode.E) && !itemPicked && JugadorCerca)
         {
             MarcaDialogo.SetActive(false);
             myAnim.Play("cofre_abrir");
