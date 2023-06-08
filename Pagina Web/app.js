@@ -16,7 +16,7 @@ async function connectToDB()
         host:'localhost',
         user:'test_API',
         password:'Hola_123',
-        database:'darkesttimes_BD'
+        database:'darkesttimes_bd'
     })
 }
 
@@ -173,6 +173,44 @@ app.get('/api/juego/checkpoint', async (request, response)=>{
     }
 })
 
+app.post('/api/addUser', async (request, response)=>{
+
+    let connection = null
+    
+    let nombre_request = request.body.nombre
+    let correo_request = request.body.correo
+    let contraseña_request = request.body.contraseña
+    
+    try
+    {    
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query('INSERT INTO usuarios SET ?', {
+            nombre: nombre_request,
+            correo: correo_request,
+            contraseña: contraseña_request,
+            horas_jugadas: 0,
+            juegos_completados: 0,
+            muertes_totales: 0
+          });        
+        //console.log(`${results.affectedRows} row inserted`)
+        response.json({'message': "Data inserted correctly.", "id": results.insertId})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
 
 
 

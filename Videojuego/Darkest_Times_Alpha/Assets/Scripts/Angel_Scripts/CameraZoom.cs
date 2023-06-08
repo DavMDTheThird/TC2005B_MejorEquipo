@@ -14,13 +14,14 @@ public class CameraZoom : MonoBehaviour
 
     public float Out;
 
+    public Vector2 maxPosition;
+    public Vector2 minPosition;
+
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
-
     }
-
 
     public void LateUpdate()
     {
@@ -32,6 +33,11 @@ public class CameraZoom : MonoBehaviour
         {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, Out, Speed);
         }
-        
+
+        // Aplicar los límites del mapa
+        Vector3 clampedPosition = transform.position;
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, minPosition.x, maxPosition.x);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, minPosition.y, maxPosition.y);
+        transform.position = clampedPosition;
     }
 }

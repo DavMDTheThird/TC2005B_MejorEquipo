@@ -7,6 +7,8 @@ SELECT nombre, juegos_completados FROM darkesttimes_BD.usuarios
 ORDER BY juegos_completados DESC;
 SELECT * FROM usuarios_juegosGanados;
 
+SELECT * FROM usuarios;
+
 -- Mobs que han matado mas al usuario
 CREATE VIEW mobs_masAsesinatos AS
 SELECT enemigos_nombres.nombre_enemigo, enemigos.asesinatos FROM enemigos_nombres
@@ -24,4 +26,9 @@ CREATE VIEW usuario_masMalo AS
 SELECT nombre, muertes_totales FROM darkesttimes_BD.usuarios
 ORDER BY muertes_totales DESC;
 SELECT * FROM usuario_masMalo;
+
+-- Usuarios y nombre
+CREATE VIEW usuarios_nombre AS
+SELECT id_usuario, nombre, correo FROM darkesttimes_BD.usuarios;
+SELECT * FROM usuarios_nombre;
 

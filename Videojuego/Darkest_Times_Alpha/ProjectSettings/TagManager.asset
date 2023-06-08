@@ -62,6 +62,9 @@ TagManager:
   - name: Inmobilario2
     uniqueID: 1524540145
     locked: 0
+  - name: NPC
+    uniqueID: 3930288511
+    locked: 0
   - name: Personaje
     uniqueID: 1436809597
     locked: 0
