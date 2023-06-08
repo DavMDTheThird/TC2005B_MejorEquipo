@@ -94,12 +94,6 @@ CONSTRAINT fk_id_enemigo FOREIGN KEY (id_enemigo) REFERENCES enemigos (id_enemig
 USE darkesttimes_BD;
 SELECT * FROM darkesttimes_BD.usuarios;
 
-SELECT * FROM darkesttimes_BD.checkpoints;
-
-USE darkesttimes_BD;
-SELECT a.id_usuario FROM darkesttimes_BD.checkpoints as a JOIN darkesttimes_BD.personaje as b
-ON a.id_usuario = b.id_personaje
-WHERE a.id_usuario = 7;
-
-SELECT * FROM darkesttimes_BD.checkpoints INNER JOIN darkesttimes_BD.personaje 
-ON checkpoints.id_usuario = personaje.id_personaje;
+SELECT personaje.* FROM darkesttimes_BD.checkpoints
+JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje
+WHERE darkesttimes_BD.checkpoints.id_usuario = 6;
