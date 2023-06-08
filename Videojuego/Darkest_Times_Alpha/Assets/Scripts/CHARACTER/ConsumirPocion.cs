@@ -5,6 +5,7 @@ using UnityEngine;
 public class ConsumirPocion : MonoBehaviour
 {
     [SerializeField] ObjetosPociones objetosPocions;
+    public Vidas vida;
 
     public enum ObjetosPociones
     {
@@ -33,5 +34,6 @@ public class ConsumirPocion : MonoBehaviour
         }
 
         Destroy(this.gameObject);
+
     }
 }
