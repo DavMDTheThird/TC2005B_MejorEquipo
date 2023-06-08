@@ -8,13 +8,15 @@ public class hueso : MonoBehaviour
     [SerializeField] private AudioClip colectar;
     public int valor = 1;
     //public GameManager gameManager;
+    [SerializeField] private float cantidadPuntos;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if(collision.CompareTag("Player"))
         {
-            GameManager.Instance.SumarPuntos(valor);
+            ControladorPuntos.Instance.sumarPuntos(valor);
+            /*GameManager.Instance.SumarPuntos(valor);*/
             ControladorSonidos.Instance.EjecutarSonido(colectar);
             Destroy(this.gameObject);
         }
