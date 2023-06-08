@@ -50082,7 +50082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656050119aec09b49b334ca1345c7b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CargarEscena: Cutscenes2
+  CargarEscena: CutsceneTutorial
 --- !u!1001 &4311226154963364015
 PrefabInstance:
   m_ObjectHideFlags: 0
