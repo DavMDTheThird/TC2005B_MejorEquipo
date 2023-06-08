@@ -17,9 +17,27 @@ public class Player_stats : MonoBehaviour
     Player_basic playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 4.5f, 5, 5, 1, 0);
     Player_basic player;
 
+    public List<GameObject> HeartContainer;
+
+
     void Start()
     {
+        HeartContainer.Add(GameObject.Find("0Hearts"));
+        HeartContainer.Add(GameObject.Find("1Hearts"));
+        HeartContainer.Add(GameObject.Find("2Hearts"));
+        HeartContainer.Add(GameObject.Find("3Hearts"));
+        HeartContainer.Add(GameObject.Find("4Hearts"));
+        HeartContainer.Add(GameObject.Find("5Hearts"));
+        HeartContainer.Add(GameObject.Find("6Hearts"));
+        HeartContainer.Add(GameObject.Find("7Hearts"));
+        HeartContainer.Add(GameObject.Find("8Hearts"));
+        HeartContainer.Add(GameObject.Find("9Hearts"));
+        HeartContainer.Add(GameObject.Find("10Hearts"));
+
         QueryUsers();
+
+        ShowHearts();
+
     }
 
 
@@ -30,6 +48,7 @@ public class Player_stats : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.T))
         {
             TakeDamage(1);
+            ShowHearts();
         }
         if (Input.GetKeyUp(KeyCode.G))
         {
@@ -51,6 +70,10 @@ public class Player_stats : MonoBehaviour
         {
             ShowHearts();
         }
+        if (Input.GetKeyUp(KeyCode.L))
+        {
+            Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id"));
+        }
     }
 
 
@@ -59,7 +82,14 @@ public class Player_stats : MonoBehaviour
     // Player interactions
     public void TakeDamage(short damage)
     {
-        playerBSC.HP -= damage;
+        if (playerBSC.HP - damage <= 0)
+        {
+            playerBSC.HP = 0;
+        }
+        else
+        {
+            playerBSC.HP -= damage;
+        }
         Debug.Log(transform.name + " took: " + damage + " damage. HP now: " + playerBSC.HP);
     }
 
@@ -72,7 +102,17 @@ public class Player_stats : MonoBehaviour
     public void ShowHearts()
     {
         Debug.Log(playerBSC.HP);
+        short i = 0;
+        foreach (GameObject obj in HeartContainer)
+        {
+            obj.SetActive(false);
 
+            if(playerBSC.HP == i)
+            {
+                obj.SetActive(true);
+            }
+            ++i;
+        }
 
     }
 

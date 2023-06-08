@@ -53,6 +53,7 @@ body {
     padding: 5px 3%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .menu .personaje_game img{
     width: auto;
@@ -274,20 +275,22 @@ body {
 
 /*##################################### Información proyecto INTRO ##########################################*/
 .info_intro{
-    /*
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-content: center;  
     background-color: #1c1919;
     padding: 20px 20px;
     border-radius: 20px;
-    */
+    flex-wrap: wrap;
+   
+    
+    /*
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
     padding: 20px;
     border: solid 2px #802e2e;
+    max-width: 100vw;*/
 }
 #introTitulo{
     font-size: 50px;
@@ -298,11 +301,21 @@ body {
     text-transform: uppercase;
 }
 .intro{
+    /*
+    display: flex;
     background: rgba(90, 87, 87, 0.486);
     border-radius: 20px;
     padding: 10px;
     border: solid 2px #802e2e;
-    width: auto;
+    max-width: 50vw;
+    flex-direction: column;
+    justify-items: center;*/
+    display: grid;
+    border-radius: 20px;
+    height: 100%;
+    width: 700px;
+    justify-items: center;
+    padding: 10px 20px;
 }
 #methTitulo{
     font-size: 50px;
@@ -313,14 +326,24 @@ body {
     text-transform: uppercase;
 }
 .meth{
+    /*
+    display: flex;
     background: #1c1919c7;
     border-radius: 20px;
     padding: 10px;
     border: solid 2px #802e2e;
-    width: auto;
+    max-width: 45vw;
+    justify-items: center;
+    flex-direction: column;*/
+    display: grid;
+    border-radius: 20px;
+    height: 100%;
+    width: 700px;
+    justify-items: center;
+    padding: 10px 20px;
 }
-#img_meth{
-    width: 50vw;
+.img_meth{
+    width: 35vw;
     height: 25vw;
     padding: 10px;
     margin: 20px;
@@ -500,6 +523,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin: 10px;
+    align-items: center;
 }
 .titulo_resultados{
     font-size: 50px;
@@ -511,20 +535,20 @@ body {
 }
 .contenido_resultados{
     font-size: 20px;
+    justify-items: center;
 }
-/*
-#img_backrooms{
-    width: 700px;
-    height: 300px;
+#img_ahorcado{
+    width: 50vw;
+    height: 25vw;
     padding: 10px;
     margin: 20px;
-}*/
+}
 
-/* #################################### Conclusiones ###################################*/
-.conclusiones{
+
+/* #################################### Equipo ###################################*/
+.euqipo{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: end;*/
     height: 100%;
     background-color: #1c1919c7;
     padding: 20px 20px;
@@ -534,10 +558,28 @@ body {
     margin: 2px;
 }
 .fotos_nosotros{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+.titulo_equipo{
+    font-size: 50px;
+    font-family: 'Silkscreen', fantasy;
+    color: #802e2e;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#img_nosotros{
+    width: 50vw;
+    height: 25vw;
+    padding: 10px;
+    margin: 20px;
 }
 
 /*##################################### Footer ##########################################*/
