@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.2
+  m_fontSize: 33.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -480,7 +480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.032286976, y: 0.19059417}
   m_AnchorMax: {x: 0.36356956, y: 0.68978983}
-  m_AnchoredPosition: {x: 1.0000305, y: 1}
+  m_AnchoredPosition: {x: 1, y: 1}
   m_SizeDelta: {x: -2.5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181116625
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   url_signIn: localhost:5000
-  getUsersEP_signIn: /api/addUser
+  getUsersEP_signIn: /api/juego/addUser
   errorText_signIn: {fileID: 0}
   url_logIn: 
   getUsersEP_logIn: 
@@ -2217,7 +2217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.186, y: 0.17544551}
   m_AnchorMax: {x: 0.82400006, y: 0.84478015}
-  m_AnchoredPosition: {x: -61.2353, y: -0.5000019}
+  m_AnchoredPosition: {x: -61.235306, y: -0.5000038}
   m_SizeDelta: {x: -114.4706, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620584750

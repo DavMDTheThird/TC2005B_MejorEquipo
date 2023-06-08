@@ -145,13 +145,41 @@ app.get('/api/user_masMalo', async (request, response)=>{
 //Videojuego//------------------------------------------------------------------------------------------
 /////////////
 
-app.get('/api/juego/checkpoint', async (request, response)=>{
+app.put('/api/juego/sendCheckpoint', async (request, response)=>{
+
+    let connection = null
+
+    try{
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query('update users set name = ?, surname = ? where id_users= ?', [request.body['name'], request.body['surname'], request.body['userID']])
+        
+        console.log(`${results.affectedRows} rows updated`)
+        response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+app.get('/api/juego/getCheckpoint', async (request, response)=>{
     let connection = null  //This variable will be used to hold the database connection object.
 
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT usuario, easter_eggs FROM darkesttimes.usuario ORDER BY easter_eggs DESC LIMIT 1;')//La busqueda
+        const [results, fields] = await connection.execute('SELECT personaje.* FROM darkesttimes_BD.checkpoints JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje WHERE darkesttimes_BD.checkpoints.id_usuario =  ?', [request.body['id']])
 
         console.log(`${results.length} rows returned`)
         console.log(results)
@@ -173,7 +201,7 @@ app.get('/api/juego/checkpoint', async (request, response)=>{
     }
 })
 
-app.post('/api/addUser', async (request, response)=>{
+app.post('/api/juego/addUser', async (request, response)=>{
 
     let connection = null
     
