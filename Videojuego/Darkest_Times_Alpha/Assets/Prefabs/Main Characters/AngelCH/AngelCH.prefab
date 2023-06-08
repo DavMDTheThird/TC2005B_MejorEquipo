@@ -205,6 +205,7 @@ MonoBehaviour:
   getUsersEP: /api/user/checkpoint
   errorText: {fileID: 0}
   babyCharacter: 1
+  hearts_container: {fileID: 4983049169570658121, guid: c91e5ef26405eaf45b0f3c4da4011034, type: 3}
 --- !u!114 &4499063437207991674
 MonoBehaviour:
   m_ObjectHideFlags: 0
