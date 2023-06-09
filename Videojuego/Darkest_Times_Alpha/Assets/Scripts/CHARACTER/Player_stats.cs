@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 
 [System.Serializable]
@@ -55,6 +56,10 @@ public class Player_stats : MonoBehaviour
     // Testing
     void Update()
     {
+        if (playerBSC.HP == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         if (Input.GetKeyUp(KeyCode.T))
         {
             TakeDamage(1);

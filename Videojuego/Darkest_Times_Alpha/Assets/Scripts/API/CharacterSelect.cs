@@ -131,7 +131,9 @@ public class CharacterSelect : MonoBehaviour
 
         string jsonData = JsonUtility.ToJson(testUser);
 
+        Debug.Log(url_stCheckpoint + getUsersEP_stCheckpoint);
         Debug.Log(jsonData);
+
 
         using (UnityWebRequest www = UnityWebRequest.Put(url_stCheckpoint + getUsersEP_stCheckpoint, jsonData))
         {
