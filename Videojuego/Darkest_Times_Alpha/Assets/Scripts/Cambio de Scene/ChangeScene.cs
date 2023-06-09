@@ -10,7 +10,14 @@ public class ChangeScene : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-//Agregar codigo de camio de scene mandar al bd
+            SceneManager.LoadScene(sceneIndex);
+//Agregar codigo de cambio de scene mandar al bd
         }
     }
+
+    public void cambiarScene()
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
 }

@@ -88,12 +88,3 @@ id_enemigo SMALLINT UNSIGNED NOT NULL comment "Llave foranea",
 nombre_enemigo VARCHAR(45) NOT NULL comment "Nombre de los enemigos",
 CONSTRAINT fk_id_enemigo FOREIGN KEY (id_enemigo) REFERENCES enemigos (id_enemigo) ON DELETE RESTRICT ON UPDATE CASCADE
 )ENGINE=InnoDB;
-
-
-
-USE darkesttimes_BD;
-SELECT * FROM darkesttimes_BD.usuarios;
-
-SELECT personaje.* FROM darkesttimes_BD.checkpoints
-JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje
-WHERE darkesttimes_BD.checkpoints.id_usuario = 6;

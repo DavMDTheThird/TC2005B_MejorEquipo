@@ -145,13 +145,132 @@ app.get('/api/user_masMalo', async (request, response)=>{
 //Videojuego//------------------------------------------------------------------------------------------
 /////////////
 
-app.get('/api/juego/checkpoint', async (request, response)=>{
+app.post('/api/juego/addPersonaje', async (request, response)=>{
+
+    let connection = null
+    
+    let vida_actual_request = request.body._hp
+    let vida_max_request = request.body._maxhp
+    let nivel_request = request.body._lvl
+    let xp_request = request.body._xp
+    let suerte_request = request.body._lck
+    let ataque_request = request.body._atk
+    let stamina_request = request.body._stamina
+    let inventario_request = request.body._inventory
+    let multiplicador_monedas_request = request.body._TimesMoney
+    let monedas_request = request.body._money
+    
+    try
+    {    
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query('INSERT INTO personaje SET ?', {
+            vida_actual: vida_actual_request,
+            vida_max: vida_max_request,
+            nivel: nivel_request,
+            xp: xp_request,
+            suerte: suerte_request,
+            ataque: ataque_request,
+            stamina: stamina_request,
+            inventario: inventario_request,
+            multiplicador_monedas: multiplicador_monedas_request,
+            monedas: monedas_request,
+            muertes: 0
+          })      
+        //console.log(`${results.affectedRows} row inserted`)
+        response.json({'message': "Data inserted correctly.", "id": results.insertId})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+app.post('/api/juego/setCheckpoint', async (request, response)=>{
+
+    let connection = null
+
+    let id_usuario = request.body.id_usuario
+    let id_personaje = request.body.id_personaje
+    let id_inventario = request.body.id_inventario
+    let id_nivel = request.body.id_nivel
+
+    try
+    {    
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query('insert into checkpoints set ?', {
+            id_usuario: id_usuario,
+            id_personaje: id_personaje,
+            id_inventario: id_inventario,
+            id_nivel: id_nivel
+          })
+        
+        //console.log(`${results.affectedRows} row inserted`)
+        response.json({'message': "Data inserted correctly.", "id": results.insertId})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+
+app.put('/api/juego/updateCheckpoint', async (request, response)=>{
+
+    let connection = null
+
+    try{
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query('update users set name = ?, surname = ? where id_users= ?', [request.body['name'], request.body['surname'], request.body['userID']])
+        
+        console.log(`${results.affectedRows} rows updated`)
+        response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+app.get('/api/juego/getCheckpoint', async (request, response)=>{
     let connection = null  //This variable will be used to hold the database connection object.
 
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT usuario, easter_eggs FROM darkesttimes.usuario ORDER BY easter_eggs DESC LIMIT 1;')//La busqueda
+        const [results, fields] = await connection.execute('SELECT personaje.* FROM darkesttimes_BD.checkpoints JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje WHERE darkesttimes_BD.checkpoints.id_usuario = ?', [request.body['id']])
 
         console.log(`${results.length} rows returned`)
         console.log(results)
@@ -173,7 +292,7 @@ app.get('/api/juego/checkpoint', async (request, response)=>{
     }
 })
 
-app.post('/api/addUser', async (request, response)=>{
+app.post('/api/juego/addUser', async (request, response)=>{
 
     let connection = null
     

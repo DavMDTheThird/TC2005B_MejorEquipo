@@ -46,15 +46,15 @@ public class SignIn : MonoBehaviour
 
 
     public void SetInputText_nombre(string input_text){
-        Debug.Log("Se guardo: " + input_text);
+        //Debug.Log("Se guardo: " + input_text);
         nombre = input_text;
     }
     public void SetInputText_correo(string input_text){
-        Debug.Log("Se guardo: " + input_text);
+        //Debug.Log("Se guardo: " + input_text);
         correo = input_text;
     }
     public void SetInputText_contrasenia(string input_text){
-        Debug.Log("Se guardo: " + input_text);
+        //Debug.Log("Se guardo: " + input_text);
         contraseña = input_text;
     }
 
@@ -81,7 +81,7 @@ public class SignIn : MonoBehaviour
         string jsonData = JsonUtility.ToJson(testUser);
        
         // Debug.Log(url_signIn + getUsersEP_signIn);
-        // Debug.Log(jsonData);
+        Debug.Log(jsonData);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url_signIn + getUsersEP_signIn, jsonData))
         {

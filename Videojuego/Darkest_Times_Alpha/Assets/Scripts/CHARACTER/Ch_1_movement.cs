@@ -11,15 +11,8 @@ public class Ch_1_movement : MonoBehaviour
     public float runSpeed = 2f;
     public float runSprint = 2f;
 
-    //Gun and look
     Vector2 mousePos;
 
-    [SerializeField] private GameObject BulletPrefab;
-    [SerializeField] private Transform firingPoint;
-
-    [Range(0.1f, 2f)]
-    [SerializeField] private float fireRate = 0.5f;
-    private float fireTimer;
 
     //Player Animation
     Rigidbody2D rb2d;
@@ -27,10 +20,6 @@ public class Ch_1_movement : MonoBehaviour
 
     //Canvas
     Canvas heartsCanvas;
-
-    
-
-
 
 
     void Start()
@@ -60,17 +49,7 @@ public class Ch_1_movement : MonoBehaviour
         animator.SetFloat("Look_x", mousePos.x - transform.position.x);
         animator.SetFloat("Look_y", mousePos.y - transform.position.y);
 
-        //Gun
-        // Dispara cada cierto tiempo
-        if (Input.GetMouseButtonDown(0) && fireTimer < 0f)
-        {
-            Shoot();
-            fireTimer = fireRate;
-        }
-        else
-        {   //Para reducir el tiempo antes del siguiente disparo (mabe agregar un coroutine para el sonido)
-            fireTimer -= Time.deltaTime;
-        }
+        
     }
 
 
@@ -89,11 +68,6 @@ public class Ch_1_movement : MonoBehaviour
         
     }
 
-
-    private void Shoot()
-    {
-        Instantiate(BulletPrefab, firingPoint.position, firingPoint.rotation);
-    }
 
     // Diferentes coliciones y eventos
     private void OnTriggerEnter2D(Collider2D collision)
@@ -139,8 +113,9 @@ public class Ch_1_movement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigos")
         {
-            Debug.Log("Te hizo daino: " + collision.gameObject.name);
+            //Debug.Log("Te hizo daino: " + collision.gameObject.name);
             playerStats.TakeDamage(1);
+
             //Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
         }
     }

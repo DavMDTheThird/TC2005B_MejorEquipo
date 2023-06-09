@@ -5,6 +5,16 @@ using System.IO;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
+
+[System.Serializable]
+public class UserCheckpoint
+{
+    public int ID_usuario;
+    public string nombre;
+    public string correo;
+    public string contraseña;
+}
+
 public class Player_stats : MonoBehaviour
 {
     //API
@@ -48,7 +58,6 @@ public class Player_stats : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.T))
         {
             TakeDamage(1);
-            ShowHearts();
         }
         if (Input.GetKeyUp(KeyCode.G))
         {
@@ -90,7 +99,8 @@ public class Player_stats : MonoBehaviour
         {
             playerBSC.HP -= damage;
         }
-        Debug.Log(transform.name + " took: " + damage + " damage. HP now: " + playerBSC.HP);
+        ShowHearts();
+        //Debug.Log(transform.name + " took: " + damage + " damage. HP now: " + playerBSC.HP);
     }
 
     public void GetMoney(short money)
@@ -122,7 +132,7 @@ public class Player_stats : MonoBehaviour
     // Json Stuff
     public void QueryUsers()
     {
-        StartCoroutine(GetUsers());
+        StartCoroutine(GetUserCheckpoint());
     }
 
     //public void InsertNewUser()
@@ -131,7 +141,7 @@ public class Player_stats : MonoBehaviour
     //}
 
 
-    IEnumerator GetUsers()
+    IEnumerator GetUserCheckpoint()
     {
         using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
         {
@@ -140,18 +150,15 @@ public class Player_stats : MonoBehaviour
             if (www.result == UnityWebRequest.Result.Success)
             {
                 //Debug.Log("Response: " + www.downloadHandler.text);
-                // Compose the response to look like the object we want to extract
-                // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
                 string jsonString = www.downloadHandler.text;
                 player = JsonUtility.FromJson<Player_basic>(jsonString);
                 player.Info();
-                //DisplayUsers();
-                //if (errorText != null) errorText.text = "";
+                if (errorText != null) errorText.text = "";
             }
             else
             {
                 Debug.Log("Error: " + www.error);
-                //if (errorText != null) errorText.text = "Error: " + www.error;
+                if (errorText != null) errorText.text = "Error: " + www.error;
             }
         }
     }
