@@ -149,6 +149,7 @@ app.post('/api/juego/addPersonaje', async (request, response)=>{
 
     let connection = null
     
+    let personaje_request = request.body.personaje
     let vida_actual_request = request.body._hp
     let vida_max_request = request.body._maxhp
     let nivel_request = request.body._lvl
@@ -165,6 +166,7 @@ app.post('/api/juego/addPersonaje', async (request, response)=>{
         connection = await connectToDB()
 
         const [results, fields] = await connection.query('INSERT INTO personaje SET ?', {
+            personaje: personaje_request,
             vida_actual: vida_actual_request,
             vida_max: vida_max_request,
             nivel: nivel_request,
@@ -196,6 +198,58 @@ app.post('/api/juego/addPersonaje', async (request, response)=>{
     }
 })
 
+app.post('/api/juego/addInventario', async (request, response)=>{
+
+    let connection = null
+
+    let pocionQM = request.body.pocionQM
+    let escudoQM = request.body.escudoQM
+    let antorchaQM = request.body.antorchaQM
+    let linternaQM = request.body.linternaQM
+    let mecheroQM = request.body.mecheroQM
+    let bengala_gunQM = request.body.bengala_gunQM
+    let ballesta = request.body.ballesta
+    let espada = request.body.espada
+    let bat = request.body.bat
+    let staff = request.body.staff
+    let rifle = request.body.rifle
+
+    try
+    {    
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query('insert into inventario set ?', {
+            pocionQM: pocionQM,
+            escudoQM: escudoQM,
+            antorchaQM: antorchaQM,
+            linternaQM: linternaQM,
+            mecheroQM: mecheroQM,
+            bengala_gunQM: bengala_gunQM,
+            ballesta: ballesta,
+            espada: espada,
+            bat: bat,
+            staff: staff,
+            rifle: rifle
+          })
+        
+        //console.log(`${results.affectedRows} row inserted`)
+        response.json({'message': "Data inserted correctly.", "id": results.insertId})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
 app.post('/api/juego/setCheckpoint', async (request, response)=>{
 
     let connection = null
