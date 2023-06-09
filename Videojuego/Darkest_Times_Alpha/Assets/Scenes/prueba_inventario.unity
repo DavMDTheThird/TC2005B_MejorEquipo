@@ -212,7 +212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01addfbd2887104c8b7ed0f3699debd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   i: 1
 --- !u!1 &92565061
 GameObject:
@@ -303,7 +302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01addfbd2887104c8b7ed0f3699debd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   i: 0
 --- !u!1 &237333090
 GameObject:
@@ -527,7 +525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01addfbd2887104c8b7ed0f3699debd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   i: 2
 --- !u!1 &319030739
 GameObject:
@@ -693,7 +690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 4583998453119285564, guid: dcbf5aa6f6f11a0499308f35fcd16b48, type: 3}
 --- !u!61 &381019243
 BoxCollider2D:
@@ -804,7 +800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 8765467585225477537, guid: 09123b91a4e455942b7c6271e5da93b7, type: 3}
 --- !u!61 &438552354
 BoxCollider2D:
@@ -988,7 +983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01addfbd2887104c8b7ed0f3699debd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   i: 3
 --- !u!1 &675274313
 GameObject:
@@ -1058,7 +1052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 8765467585225477537, guid: 09123b91a4e455942b7c6271e5da93b7, type: 3}
 --- !u!61 &748061465
 BoxCollider2D:
@@ -1410,7 +1403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 4583998453119285564, guid: dcbf5aa6f6f11a0499308f35fcd16b48, type: 3}
 --- !u!1 &1117230359
 GameObject:
@@ -1767,7 +1759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01addfbd2887104c8b7ed0f3699debd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   i: 4
 --- !u!1 &1450479531
 GameObject:
@@ -1800,7 +1791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 8765467585225477537, guid: 09123b91a4e455942b7c6271e5da93b7, type: 3}
 --- !u!61 &1450479533
 BoxCollider2D:
@@ -2028,7 +2018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 8765467585225477537, guid: 09123b91a4e455942b7c6271e5da93b7, type: 3}
 --- !u!61 &1532449044
 BoxCollider2D:
@@ -2141,7 +2130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1548796508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,7 +2253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 8765467585225477537, guid: 09123b91a4e455942b7c6271e5da93b7, type: 3}
 --- !u!61 &1645862874
 BoxCollider2D:
@@ -2680,7 +2668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 2685879307018406837, guid: 770a4d520726f934791c4b4d0b040f73, type: 3}
 --- !u!61 &4353241574094989848
 BoxCollider2D:
@@ -2806,7 +2793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 8765467585225477537, guid: 09123b91a4e455942b7c6271e5da93b7, type: 3}
 --- !u!114 &4499063436228804751
 MonoBehaviour:
@@ -2997,13 +2983,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353125e8c641ca24eb7231f143652037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFull: 
+  isFull: 0000000000
   slots:
   - {fileID: 92565061}
   - {fileID: 28171924}
   - {fileID: 269101687}
   - {fileID: 536535876}
   - {fileID: 1385103561}
+  inventario: {fileID: 1548796507}
 --- !u!1 &6811699496151307002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,7 +3133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenPrueba: {fileID: 0}
   itemButtom: {fileID: 4583998453119285564, guid: dcbf5aa6f6f11a0499308f35fcd16b48, type: 3}
 --- !u!114 &7407055192506831014
 MonoBehaviour:
