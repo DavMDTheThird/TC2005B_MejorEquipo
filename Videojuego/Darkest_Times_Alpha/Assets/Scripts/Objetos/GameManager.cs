@@ -28,9 +28,13 @@ public class GameManager : MonoBehaviour
     public void SumarPuntos(int puntosASumar)
     {
         PuntosTotales = PuntosTotales + puntosASumar;
-        // Debug.Log(puntosTotales);
+        //Debug.Log(PuntosTotales);
         contador_monedas.ActualizarPuntos(PuntosTotales);
     }
-
-
+    public void RestarPuntos(int puntosARestar)
+    {
+        PuntosTotales = PuntosTotales - puntosARestar;
+        //Debug.Log(PuntosTotales);
+        contador_monedas.ActualizarPuntos(PuntosTotales);
+    }
 }

@@ -9,6 +9,7 @@ public class inventarioPrueba : MonoBehaviour
 
     public GameObject inventario;
     bool inventario_prendido = false;
+    public int totalObjetos;
 
     void Update()
     {
@@ -24,6 +25,7 @@ public class inventarioPrueba : MonoBehaviour
         }
 
     }
+
 }
 
 
