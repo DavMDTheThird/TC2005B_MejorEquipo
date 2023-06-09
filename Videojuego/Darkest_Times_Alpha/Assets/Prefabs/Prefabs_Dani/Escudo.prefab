@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7117623538032722126}
   - component: {fileID: 7117623538032722121}
   - component: {fileID: 7117623538032722120}
+  - component: {fileID: 2305476009273498358}
   m_Layer: 0
   m_Name: Escudo
   m_TagString: ObjetoRecogibleE
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 7d2555db5cccc36468623b23afd46552, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -111,3 +112,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6447699, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2305476009273498358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7117623538032722123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfea027f07aac940a65434ea945ea12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButtom: {fileID: 4583998453119285564, guid: dcbf5aa6f6f11a0499308f35fcd16b48, type: 3}

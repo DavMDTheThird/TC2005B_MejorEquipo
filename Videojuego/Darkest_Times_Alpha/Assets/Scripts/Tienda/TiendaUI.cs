@@ -5,7 +5,8 @@ using UnityEngine;
 public class TiendaUI : MonoBehaviour
 {
     [SerializeField] private GameObject panelEquipo;
-
+    private pickUpAtaque inventario;
+    private inventarioPrueba inventarioCheck;
     private int totalMonedas;
     public int totalObjetos;
     private int precioObjeto;
@@ -25,15 +26,14 @@ public class TiendaUI : MonoBehaviour
             
             totalMonedas -= precioObjeto;
         }*/
-        if(totalObjetos < 5)
+        /*if(totalObjetos < 5)
         {
             totalObjetos++;
             GameObject equipo = (GameObject)Resources.Load(objeto); // va dentro del if
             Instantiate(equipo, Vector3.zero, Quaternion.identity, panelEquipo.transform); // va dentro del if
             
-        }
+        }*/
         
-
     }
 
     public void PrecioObjeto(string objeto)
