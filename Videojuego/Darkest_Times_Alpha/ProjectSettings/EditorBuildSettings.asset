@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrincipalScenes/DentroTienda.unity
     guid: 0a4cb3a1329f19943961900d8d1865eb
+  - enabled: 1
+    path: Assets/Scenes/PrincipalScenes/GameOver.unity
+    guid: f32b3bb80c2950849b362ae717821012
+  - enabled: 1
+    path: Assets/Scenes/PrincipalScenes/Hospital.unity
+    guid: b87f1d7f4331ccf4c90c8f39f5d7b1d9
   m_configObjects: {}
