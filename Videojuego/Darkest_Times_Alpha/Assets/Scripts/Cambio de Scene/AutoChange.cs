@@ -22,8 +22,8 @@ public class AutoChange : MonoBehaviour
         operacion.allowSceneActivation = false;
         while(!operacion.isDone){
             if(operacion.progress >= 0.9f){
-                texto.text = "Presiona E para continuar";
-                if(Input.GetKeyDown(KeyCode.E)){
+                texto.text = "Presiona C para continuar";
+                if(Input.GetKeyDown(KeyCode.C)){
                     operacion.allowSceneActivation = true;
                     cambio.LoadScene(nivelCargar);
                 }

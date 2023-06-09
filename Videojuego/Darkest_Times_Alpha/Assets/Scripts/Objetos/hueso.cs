@@ -15,7 +15,7 @@ public class hueso : MonoBehaviour
 
         if(collision.CompareTag("Player"))
         {
-            /*ControladorPuntos.Instance.sumarPuntos(valor);*/
+            // ControladorPuntos.Instance.sumarPuntos(valor);
             GameManager.Instance.SumarPuntos(valor);
             ControladorSonidos.Instance.EjecutarSonido(colectar);
             Destroy(this.gameObject);
