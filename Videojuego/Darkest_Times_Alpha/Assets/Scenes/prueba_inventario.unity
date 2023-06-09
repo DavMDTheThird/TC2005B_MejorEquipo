@@ -2130,7 +2130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1548796508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2990,6 +2990,7 @@ MonoBehaviour:
   - {fileID: 269101687}
   - {fileID: 536535876}
   - {fileID: 1385103561}
+  inventario: {fileID: 1548796507}
 --- !u!1 &6811699496151307002
 GameObject:
   m_ObjectHideFlags: 0
