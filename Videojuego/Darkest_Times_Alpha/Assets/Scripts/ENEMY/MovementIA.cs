@@ -14,12 +14,14 @@ using UnityEngine.AI;
 public class MovementIA : MonoBehaviour
 {
     [SerializeField] Transform target;
+    private bool isFound;
 
     NavMeshAgent nvAgent;
 
     // Start is called before the first frame update
     void Start()
     {
+
         nvAgent = GetComponent<NavMeshAgent>();
         nvAgent.updateRotation = false;
         nvAgent.updateUpAxis = false;
@@ -28,6 +30,11 @@ public class MovementIA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isFound)
+        {
+            target = GameObject.FindWithTag("Player").transform;
+            isFound = true;
+        }
         nvAgent.destination = target.position;
     }
 }
