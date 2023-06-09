@@ -17,6 +17,7 @@ TagManager:
   - antorcha
   - mechero
   - Vida
+  - EnemigoObs1
   layers:
   - Default
   - TransparentFX
