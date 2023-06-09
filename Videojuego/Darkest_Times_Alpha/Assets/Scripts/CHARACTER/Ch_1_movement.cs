@@ -98,6 +98,7 @@ public class Ch_1_movement : MonoBehaviour
     // Diferentes coliciones y eventos
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        /*
         if (collision.gameObject.tag == "ObjetoRecogibleV")
         {
             Debug.Log("Poci?n de vida" + collision.gameObject.name);
@@ -126,7 +127,7 @@ public class Ch_1_movement : MonoBehaviour
         {
             Debug.Log("Poci?n de Ataque" + collision.gameObject.name);
             Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
-        }
+        }*/
         if (collision.gameObject.tag == "Item")
         {
             Debug.Log("Se agarro un item: " + collision.gameObject.name);
