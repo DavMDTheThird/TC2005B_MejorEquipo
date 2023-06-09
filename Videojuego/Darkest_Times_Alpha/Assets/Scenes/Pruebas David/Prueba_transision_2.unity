@@ -743,9 +743,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261674b685a4b654abfcd1a4413de230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 2
-  objectToFollow: {fileID: 0}
+  target: {fileID: 0}
+  smoothing: 0
   yOffset: 1
+  maxPosition: {x: 0, y: 0}
+  minPosition: {x: 0, y: 0}
 --- !u!222 &568342429418942961
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -946,7 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdf3f2eec9284fd6af8fbfb3a789453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 3
+  sceneIndex: 7
 --- !u!1 &8376180813469575690
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,4 +981,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdf3f2eec9284fd6af8fbfb3a789453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 5
+  sceneIndex: 9
