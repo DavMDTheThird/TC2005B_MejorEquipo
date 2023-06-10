@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetosPocions: 3
+  vida: {fileID: 0}

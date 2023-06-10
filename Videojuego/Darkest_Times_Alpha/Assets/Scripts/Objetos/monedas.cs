@@ -6,16 +6,17 @@ using UnityEngine.UI;
 
 public class monedas : MonoBehaviour
 {
-    public TextMeshProUGUI Puntos;
+    public TextMeshProUGUI CantidadHuesos;
+
 
     // Update is called once per frame
     void Update()
     {
-        Puntos.text = GameManager.Instance.PuntosTotales.ToString();
+        CantidadHuesos.text = GameManager.Instance.PuntosTotales.ToString();
     }
 
     public void ActualizarPuntos(int puntosTotales)
     {
-        Puntos.text = puntosTotales.ToString();
+        CantidadHuesos.text = puntosTotales.ToString();
     }
 }
