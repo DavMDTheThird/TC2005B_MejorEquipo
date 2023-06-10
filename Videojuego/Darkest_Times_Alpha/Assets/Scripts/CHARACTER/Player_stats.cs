@@ -86,7 +86,7 @@ public class Player_stats : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.L))
         {
-            Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id"));
+            Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id_inventario"));
         }
     }
 

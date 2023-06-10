@@ -36,6 +36,7 @@ SELECT * FROM usuarios_nombre;
 USE darkesttimes_BD;
 SELECT * FROM darkesttimes_BD.usuarios;
 SELECT * FROM darkesttimes_BD.personaje;
+SELECT * FROM darkesttimes_BD.inventario;
 
 SELECT * FROM darkesttimes_BD.checkpoints;
 

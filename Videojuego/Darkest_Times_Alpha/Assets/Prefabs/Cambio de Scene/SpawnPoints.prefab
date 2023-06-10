@@ -71,5 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba67773eb34648478cebdd10cc2ac01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_prefab1: {fileID: 5673788724312163324, guid: 0ddbf8e34419782479caf867ffdfec37, type: 3}
+  player_prefab2: {fileID: 5673788724312163324, guid: 069cb57e7381bb742ad63138b86ecf9f, type: 3}
+  player_prefab3: {fileID: 5673788724312163324, guid: 312766efb20476f409fb385bc01649b4, type: 3}
+  player_prefab4: {fileID: 5673788724312163324, guid: f642716694e77f540bcc31dc9443fbaf, type: 3}
   player_prefab: {fileID: 5673788724312163324, guid: 6a59d00f2f2504fe2a78fb76d5f47dc1, type: 3}
   id_spwnPoint: 0
