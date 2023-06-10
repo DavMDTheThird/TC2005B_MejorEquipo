@@ -1176,7 +1176,6 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 518502928623027472, guid: e2c89fc39f0e74e4b9675ccb4dbf52a8, type: 3}
-  m_PrefabInstance: {fileID: 518502928473892259}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -2470,7 +2469,6 @@ Canvas:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 518502928324648066, guid: e2c89fc39f0e74e4b9675ccb4dbf52a8, type: 3}
-  m_PrefabInstance: {fileID: 518502928473892259}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
