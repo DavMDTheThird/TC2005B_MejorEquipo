@@ -7,14 +7,14 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 
-[System.Serializable]
-public class UserCheckpoint
-{
-    public int ID_usuario;
-    public string nombre;
-    public string correo;
-    public string contraseña;
-}
+//[System.Serializable]
+//public class UserCheckpoint
+//{
+//    public int ID_usuario;
+//    public string nombre;
+//    public string correo;
+//    public string contraseña;
+//}
 
 public class Player_stats : MonoBehaviour
 {
@@ -148,7 +148,8 @@ public class Player_stats : MonoBehaviour
 
     IEnumerator GetUserCheckpoint()
     {
-        using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
+        Debug.Log(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}");
+        using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}"))
         {
             yield return www.SendWebRequest();
 
