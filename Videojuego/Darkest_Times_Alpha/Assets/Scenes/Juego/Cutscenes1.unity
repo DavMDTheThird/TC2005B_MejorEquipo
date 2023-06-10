@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &179625152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612a9be695ce83549b0bc609fe846d3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NameScene: Tutorial
 --- !u!4 &179625153
 Transform:
   m_ObjectHideFlags: 0
@@ -699,7 +700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5988328, y: 0}
   m_AnchorMax: {x: 1, y: 0.06271617}
-  m_AnchoredPosition: {x: -2.7899933, y: 1.3299866}
+  m_AnchoredPosition: {x: -2.789978, y: 1.3299866}
   m_SizeDelta: {x: 4.573242, y: 1.8560028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1968673717
