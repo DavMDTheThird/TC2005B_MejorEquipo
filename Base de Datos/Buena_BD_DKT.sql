@@ -18,6 +18,7 @@ PRIMARY KEY (id_usuario)
 -- Tabla de personaje
 CREATE TABLE personaje(
 id_personaje INT UNSIGNED NOT NULL UNIQUE AUTO_INCREMENT comment "LLave primaria",
+personaje SMALLINT UNSIGNED NOT NULL comment "usuario jugable",
 vida_actual SMALLINT NOT NULL comment "Vida que tiene en el momento el personaje",
 vida_max SMALLINT NOT NULL comment "Vida que puede llegar a tener el personaje",
 nivel SMALLINT NOT NULL comment "El nivel en que se encuentra el personaje - progresion",

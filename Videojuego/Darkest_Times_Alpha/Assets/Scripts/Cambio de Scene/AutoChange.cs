@@ -7,12 +7,12 @@ using TMPro;
 
 public class AutoChange : MonoBehaviour
 {   
-    private ScenesGame cambio;
+    // private ScenesGame cambio;
     public string nivelCargar;
     public TextMeshProUGUI texto;
     private void Start()
     {
-        cambio = new ScenesGame();
+        // cambio = new ScenesGame();
         StartCoroutine(IniciarCarga(nivelCargar));
     }
 
@@ -25,7 +25,7 @@ public class AutoChange : MonoBehaviour
                 texto.text = "Presiona C para continuar";
                 if(Input.GetKeyDown(KeyCode.C)){
                     operacion.allowSceneActivation = true;
-                    cambio.LoadScene(nivelCargar);
+                    SceneManager.LoadScene(nivelCargar);
                 }
             }
             yield return null;

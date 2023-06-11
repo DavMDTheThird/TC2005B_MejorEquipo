@@ -39,6 +39,12 @@ public class DicSpawnPoints : MonoBehaviour
         new float[] { 0, 4, 0 },
         new float[] { -7, 0, 0 }
     };
+    float[][] Lobby =
+    {
+        new float[] { 0, -7, 0 },
+        new float[] { 0, 4, 0 },
+        new float[] { -7, 0, 0 }
+    };
 
 
 
@@ -61,5 +67,6 @@ public class DicSpawnPoints : MonoBehaviour
         myDictionary.Add("Prueba_transision_1", Prueba_transision_1);
         myDictionary.Add("Prueba_transision_2", Prueba_transision_2);
         myDictionary.Add("Prueba_transision_3", Prueba_transision_3);
+        myDictionary.Add("Lobby", Lobby);
     }
 }

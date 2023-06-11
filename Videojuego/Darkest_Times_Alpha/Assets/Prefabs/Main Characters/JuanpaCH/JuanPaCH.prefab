@@ -201,10 +201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bbbec1e92d7418da8105282be00269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://localhost:5000
-  getUsersEP: /api/user/checkpoint
+  url: localhost:5000
+  getUsersEP: /api/juego/getCheckpoint
   errorText: {fileID: 0}
   babyCharacter: 1
+  HeartContainer: []
 --- !u!114 &4499063437207991674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,9 +220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 4.5
   runSprint: 7
-  BulletPrefab: {fileID: 973528560280927882, guid: 2cc15e99684ac44818ae7f75423fcb0f, type: 3}
-  firingPoint: {fileID: 4228117553346436070}
-  fireRate: 0.5
   animator: {fileID: 5673788724312163327}
 --- !u!1 &6811699497180686095
 GameObject:
@@ -323,3 +321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5673788724312163321}
   distance: 1
+  BulletPrefab: {fileID: 0}
+  firingPoint: {fileID: 0}
+  fireRate: 0.5

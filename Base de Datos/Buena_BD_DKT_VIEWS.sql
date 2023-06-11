@@ -36,9 +36,11 @@ SELECT * FROM usuarios_nombre;
 USE darkesttimes_BD;
 SELECT * FROM darkesttimes_BD.usuarios;
 SELECT * FROM darkesttimes_BD.personaje;
+SELECT * FROM darkesttimes_BD.inventario;
 
 SELECT * FROM darkesttimes_BD.checkpoints;
 
 SELECT personaje.* FROM darkesttimes_BD.checkpoints
 JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje
-WHERE darkesttimes_BD.checkpoints.id_usuario = 1;
+WHERE darkesttimes_BD.checkpoints.id_usuario = 11 ORDER BY id_personaje DESC LIMIT 1;
+

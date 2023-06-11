@@ -250,6 +250,7 @@ app.post('/api/juego/addInventario', async (request, response)=>{
         }
     }
 })
+
 app.post('/api/juego/setCheckpoint', async (request, response)=>{
 
     let connection = null
@@ -289,7 +290,6 @@ app.post('/api/juego/setCheckpoint', async (request, response)=>{
     }
 })
 
-
 app.put('/api/juego/updateCheckpoint', async (request, response)=>{
 
     let connection = null
@@ -324,7 +324,7 @@ app.get('/api/juego/getCheckpoint', async (request, response)=>{
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT personaje.* FROM darkesttimes_BD.checkpoints JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje WHERE darkesttimes_BD.checkpoints.id_usuario = ?', [request.body['id']])
+        const [results, fields] = await connection.execute('SELECT personaje.* FROM darkesttimes_BD.checkpoints JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje WHERE darkesttimes_BD.checkpoints.id_usuario = ? ORDER BY id_personaje DESC LIMIT 1;', [request.body['id']])
 
         console.log(`${results.length} rows returned`)
         console.log(results)
