@@ -18,23 +18,48 @@ public class MovementIA : MonoBehaviour
 
     NavMeshAgent nvAgent;
 
+    [SerializeField] private float velocidad;
+    [SerializeField] private Transform[] puntosMov;
+    [SerializeField] private float distanciaMinima;
+    private int numAleatorio;
+    private SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
 
-        nvAgent = GetComponent<NavMeshAgent>();
-        nvAgent.updateRotation = false;
-        nvAgent.updateUpAxis = false;
+        // nvAgent = GetComponent<NavMeshAgent>();
+        // nvAgent.updateRotation = false;
+        // nvAgent.updateUpAxis = false;
+        numAleatorio = Random.Range(0,puntosMov.Length);
+        sprite = GetComponent<SpriteRenderer>();
+        Girar();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!isFound)
+        // if(!isFound)
+        // {
+        //     target = GameObject.FindWithTag("Player").transform;
+        //     isFound = true;
+        // }
+        // nvAgent.destination = target.position;
+
+        transform.position = Vector2.MoveTowards(transform.position,puntosMov[numAleatorio].position,velocidad*Time.deltaTime);
+        if(Vector3.Distance(transform.position,puntosMov[numAleatorio].position)<distanciaMinima)
         {
-            target = GameObject.FindWithTag("Player").transform;
-            isFound = true;
+            numAleatorio = Random.Range(0,puntosMov.Length);
+            Girar();
         }
-        nvAgent.destination = target.position;
+    }
+
+    private void Girar()
+    {
+        if(transform.position.x<puntosMov[numAleatorio].position.x){
+            sprite.flipX = true;
+        }else{
+            sprite.flipX = false;
+        }
     }
 }
