@@ -7,19 +7,18 @@ public class pickUpAtaque : MonoBehaviour
 {
     private inventarioPrueba invenPrueba;
     public GameObject itemButtom;
+    private GameObject jugador;
+    [SerializeField] GameObject linterna;
 
     private int precioObjeto;
     private int totalHuesos;
     private int valorPocionStamina = 1;
     private int valorEscudo = 2;
 
-
-    /*public GameManager gameManager;*/
-
-
     private void Start()
     {
-        invenPrueba = GameObject.FindGameObjectWithTag("Player").GetComponent<inventarioPrueba>();
+        jugador = GameObject.FindGameObjectWithTag("Player");
+        invenPrueba = jugador.GetComponent<inventarioPrueba>();
     }
 
     public void PrecioObjeto(string objeto)
@@ -34,19 +33,17 @@ public class pickUpAtaque : MonoBehaviour
                 break;
         }
     }
-
     public void AdquirirObjeto(string objeto)
     {
         PrecioObjeto(objeto);
-        itemButtom = (GameObject)Resources.Load(objeto); // va dentro del if
+        itemButtom = (GameObject)Resources.Load(objeto); 
         for (int i = 0; i < invenPrueba.slots.Length; i++)
         {
-            if (invenPrueba.isFull[i] == false && precioObjeto <= GameManager.Instance.PuntosTotales)
+            if (invenPrueba.isFull[i] == null && precioObjeto <= GameManager.Instance.PuntosTotales)
             {
                 totalHuesos = GameManager.Instance.PuntosTotales;
                 GameManager.Instance.RestarPuntos(valorPocionStamina);
-                invenPrueba.isFull[i] = true;
-                Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                 break;
             }
         }
@@ -57,10 +54,9 @@ public class pickUpAtaque : MonoBehaviour
         {
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
-                if (invenPrueba.isFull[i] == false)
+                if (invenPrueba.isFull[i] == null)
                 {
-                    invenPrueba.isFull[i] = true;
-                    Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                     Destroy(gameObject);
                     break;
                 }
@@ -70,10 +66,9 @@ public class pickUpAtaque : MonoBehaviour
         {
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
-                if (invenPrueba.isFull[i] == false)
+                if (invenPrueba.isFull[i] == null)
                 {
-                    invenPrueba.isFull[i] = true;
-                    Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                     Destroy(gameObject);
                     break;
                 }
@@ -83,10 +78,26 @@ public class pickUpAtaque : MonoBehaviour
         {
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
-                if (invenPrueba.isFull[i] == false)
+                if (invenPrueba.isFull[i] == null)
                 {
-                    invenPrueba.isFull[i] = true;
-                    Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    Destroy(gameObject);
+                    break;
+                }
+            }
+        }
+        if (collision.CompareTag("Player") && gameObject.tag == "linterna")
+        {
+            for (int i = 0; i < invenPrueba.slots.Length; i++)
+            {
+                if (invenPrueba.isFull[i] == null)
+                {
+                    GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    boton.GetComponent<Linterna>().slot = i;
+                    GameObject linternaArma = Instantiate(linterna,Vector3.zero,Quaternion.identity,jugador.transform);
+                    linternaArma.transform.localPosition = Vector3.zero;
+                    linternaArma.SetActive(false);
+                    invenPrueba.isFull[i] = linternaArma;
                     Destroy(gameObject);
                     break;
                 }

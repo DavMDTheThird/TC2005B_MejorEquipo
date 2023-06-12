@@ -28,9 +28,9 @@ public class MovementIA : MonoBehaviour
     void Start()
     {
 
-        // nvAgent = GetComponent<NavMeshAgent>();
-        // nvAgent.updateRotation = false;
-        // nvAgent.updateUpAxis = false;
+        nvAgent = GetComponent<NavMeshAgent>();
+        nvAgent.updateRotation = false;
+        nvAgent.updateUpAxis = false;
         numAleatorio = Random.Range(0,puntosMov.Length);
         sprite = GetComponent<SpriteRenderer>();
         Girar();

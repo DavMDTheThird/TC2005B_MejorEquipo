@@ -16,10 +16,9 @@ public class itemTienda : MonoBehaviour
     {
         for (int i = 0; i < invenPrueba.slots.Length; i++)
         {
-            if (invenPrueba.isFull[i] == false)
+            if (invenPrueba.isFull[i] == null)
             {
-                invenPrueba.isFull[i] = true;
-                Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                 break;
             }
         }

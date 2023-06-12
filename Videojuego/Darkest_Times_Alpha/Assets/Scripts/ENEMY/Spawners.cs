@@ -5,17 +5,16 @@ using UnityEngine;
 public class Spawners : MonoBehaviour
 {
     [SerializeField]
-    private GameObject eyeBall;
+    private GameObject enemy;
     private float eyeIntervalTime = 4.0f;
 
     void Start()
     {
-        StartCoroutine(spawnEnemy(eyeIntervalTime,eyeBall));
+        InvokeRepeating("spawnEnemy",eyeIntervalTime,eyeIntervalTime);
     }
 
-    private IEnumerator spawnEnemy(float intervalo,GameObject enemy)
+    private void spawnEnemy()
     {
-        yield return new WaitForSeconds(intervalo);
         GameObject enemyObject = Instantiate(enemy,new Vector3(Random.Range(-21.0f,21f),Random.Range(8f,16f),0),Quaternion.identity);
     }
 
