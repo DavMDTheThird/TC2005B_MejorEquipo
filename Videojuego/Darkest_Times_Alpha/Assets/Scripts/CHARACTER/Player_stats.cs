@@ -7,14 +7,22 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 
-//[System.Serializable]
-//public class UserCheckpoint
-//{
-//    public int ID_usuario;
-//    public string nombre;
-//    public string correo;
-//    public string contraseña;
-//}
+[System.Serializable]
+public class userStats
+{
+    public int vida_actual;
+    public int vida_max;
+    public int nivel;
+    public int xp;
+    public float suerte;
+    public int ataque;
+    public int stamina;
+    public int inventario;
+    public int multiplicador_monedas;
+    public int monedas;
+}
+
+
 
 public class Player_stats : MonoBehaviour
 {
@@ -23,16 +31,21 @@ public class Player_stats : MonoBehaviour
     [SerializeField] string getUsersEP;
     [SerializeField] Text errorText;
 
-    //Player_basic playerBSC;
-    public bool babyCharacter = true;
-    Player_basic playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 4.5f, 5, 5, 1, 0);
-    Player_basic player;
+    //public bool babyCharacter = true;
+    Player_basic playerBSC;
+    //Player_basic playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 5, 5, 1, 0);
 
     public List<GameObject> HeartContainer;
 
 
     void Start()
     {
+        //PlayerPrefs.SetInt("id", 1);
+        //PlayerPrefs.SetInt("id_inventario", 1);
+        //PlayerPrefs.SetInt("id_checkpoint", 1);
+
+        QueryUsers();
+
         HeartContainer.Add(GameObject.Find("0Hearts"));
         HeartContainer.Add(GameObject.Find("1Hearts"));
         HeartContainer.Add(GameObject.Find("2Hearts"));
@@ -44,11 +57,6 @@ public class Player_stats : MonoBehaviour
         HeartContainer.Add(GameObject.Find("8Hearts"));
         HeartContainer.Add(GameObject.Find("9Hearts"));
         HeartContainer.Add(GameObject.Find("10Hearts"));
-
-        QueryUsers();
-
-        ShowHearts();
-
     }
 
 
@@ -56,7 +64,7 @@ public class Player_stats : MonoBehaviour
     // Testing
     void Update()
     {
-        if (playerBSC.HP == 0)
+        if (playerBSC != null && playerBSC.HP == 0)
         {
             SceneManager.LoadScene("GameOver");
         }
@@ -78,7 +86,7 @@ public class Player_stats : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.R))
         {
-            playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 4.5f, 5, 5, 1, 0);
+            playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 5, 5, 1, 0);
         }
         if (Input.GetKeyUp(KeyCode.N))
         {
@@ -86,7 +94,9 @@ public class Player_stats : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.L))
         {
-            Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id_inventario"));
+            Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id"));
+            Debug.Log("ID del inventario: " + PlayerPrefs.GetInt("id_inventario"));
+            Debug.Log("id_checkpoint: " + PlayerPrefs.GetInt("id_checkpoint"));
         }
     }
 
@@ -148,8 +158,14 @@ public class Player_stats : MonoBehaviour
 
     IEnumerator GetUserCheckpoint()
     {
-        Debug.Log(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}");
-        using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}"))
+        //Debug.Log(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}");
+        //using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}"))
+
+        string requestUrl = url + getUsersEP + "/" + PlayerPrefs.GetInt("id").ToString();
+
+        Debug.Log(requestUrl);
+
+        using (UnityWebRequest www = UnityWebRequest.Get(requestUrl))
         {
             yield return www.SendWebRequest();
 
@@ -157,8 +173,13 @@ public class Player_stats : MonoBehaviour
             {
                 //Debug.Log("Response: " + www.downloadHandler.text);
                 string jsonString = www.downloadHandler.text;
-                player = JsonUtility.FromJson<Player_basic>(jsonString);
-                player.Info();
+                userStats playerSTATS;
+                playerSTATS = JsonUtility.FromJson<userStats>(jsonString);
+                Debug.Log(jsonString);
+
+                playerBSC = new Player_basic(playerSTATS.vida_actual, playerSTATS.vida_max, playerSTATS.nivel, playerSTATS.xp, playerSTATS.suerte, playerSTATS.ataque, playerSTATS.stamina, playerSTATS.inventario, playerSTATS.multiplicador_monedas, playerSTATS.monedas);
+
+                playerBSC.Info();
                 if (errorText != null) errorText.text = "";
             }
             else
@@ -167,6 +188,7 @@ public class Player_stats : MonoBehaviour
                 if (errorText != null) errorText.text = "Error: " + www.error;
             }
         }
+        ShowHearts();
     }
 
     //IEnumerator AddUser()
