@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Rubik+Wet+Paint&family=Silkscreen&family=Waiting+for+the+Sunrise&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Josefin+Sans:wght@100&family=Rubik+Wet+Paint&family=Silkscreen&family=Waiting+for+the+Sunrise&display=swap');
+
 @keyframes animacion{
     0%{
         transform: scale(1);
@@ -39,8 +41,10 @@ body {
     background-position: center center; /* Para que la imagen esté centrada */
     background-attachment: fixed; /* Para evitar que la imagen se mueva */
     color: white;
-    font-family: 'verdana', sans-serif;
-    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    
 }
 
 /*##################################### Barra de Navegación ##########################################*/
@@ -259,7 +263,7 @@ body {
     text-transform: uppercase;
 }
 .contenido_his{
-    font-size: 20px;
+    /*font-size: 20px;*/
     justify-items: center;
 }
 #img_backrooms{
@@ -278,7 +282,7 @@ body {
     
     display: flex;
     justify-content: center;  
-    background-color: #1c1919;
+    background-color: rgba(90, 87, 87, 0.486);
     padding: 20px 20px;
     border-radius: 20px;
     flex-wrap: wrap;
@@ -357,7 +361,7 @@ body {
 }
 .videojuego{
     display: grid;
-    background: rgba(90, 87, 87, 0.486);
+    background: #1c1919c7;
     border-radius: 20px;
     height: 100%;
     width: 700px;
@@ -410,6 +414,13 @@ body {
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 4px;
     text-transform: uppercase;
+}
+#img_nosotros{
+    width: 25vw;
+    height: 25vw;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 50%;
 }
 
 /* ################################## Controles ###########################################*/
@@ -506,26 +517,17 @@ body {
 }
 
 /* #################################### Resultados ######################################*/
-.res{
+.PruebaResultados{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #1c1919c7;
-    padding: 20px 20px;
     border-radius: 20px;
+    height: 100%;
+    background-color: rgba(90, 87, 87, 0.486);
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     margin: 2px;
 }
-.estilo_resultados{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    margin: 10px;
-    align-items: center;
-}
-.titulo_resultados{
+.resultadosTitulo{
     font-size: 50px;
     font-family: 'Silkscreen', fantasy;
     color: #802e2e;
@@ -533,54 +535,36 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.contenido_resultados{
-    font-size: 20px;
-    justify-items: center;
-}
-#img_ahorcado{
-    width: 50vw;
-    height: 25vw;
-    padding: 10px;
-    margin: 20px;
-}
-
-
-/* #################################### Equipo ###################################*/
-.euqipo{
+.resultados2contenido{
     display: flex;
-    /*justify-content: end;*/
-    height: 100%;
-    background-color: #1c1919c7;
-    padding: 20px 20px;
     border-radius: 20px;
-    flex-direction: column;
+    height: 100%;
+    padding: 20px;
     align-items: center;
     margin: 2px;
+    flex-direction: row;
 }
-.fotos_nosotros{
-    display: flex;
+.contenidoResultados{
+   
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    width: auto;
+    margin: 5px;
+    padding: 20px;
+    width: 100%;
     height: auto;
 }
-.titulo_equipo{
-    font-size: 50px;
-    font-family: 'Silkscreen', fantasy;
-    color: #802e2e;
-    text-shadow: 2px 2px 4px #000;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+.contenidoResultados ul{
+    padding:20px;
 }
-#img_nosotros{
-    width: 50vw;
+.img_Resultados{
+    width: 25vw;
     height: 25vw;
     padding: 10px;
     margin: 20px;
 }
+
+
 
 /*##################################### Footer ##########################################*/
 footer {
@@ -590,7 +574,7 @@ footer {
     padding: 10px;
     height: 100%;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 #insta{
     width: 50px;
