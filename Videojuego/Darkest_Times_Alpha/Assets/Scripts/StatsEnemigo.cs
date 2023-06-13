@@ -29,7 +29,12 @@ public class StatsEnemigo : MonoBehaviour
     {
         if (collision.gameObject.tag == "linterna")
         {
-            vida -= 10;
+            vida -= 15;
+        }
+        if (collision.gameObject.tag == "mechero")
+        {
+            vida -= 5;
         }
     }
+    
 }
