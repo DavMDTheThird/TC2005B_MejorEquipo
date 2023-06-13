@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3485692035413247539}
   - component: {fileID: 2815229593194007951}
   - component: {fileID: 8844556447165426368}
+  - component: {fileID: 2769501624866683366}
   m_Layer: 0
   m_Name: Mesa
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 333003441
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 38504255, guid: 9bb3473de122ef04b8be0357d9ac66b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,3 +112,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.875, y: 1.875}
   m_EdgeRadius: 0
+--- !u!114 &2769501624866683366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920323183216985032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
