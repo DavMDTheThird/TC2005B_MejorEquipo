@@ -297,7 +297,24 @@ app.put('/api/juego/updateCheckpoint', async (request, response)=>{
     try{
         connection = await connectToDB()
 
-        const [results, fields] = await connection.query('update users set name = ?, surname = ? where id_users= ?', [request.body['name'], request.body['surname'], request.body['userID']])
+        const [results, fields] = await connection.query(
+            'UPDATE darkesttimes_BD.personaje ' +
+            'SET vida_actual = ?, vida_max = ?, nivel = ?, xp = ?, suerte = ?, ataque = ?, stamina = ?, inventario = ?, multiplicador_monedas = ?, monedas = ? ' +
+            'WHERE id_personaje = (SELECT id_personaje FROM darkesttimes_BD.checkpoints WHERE id_usuario = ? ORDER BY id_personaje DESC LIMIT 1);',
+            [
+              request.body['vida_actual'],
+              request.body['vida_max'],
+              request.body['nivel'],
+              request.body['xp'],
+              request.body['suerte'],
+              request.body['ataque'],
+              request.body['stamina'],
+              request.body['inventario'],
+              request.body['multiplicador_monedas'],
+              request.body['monedas'],
+              request.body['id_usuario']
+            ]
+          );
         
         console.log(`${results.affectedRows} rows updated`)
         response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})
@@ -318,17 +335,17 @@ app.put('/api/juego/updateCheckpoint', async (request, response)=>{
     }
 })
 
-app.get('/api/juego/getCheckpoint', async (request, response)=>{
+app.get('/api/juego/getCheckpoint/:id', async (request, response)=>{
     let connection = null  //This variable will be used to hold the database connection object.
 
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT personaje.* FROM darkesttimes_BD.checkpoints JOIN darkesttimes_BD.personaje ON darkesttimes_BD.checkpoints.id_personaje = darkesttimes_BD.personaje.id_personaje WHERE darkesttimes_BD.checkpoints.id_usuario = ? ORDER BY id_personaje DESC LIMIT 1;', [request.body['id']])
+        const [results, fields] = await connection.execute('SELECT p.vida_actual, p.vida_max, p.nivel, p.xp, p.suerte, p.ataque, p.stamina, p.inventario, p.multiplicador_monedas, p.monedas FROM darkesttimes_BD.checkpoints AS c JOIN darkesttimes_BD.personaje AS p ON c.id_personaje = p.id_personaje WHERE c.id_usuario = ? ORDER BY p.id_personaje DESC LIMIT 1;', [request.params.id])
 
         console.log(`${results.length} rows returned`)
         console.log(results)
-        response.json(results)
+        response.json(results[0])
     }
     catch(error)
     {

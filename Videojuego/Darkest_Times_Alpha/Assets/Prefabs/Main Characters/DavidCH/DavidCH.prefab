@@ -201,10 +201,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bbbec1e92d7418da8105282be00269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://localhost:5000
-  getUsersEP: /api/user/checkpoint
+  url: localhost:5000
+  getUsersEP: /api/juego/getCheckpoint
   errorText: {fileID: 0}
-  babyCharacter: 1
+  updateCheckpointEP: /api/juego/updateCheckpoint
+  errorText_updateCheckpoint: {fileID: 0}
+  respuesta_para_updateCheckpoint:
+    mensaje: 
+    id: 0
   HeartContainer: []
 --- !u!114 &4499063437207991674
 MonoBehaviour:

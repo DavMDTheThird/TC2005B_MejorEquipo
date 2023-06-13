@@ -8,10 +8,8 @@ public class Linterna : MonoBehaviour
     private GameObject jugador;
     inventarioPrueba inventario;
     private bool equipada;
-    public float coolDownL;
-    private int atkLinterna = 15;// Atk de la linterna
+    private float coolDownL;
     public bool IsBroken = false;// Booleano que verifica si esta apunto de romperse
-
     public int slot;
 
     // Start is called before the first frame update

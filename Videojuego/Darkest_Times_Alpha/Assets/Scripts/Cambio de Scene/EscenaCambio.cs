@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class EscenaCambio : MonoBehaviour
 {
     public string CargarEscena;
+    private Player_stats player;
 
     public void OnTriggerEnter2D(Collider2D otro)
     {
-        if(otro.CompareTag("Player") && !otro.isTrigger)
+        Debug.Log(otro);
+        player = otro.GetComponent<Player_stats>();
+        Debug.Log(player);
+        player.PutCheckpoint();
+
+        if (otro.CompareTag("Player") && !otro.isTrigger)
         {
             SceneManager.LoadScene(CargarEscena);
         }

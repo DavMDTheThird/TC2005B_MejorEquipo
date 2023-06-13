@@ -9,6 +9,7 @@ public class pickUpAtaque : MonoBehaviour
     public GameObject itemButtom;
     private GameObject jugador;
     [SerializeField] GameObject linterna;
+    [SerializeField] GameObject mechero;
 
     private int precio;
     private int totalHuesos;
@@ -116,6 +117,23 @@ public class pickUpAtaque : MonoBehaviour
                     linternaArma.transform.localPosition = Vector3.zero;
                     linternaArma.SetActive(false);
                     invenPrueba.isFull[i] = linternaArma;
+                    Destroy(gameObject);
+                    break;
+                }
+            }
+        }
+        if (collision.CompareTag("Player") && gameObject.tag == "mechero")
+        {
+            for (int i = 0; i < invenPrueba.slots.Length; i++)
+            {
+                if (invenPrueba.isFull[i] == null)
+                {
+                    GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    boton.GetComponent<Mechero>().slot = i;
+                    GameObject mecheroArma = Instantiate(mechero,Vector3.zero,Quaternion.identity,jugador.transform);
+                    mecheroArma.transform.localPosition = Vector3.zero;
+                    mecheroArma.SetActive(false);
+                    invenPrueba.isFull[i] = mecheroArma;
                     Destroy(gameObject);
                     break;
                 }
