@@ -289,7 +289,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.55
+  m_fontSize: 41.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_fontSize
-      value: 10.6
+      value: 16.15
       objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_fontAsset
@@ -652,10 +652,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1517250314}
     m_Modifications:
+    - target: {fileID: 790203171131181806, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831616, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -3.4998932
       objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_text
+      value: 'Hisotria:
+
+        Haakon es un vikingo, que despues de una invasion
+        masiva contra su pueblo, logran capturarlo. En sus ultimos gritos, juro cobrar
+        venganza. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_fontSize
+      value: 15.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d24f9b5b0b74e04b938b698c1dac722, type: 2}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8969187747699180541, guid: 8d24f9b5b0b74e04b938b698c1dac722, type: 2}
     - target: {fileID: 8381977791177402033, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1030,7 +1054,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.3
+  m_fontSize: 18.2
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1778,7 +1802,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.85
+  m_fontSize: 14.65
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1835,10 +1859,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1517250314}
     m_Modifications:
+    - target: {fileID: 790203171131181806, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831616, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -3.4999695
       objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_text
+      value: "Hisotria:\nAndreas se encontraba hackeando consiguiendo numeros de
+        tarjeta y contrase\xF1as, hasta que escucho un fuerte sonido en la puerta.
+        Era la Interpol. Se llevaron a Andreas con una bolsa en la cabeza y lo siguiente
+        que supo es que desperto aqui."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_fontSize
+      value: 12.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d24f9b5b0b74e04b938b698c1dac722, type: 2}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8969187747699180541, guid: 8d24f9b5b0b74e04b938b698c1dac722, type: 2}
     - target: {fileID: 8381977791177402033, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1882,6 +1933,10 @@ PrefabInstance:
     - target: {fileID: 8381977791177402034, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 4.9979553
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381977791317616499, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8381977791976165645, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

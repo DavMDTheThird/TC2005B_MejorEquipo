@@ -16,7 +16,7 @@ public class Slot : MonoBehaviour
     {
         if(transform.childCount<=0)
         {
-            invenPrueba.isFull[i] = false;
+            invenPrueba.isFull[i] = null;
         }
     }
     public void dropItem()

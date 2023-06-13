@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6974052470001933705}
   - component: {fileID: 916629921996821882}
   - component: {fileID: 7500231803426068997}
+  - component: {fileID: -4421503166165300088}
   m_Layer: 5
   m_Name: BotonAtaque
   m_TagString: Untagged
@@ -121,7 +122,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6974052470001933705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4421503166165300088}
+        m_TargetAssemblyTypeName: ConsumirPocion, Assembly-CSharp
+        m_MethodName: UsarObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7500231803426068997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,3 +148,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 4353241574865544107, guid: b5d435c5eca1a7243b3e4e268b60e085, type: 3}
+--- !u!114 &-4421503166165300088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765467585225477537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff8a0a2f5c5aef43a41109670cf2504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetosPocions: 2
+  vida: {fileID: 0}

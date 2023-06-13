@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class inventarioPrueba : MonoBehaviour
 {
-    public bool[] isFull;
+    public GameObject[] isFull;
     public GameObject[] slots;
 
     public GameObject inventario;
