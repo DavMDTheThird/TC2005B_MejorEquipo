@@ -29,16 +29,16 @@ public class pickUpAtaque : MonoBehaviour
         switch (objeto)
         {
             case "BotonStamina":
-                precio = 1;
+                precio = 15;
                 break;
             case "BotonEscudo":
-                precio = 2;
+                precio = 20;
                 break;
             case "BotonAtaque":
-                precio = 1;
+                precio = 15;
                 break;
             case "BotonVida":
-                precio = 1;
+                precio = 10;
                 break;
         }
     }

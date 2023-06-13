@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -237.29675, y: 97.18747}
+  m_AnchoredPosition: {x: -231, y: 89}
   m_SizeDelta: {x: 458.5149, y: 175.0815}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &598810593
@@ -1459,9 +1459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261674b685a4b654abfcd1a4413de230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 99999
-  objectToFollow: {fileID: 0}
+  target: {fileID: 0}
+  smoothing: 0
   yOffset: 1
+  maxPosition: {x: 0, y: 0}
+  minPosition: {x: 0, y: 0}
 --- !u!1 &2002866829
 GameObject:
   m_ObjectHideFlags: 0
