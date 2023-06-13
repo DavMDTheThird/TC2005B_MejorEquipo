@@ -39,12 +39,12 @@ public class MovementIA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(!isFound)
-        // {
-        //     target = GameObject.FindWithTag("Player").transform;
-        //     isFound = true;
-        // }
-        // nvAgent.destination = target.position;
+         if(!isFound)
+         {
+             target = GameObject.FindWithTag("Player").transform;
+             isFound = true;
+        }
+        nvAgent.destination = target.position;
 
         transform.position = Vector2.MoveTowards(transform.position,puntosMov[numAleatorio].position,velocidad*Time.deltaTime);
         if(Vector3.Distance(transform.position,puntosMov[numAleatorio].position)<distanciaMinima)
