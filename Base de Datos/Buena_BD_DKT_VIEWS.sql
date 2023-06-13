@@ -48,5 +48,7 @@ SELECT p.vida_actual, p.vida_max, p.nivel, p.xp, p.suerte, p.ataque, p.stamina,
        p.inventario, p.multiplicador_monedas, p.monedas
 FROM darkesttimes_BD.checkpoints AS c
 JOIN darkesttimes_BD.personaje AS p ON c.id_personaje = p.id_personaje
-WHERE c.id_usuario = 6 ORDER BY p.id_personaje DESC LIMIT 1;
+WHERE c.id_usuario = 1 ORDER BY p.id_personaje DESC LIMIT 1;
+
+
 

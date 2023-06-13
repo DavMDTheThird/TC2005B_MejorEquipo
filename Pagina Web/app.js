@@ -297,7 +297,24 @@ app.put('/api/juego/updateCheckpoint', async (request, response)=>{
     try{
         connection = await connectToDB()
 
-        const [results, fields] = await connection.query('update users set name = ?, surname = ? where id_users= ?', [request.body['name'], request.body['surname'], request.body['userID']])
+        const [results, fields] = await connection.query(
+            'UPDATE darkesttimes_BD.personaje ' +
+            'SET vida_actual = ?, vida_max = ?, nivel = ?, xp = ?, suerte = ?, ataque = ?, stamina = ?, inventario = ?, multiplicador_monedas = ?, monedas = ? ' +
+            'WHERE id_personaje = (SELECT id_personaje FROM darkesttimes_BD.checkpoints WHERE id_usuario = ? ORDER BY id_personaje DESC LIMIT 1);',
+            [
+              request.body['vida_actual'],
+              request.body['vida_max'],
+              request.body['nivel'],
+              request.body['xp'],
+              request.body['suerte'],
+              request.body['ataque'],
+              request.body['stamina'],
+              request.body['inventario'],
+              request.body['multiplicador_monedas'],
+              request.body['monedas'],
+              request.body['id_usuario']
+            ]
+          );
         
         console.log(`${results.affectedRows} rows updated`)
         response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})

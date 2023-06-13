@@ -18,10 +18,9 @@ public class userStats
     public int ataque;
     public int stamina;
     public int inventario;
-    public int multiplicador_monedas;
+    public float multiplicador_monedas;
     public int monedas;
 }
-
 
 
 public class Player_stats : MonoBehaviour
@@ -30,6 +29,11 @@ public class Player_stats : MonoBehaviour
     [SerializeField] string url;
     [SerializeField] string getUsersEP;
     [SerializeField] Text errorText;
+
+    [SerializeField] string updateCheckpointEP;
+    [SerializeField] Text errorText_updateCheckpoint;
+
+    public Response respuesta_para_updateCheckpoint;
 
     //public bool babyCharacter = true;
     Player_basic playerBSC;
@@ -40,7 +44,7 @@ public class Player_stats : MonoBehaviour
 
     void Start()
     {
-        //PlayerPrefs.SetInt("id", 1);
+        PlayerPrefs.SetInt("id", 1);
         //PlayerPrefs.SetInt("id_inventario", 1);
         //PlayerPrefs.SetInt("id_checkpoint", 1);
 
@@ -71,6 +75,10 @@ public class Player_stats : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.T))
         {
             TakeDamage(1);
+        }
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            TakeDamage(-1);
         }
         if (Input.GetKeyUp(KeyCode.G))
         {
@@ -150,10 +158,10 @@ public class Player_stats : MonoBehaviour
         StartCoroutine(GetUserCheckpoint());
     }
 
-    //public void InsertNewUser()
-    //{
-    //    StartCoroutine(AddUser());
-    //}
+    public void PutCheckpoint()
+    {
+        StartCoroutine(UpdateCheckpoint());
+    }
 
 
     IEnumerator GetUserCheckpoint()
@@ -190,6 +198,60 @@ public class Player_stats : MonoBehaviour
         }
         ShowHearts();
     }
+
+
+    IEnumerator UpdateCheckpoint()
+    {
+        userStats User = new userStats();
+
+        User.vida_actual = playerBSC.HP;
+        User.vida_max = playerBSC.MAXHP;
+        User.nivel = 1;
+        User.xp = playerBSC.XP;
+        User.suerte = playerBSC.LCK;
+        User.ataque = playerBSC.ATK;
+        User.stamina = playerBSC.Stamina;
+        User.inventario = playerBSC.Inventory;
+        User.multiplicador_monedas = playerBSC.TimesMoney;
+        User.monedas = playerBSC.Money;
+
+
+        string jsonData = JsonUtility.ToJson(User);
+
+        //Debug.Log(url + EP_stCheckpoint);
+        Debug.Log(jsonData);
+
+
+        using (UnityWebRequest www = UnityWebRequest.Put(url + updateCheckpointEP, jsonData))
+        {
+            //www.method = "POST";
+            www.SetRequestHeader("Content-Type", "application/json");
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                string responseJson = www.downloadHandler.text;
+                Debug.Log("Response: " + responseJson);
+                respuesta_para_updateCheckpoint = JsonUtility.FromJson<Response>(responseJson);
+
+                if (errorText_updateCheckpoint != null) errorText_updateCheckpoint.text = "";
+
+                //PlayerPrefs.SetInt("id_checkpoint", respuesta_para_ID_checkpoint.id);
+                //Debug.Log("id_checkpoint: " + PlayerPrefs.GetInt("id_checkpoint"));
+            }
+            else
+            {
+                Debug.Log("Error: " + www.error);
+                if (errorText_updateCheckpoint != null) errorText_updateCheckpoint.text = "Error: " + www.error;
+            }
+
+
+            Debug.Log("HOLA");
+        }
+    }
+
+
+
 
     //IEnumerator AddUser()
     //{
