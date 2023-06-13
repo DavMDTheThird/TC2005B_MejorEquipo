@@ -10,7 +10,7 @@ public class pickUpAtaque : MonoBehaviour
     private GameObject jugador;
     [SerializeField] GameObject linterna;
 
-    private int precioObjeto;
+    private int precio;
     private int totalHuesos;
     private int valorPocionStamina = 1;
     private int valorEscudo = 2;
@@ -26,10 +26,10 @@ public class pickUpAtaque : MonoBehaviour
         switch (objeto)
         {
             case "BotonStamina":
-                precioObjeto = 1;
+                precio = 1;
                 break;
             case "BotonEscudo":
-                precioObjeto = 2;
+                precio = 2;
                 break;
         }
     }
@@ -39,10 +39,10 @@ public class pickUpAtaque : MonoBehaviour
         itemButtom = (GameObject)Resources.Load(objeto); 
         for (int i = 0; i < invenPrueba.slots.Length; i++)
         {
-            if (invenPrueba.isFull[i] == null && precioObjeto <= GameManager.Instance.PuntosTotales)
+            if (invenPrueba.isFull[i] == null && precio <= GameManager.Instance.PuntosTotales)
             {
                 totalHuesos = GameManager.Instance.PuntosTotales;
-                GameManager.Instance.RestarPuntos(valorPocionStamina);
+                GameManager.Instance.RestarPuntos(precio);
                 invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                 break;
             }

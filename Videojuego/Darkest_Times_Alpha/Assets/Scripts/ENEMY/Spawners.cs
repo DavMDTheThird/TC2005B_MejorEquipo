@@ -6,7 +6,7 @@ public class Spawners : MonoBehaviour
 {
     [SerializeField]
     private GameObject enemy;
-    private float eyeIntervalTime = 4.0f;
+    private float eyeIntervalTime = 30.0f;
 
     void Start()
     {

@@ -18,6 +18,7 @@ TagManager:
   - mechero
   - Vida
   - EnemigoObs1
+  - eyeBall
   layers:
   - Default
   - TransparentFX

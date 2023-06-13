@@ -111,7 +111,14 @@ public class Ch_1_movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemigos")
+        // if (collision.gameObject.tag == "Enemigos")
+        // {
+        //     //Debug.Log("Te hizo daino: " + collision.gameObject.name);
+        //     playerStats.TakeDamage(1);
+
+        //     //Destroy(collision.gameObject); // se tiene que poner el collider y no el tag
+        // }
+        if (collision.gameObject.tag == "eyeBall")
         {
             //Debug.Log("Te hizo daino: " + collision.gameObject.name);
             playerStats.TakeDamage(1);

@@ -31,6 +31,7 @@ public class Linterna : MonoBehaviour
             }
             if(coolDownL <= 0){
                 this.IsBroken = true;
+                Destroy(inventario.isFull[slot]);
                 Destroy(gameObject);
                 Debug.Log("Se rompe");
             }
