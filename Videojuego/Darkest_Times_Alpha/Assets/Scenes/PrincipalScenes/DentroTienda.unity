@@ -7749,6 +7749,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 614835980192895440, guid: d9800352cb046d7479a22329997b9a9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 614835981698673923, guid: d9800352cb046d7479a22329997b9a9d, type: 3}
       propertyPath: itemButtom
       value: 
