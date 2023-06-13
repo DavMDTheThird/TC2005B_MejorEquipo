@@ -31,6 +31,12 @@ public class pickUpAtaque : MonoBehaviour
             case "BotonEscudo":
                 precio = 2;
                 break;
+            case "BotonAtaque":
+                precio = 1;
+                break;
+            case "BotonVida":
+                precio = 1;
+                break;
         }
     }
     public void AdquirirObjeto(string objeto)
@@ -75,6 +81,18 @@ public class pickUpAtaque : MonoBehaviour
             }
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleS")
+        {
+            for (int i = 0; i < invenPrueba.slots.Length; i++)
+            {
+                if (invenPrueba.isFull[i] == null)
+                {
+                    invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    Destroy(gameObject);
+                    break;
+                }
+            }
+        }
+        if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleV")
         {
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
