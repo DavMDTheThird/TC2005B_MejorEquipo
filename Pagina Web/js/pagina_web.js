@@ -14,7 +14,7 @@ function main()
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/user_maxWins`,{
+        let response = await fetch(`/api/user_maxWins`,{
             method: 'GET'
         })
         
@@ -64,7 +64,7 @@ function main()
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/mobs_mostKills`,{
+        let response = await fetch(`/api/mobs_mostKills`,{
             method: 'GET'
         })
         
@@ -135,7 +135,7 @@ function main()
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/user_masViciados`,{
+        let response = await fetch(`/api/user_masViciados`,{
             method: 'GET'
         })
         
@@ -214,7 +214,7 @@ function main()
 
         console.log(dataObj)
 
-        let response = await fetch(`http://localhost:5000/api/user_masMalo`,{
+        let response = await fetch(`/api/user_masMalo`,{
             method: 'GET'
         })
         

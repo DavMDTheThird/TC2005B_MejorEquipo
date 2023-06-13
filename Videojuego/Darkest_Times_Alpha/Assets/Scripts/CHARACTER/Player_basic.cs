@@ -6,20 +6,19 @@ using UnityEngine;
 //Esto no tenia el MonoBehaviour
 public class Player_basic
 {
-    private short _hp;
-    private short _maxhp;
-    private short _lvl;
-    private short _xp;
-    private short _lck;
-    private short _atk;
-    private float _spd; //Borrar 
-    private short _stamina;
-    private short _inventory;
+    private int _hp;
+    private int _maxhp;
+    private int _lvl;
+    private int _xp;
+    private float _lck;
+    private int _atk;
+    private int _stamina;
+    private int _inventory;
     private float _TimesMoney;
-    private short _money;
+    private int _money;
 
     //Modificadores Get y Set de los stats del personaje
-    public short HP{
+    public int HP{
         get{
             return _hp;
         }
@@ -27,7 +26,7 @@ public class Player_basic
             _hp = value;
         }
     }
-    public short MAXHP{
+    public int MAXHP{
         get{
             return _maxhp;
         }
@@ -35,7 +34,7 @@ public class Player_basic
             _maxhp = value;
         }
     }
-    public short LVL{
+    public int LVL{
         get{
             return _lvl;
         }
@@ -43,7 +42,7 @@ public class Player_basic
             _lvl = value;
         }
     }
-    public short XP{
+    public int XP{
         get{
             return _xp;
         }
@@ -51,7 +50,8 @@ public class Player_basic
             _xp = value;
         }
     }
-    public short LCK{
+    public float LCK
+    {
         get{
             return _lck;
         }
@@ -59,7 +59,7 @@ public class Player_basic
             _lck = value;
         }
     }
-    public short ATK{
+    public int ATK{
         get{
             return _atk;
         }
@@ -67,15 +67,7 @@ public class Player_basic
             _atk = value;
         }
     }
-    public float SPD{
-        get{
-            return _spd;
-        }
-        set{
-            _spd = value;
-        }
-    }
-    public short Stamina{
+    public int Stamina{
         get{
             return _stamina;
         }
@@ -83,7 +75,7 @@ public class Player_basic
             _stamina = value;
         }
     }
-    public short Inventory{
+    public int Inventory{
         get{
             return _inventory;
         }
@@ -102,7 +94,7 @@ public class Player_basic
             _TimesMoney = value;
         }
     }
-    public short Money{
+    public int Money{
         get{
             return _money;
         }
@@ -120,19 +112,17 @@ public class Player_basic
     /// <param name="xp">First value</param>
     /// <param name="Luck">Second value</param>
     /// <param name="Attack">Third value</param>
-    /// <param name="Speed">Fourth value</param>
     /// <param name="Stamina">Fifth value</param>
     /// <param name="Inventory">Sixth value</param>
     /// <param name="Money">Seventh value</param>
     /// <returns> Crea un jugador base</returns>
-    public Player_basic(short hp, short maxhp, short lvl, short xp, short lck, short atk, float spd, short stamina, short inventory, float timesMoney, short money){
+    public Player_basic(int hp, int maxhp, int lvl, int xp, float lck, int atk, int stamina, int inventory, float timesMoney, int money){
         HP = hp;
         MAXHP = maxhp;
         LVL = lvl;
         XP = xp;
         LCK = lck;
         ATK = atk;
-        SPD = spd;
         Stamina = stamina;
         Inventory = inventory;
         TimesMoney = timesMoney;
@@ -147,7 +137,6 @@ public class Player_basic
         XP = 0;
         LCK = 0;
         ATK = 0;
-        SPD = 0;
         Stamina = 0;
         Inventory = 0;
         TimesMoney = 0;
@@ -159,7 +148,6 @@ public class Player_basic
                   "Current level: " + LVL + " next level at " + XP + " xp\n" +
                   "Luck is " + LCK + "\n" +
                   "Attack is " + ATK + "\n" +
-                  "Speed is " + SPD + "\n" +
                   "Stamina is " + Stamina + "\n" +
                   "Inventory Space is " + Inventory + "\n" +
                   "Money is " + Money + " increased by: " + TimesMoney +"\n");
