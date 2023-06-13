@@ -21,6 +21,22 @@ public class userStats
     public float multiplicador_monedas;
     public int monedas;
 }
+[System.Serializable]
+public class userStatsID
+{
+    public int vida_actual;
+    public int vida_max;
+    public int nivel;
+    public int xp;
+    public float suerte;
+    public int ataque;
+    public int stamina;
+    public int inventario;
+    public float multiplicador_monedas;
+    public int monedas;
+    public int id;
+
+}
 
 
 public class Player_stats : MonoBehaviour
@@ -45,6 +61,7 @@ public class Player_stats : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("id", 1);
+        PlayerPrefs.SetInt("personaje", 1);
         //PlayerPrefs.SetInt("id_inventario", 1);
         //PlayerPrefs.SetInt("id_checkpoint", 1);
 
@@ -202,7 +219,7 @@ public class Player_stats : MonoBehaviour
 
     IEnumerator UpdateCheckpoint()
     {
-        userStats User = new userStats();
+        userStatsID User = new userStatsID();
 
         User.vida_actual = playerBSC.HP;
         User.vida_max = playerBSC.MAXHP;
@@ -214,6 +231,7 @@ public class Player_stats : MonoBehaviour
         User.inventario = playerBSC.Inventory;
         User.multiplicador_monedas = playerBSC.TimesMoney;
         User.monedas = playerBSC.Money;
+        User.id = PlayerPrefs.GetInt("id");
 
 
         string jsonData = JsonUtility.ToJson(User);

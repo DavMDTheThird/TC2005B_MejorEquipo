@@ -17,7 +17,7 @@ public class StartCharacter
     public short _maxhp;
     public short _lvl;
     public short _xp;
-    public short _lck;
+    public float _lck;
     public short _atk;
     public short _stamina;
     public short _inventory;
@@ -94,15 +94,15 @@ public class CharacterSelect : MonoBehaviour
         StartCharacter stCharacter = new StartCharacter();
 
         stCharacter.personaje = 1;
-        stCharacter._hp = 0;
-        stCharacter._maxhp = 0;
+        stCharacter._hp = 8;
+        stCharacter._maxhp = 8;
         stCharacter._lvl = 0;
         stCharacter._xp = 0;
-        stCharacter._lck = 0;
-        stCharacter._atk = 0;
-        stCharacter._stamina = 0;
-        stCharacter._inventory = 0;
-        stCharacter._TimesMoney = 0;
+        stCharacter._lck = .85F;
+        stCharacter._atk = 5;
+        stCharacter._stamina = 3;
+        stCharacter._inventory = 5;
+        stCharacter._TimesMoney = 1F;
         stCharacter._money = 0;
 
 
@@ -150,15 +150,15 @@ public class CharacterSelect : MonoBehaviour
         StartCharacter stCharacter = new StartCharacter();
 
         stCharacter.personaje = 1;
-        stCharacter._hp = 0;
-        stCharacter._maxhp = 0;
+        stCharacter._hp = 6;
+        stCharacter._maxhp = 6;
         stCharacter._lvl = 0;
         stCharacter._xp = 0;
-        stCharacter._lck = 0;
-        stCharacter._atk = 0;
-        stCharacter._stamina = 0;
-        stCharacter._inventory = 0;
-        stCharacter._TimesMoney = 0;
+        stCharacter._lck = 0.8F;
+        stCharacter._atk = 4;
+        stCharacter._stamina = 4;
+        stCharacter._inventory = 5;
+        stCharacter._TimesMoney = 1.5F;
         stCharacter._money = 0;
 
 
@@ -206,16 +206,16 @@ public class CharacterSelect : MonoBehaviour
         StartCharacter stCharacter = new StartCharacter();
 
         stCharacter.personaje = 1;
-        stCharacter._hp = 0;
-        stCharacter._maxhp = 0;
+        stCharacter._hp = 6;
+        stCharacter._maxhp = 6;
         stCharacter._lvl = 0;
         stCharacter._xp = 0;
-        stCharacter._lck = 0;
-        stCharacter._atk = 0;
-        stCharacter._stamina = 0;
-        stCharacter._inventory = 0;
-        stCharacter._TimesMoney = 0;
-        stCharacter._money = 0;
+        stCharacter._lck = 0.5F;
+        stCharacter._atk = 5;
+        stCharacter._stamina = 5;
+        stCharacter._inventory = 5;
+        stCharacter._TimesMoney = 2F;
+        stCharacter._money = 10;
 
 
         string jsonData = JsonUtility.ToJson(stCharacter);
@@ -262,15 +262,15 @@ public class CharacterSelect : MonoBehaviour
         StartCharacter stCharacter = new StartCharacter();
 
         stCharacter.personaje = 1;
-        stCharacter._hp = 0;
-        stCharacter._maxhp = 0;
+        stCharacter._hp = 8;
+        stCharacter._maxhp = 8;
         stCharacter._lvl = 0;
         stCharacter._xp = 0;
-        stCharacter._lck = 0;
-        stCharacter._atk = 0;
-        stCharacter._stamina = 0;
-        stCharacter._inventory = 0;
-        stCharacter._TimesMoney = 0;
+        stCharacter._lck = 0.85F;
+        stCharacter._atk = 4;
+        stCharacter._stamina = 3;
+        stCharacter._inventory = 5;
+        stCharacter._TimesMoney = 1F;
         stCharacter._money = 0;
 
 
