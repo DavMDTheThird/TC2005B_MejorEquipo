@@ -108,8 +108,8 @@ public class CharacterSelect : MonoBehaviour
 
         string jsonData = JsonUtility.ToJson(stCharacter);
 
-        Debug.Log(url + EP_stCharacter);
-        Debug.Log(jsonData);
+        //Debug.Log(url + EP_stCharacter);
+        //Debug.Log(jsonData);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url + EP_stCharacter, jsonData))
         {
@@ -164,8 +164,8 @@ public class CharacterSelect : MonoBehaviour
 
         string jsonData = JsonUtility.ToJson(stCharacter);
 
-        Debug.Log(url + EP_stCharacter);
-        Debug.Log(jsonData);
+        //Debug.Log(url + EP_stCharacter);
+        //Debug.Log(jsonData);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url + EP_stCharacter, jsonData))
         {
@@ -220,8 +220,8 @@ public class CharacterSelect : MonoBehaviour
 
         string jsonData = JsonUtility.ToJson(stCharacter);
 
-        Debug.Log(url + EP_stCharacter);
-        Debug.Log(jsonData);
+        //Debug.Log(url + EP_stCharacter);
+        //Debug.Log(jsonData);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url + EP_stCharacter, jsonData))
         {
@@ -276,8 +276,8 @@ public class CharacterSelect : MonoBehaviour
 
         string jsonData = JsonUtility.ToJson(stCharacter);
 
-        Debug.Log(url + EP_stCharacter);
-        Debug.Log(jsonData);
+        //Debug.Log(url + EP_stCharacter);
+        //Debug.Log(jsonData);
 
         using (UnityWebRequest www = UnityWebRequest.Put(url + EP_stCharacter, jsonData))
         {

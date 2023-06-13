@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 82518622372934604}
   - component: {fileID: 7734603876317447748}
   - component: {fileID: 7407055193695724883}
+  - component: {fileID: 413266158796801153}
   m_Layer: 8
   m_Name: gun
   m_TagString: Untagged
@@ -252,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 6811699497180686095}
   m_LocalRotation: {x: -0, y: -0, z: 0.36871544, w: 0.92954236}
   m_LocalPosition: {x: 0.513, y: -0.479, z: 0}
-  m_LocalScale: {x: 0.09, y: 0.09, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4228117553346436070}
@@ -303,7 +304,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: 906a1c2313319d1429d880749c282424, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -324,7 +325,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5673788724312163321}
-  distance: 2.5
+  distance: 2
   BulletPrefab: {fileID: 973528560280927882, guid: 2cc15e99684ac44818ae7f75423fcb0f, type: 3}
   firingPoint: {fileID: 0}
   fireRate: 0.5
+--- !u!136 &413266158796801153
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811699497180686095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23893741
+  m_Height: 16.35727
+  m_Direction: 1
+  m_Center: {x: 0.1831559, y: -7.038742, z: 0}
