@@ -19,6 +19,7 @@ TagManager:
   - Vida
   - EnemigoObs1
   - eyeBall
+  - BossFinal
   - bengalas
   layers:
   - Default
