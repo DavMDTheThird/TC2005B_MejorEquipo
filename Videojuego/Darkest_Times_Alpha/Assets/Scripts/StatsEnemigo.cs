@@ -35,6 +35,25 @@ public class StatsEnemigo : MonoBehaviour
         {
             vida -= 5;
         }
+        if (collision.gameObject.tag == "antorcha")
+        {
+            vida -= 10;
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "linterna")
+        {
+            vida -= 15;
+        }
+        if (collision.gameObject.tag == "mechero")
+        {
+            vida -= 5;
+        }
+        if (collision.gameObject.tag == "antorcha")
+        {
+            vida -= 10;
+        }
     }
     
 }

@@ -19,6 +19,7 @@ TagManager:
   - Vida
   - EnemigoObs1
   - eyeBall
+  - bengalas
   layers:
   - Default
   - TransparentFX

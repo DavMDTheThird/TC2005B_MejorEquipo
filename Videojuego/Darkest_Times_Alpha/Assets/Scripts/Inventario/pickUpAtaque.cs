@@ -10,6 +10,8 @@ public class pickUpAtaque : MonoBehaviour
     private GameObject jugador;
     [SerializeField] GameObject linterna;
     [SerializeField] GameObject mechero;
+    [SerializeField] GameObject antorcha;
+    [SerializeField] GameObject bengala;
 
     private int precio;
     private int totalHuesos;
@@ -112,7 +114,7 @@ public class pickUpAtaque : MonoBehaviour
                 {
                     GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                     boton.GetComponent<Mechero>().slot = i;
-                    GameObject mecheroArma = Instantiate(mechero,Vector3.zero,Quaternion.identity,jugador.transform);
+                    GameObject mecheroArma = Instantiate(mechero,jugador.transform,false);
                     mecheroArma.transform.localPosition = Vector3.zero;
                     mecheroArma.SetActive(false);
                     invenPrueba.isFull[i] = mecheroArma;
@@ -121,5 +123,39 @@ public class pickUpAtaque : MonoBehaviour
                 }
             }
         }
+        if (collision.CompareTag("Player") && gameObject.tag == "antorcha")
+        {
+            for (int i = 0; i < invenPrueba.slots.Length; i++)
+            {
+                if (invenPrueba.isFull[i] == null)
+                {
+                    GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    boton.GetComponent<Antorcha>().slot = i;
+                    GameObject antorchaArma = Instantiate(antorcha,jugador.transform,false);
+                    antorchaArma.transform.localPosition = Vector3.zero;
+                    antorchaArma.SetActive(false);
+                    invenPrueba.isFull[i] = antorchaArma;
+                    Destroy(gameObject);
+                    break;
+                }
+            }
+        }
+        // if (collision.CompareTag("Player") && gameObject.tag == "bengalas")
+        // {
+        //     for (int i = 0; i < invenPrueba.slots.Length; i++)
+        //     {
+        //         if (invenPrueba.isFull[i] == null)
+        //         {
+        //             GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+        //             boton.GetComponent<Bengala>().slot = i;
+        //             GameObject bengalaArma = Instantiate(bengala,jugador.transform,false);
+        //             bengalaArma.transform.localPosition = Vector3.zero;
+        //             bengalaArma.SetActive(false);
+        //             invenPrueba.isFull[i] = bengalaArma;
+        //             Destroy(gameObject);
+        //             break;
+        //         }
+        //     }
+        // }
     }
 }
