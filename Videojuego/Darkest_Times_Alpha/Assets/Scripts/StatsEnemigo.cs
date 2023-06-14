@@ -11,7 +11,7 @@ public class StatsEnemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerStats = GetComponent<Player_stats>();
+        //playerStats = GetComponent<Player_stats>();
         if(enemigo.tag == "eyeBall"){
             vida = 20;
         }
@@ -62,5 +62,10 @@ public class StatsEnemigo : MonoBehaviour
             vida -= 10;
         }
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+
 }

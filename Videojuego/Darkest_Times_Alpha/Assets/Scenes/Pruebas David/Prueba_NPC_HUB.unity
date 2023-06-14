@@ -621,7 +621,7 @@ Transform:
   - {fileID: 1584183885}
   - {fileID: 1814221169}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &758831436
 PrefabInstance:
@@ -1599,13 +1599,12 @@ GameObject:
   - component: {fileID: 2070516983}
   - component: {fileID: 2070516982}
   - component: {fileID: 2070516987}
-  - component: {fileID: 2070516981}
   - component: {fileID: 2070516984}
   - component: {fileID: 2070516985}
   - component: {fileID: 2070516986}
   m_Layer: 7
   m_Name: spider
-  m_TagString: Enemigos
+  m_TagString: spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1677,18 +1676,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2070516981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070516978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffdbdeebf373416bb07cf0a981dd356, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2070516982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1801,12 +1788,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.010637522, y: 0}
   serializedVersion: 2
-  m_Radius: 0.36988187
+  m_Radius: 0.56
 --- !u!114 &400839299769583581
 MonoBehaviour:
   m_ObjectHideFlags: 0
