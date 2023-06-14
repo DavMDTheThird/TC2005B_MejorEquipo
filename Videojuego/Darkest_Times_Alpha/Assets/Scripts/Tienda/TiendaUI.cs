@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TiendaUI : MonoBehaviour
 {
-    [SerializeField] private GameObject panelEquipo;
+    // [SerializeField] private GameObject panelEquipo;
     private pickUpAtaque inventario;
     private inventarioPrueba inventarioCheck;
     private int totalMonedas;

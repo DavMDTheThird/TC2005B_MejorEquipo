@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linterna: {fileID: 0}
-  coolDownL: 0
   IsBroken: 0
   slot: 0
 --- !u!114 &7891371100466022905

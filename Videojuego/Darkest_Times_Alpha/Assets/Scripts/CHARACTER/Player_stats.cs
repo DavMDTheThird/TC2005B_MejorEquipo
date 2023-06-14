@@ -34,7 +34,7 @@ public class userStatsID
     public int inventario;
     public float multiplicador_monedas;
     public int monedas;
-    public int id;
+    public int id_usuario;
 
 }
 
@@ -61,7 +61,10 @@ public class Player_stats : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("id", 1);
+        PlayerPrefs.SetInt("id_personaje", 1);
         PlayerPrefs.SetInt("personaje", 1);
+        PlayerPrefs.SetInt("id_inventario", 1);
+        PlayerPrefs.SetInt("id_checkpoint", 1);
 
         QueryUsers();
 
@@ -112,8 +115,17 @@ public class Player_stats : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.L))
         {
             Debug.Log("ID del usuario: " + PlayerPrefs.GetInt("id"));
+            Debug.Log("ID del personaje: " + PlayerPrefs.GetInt("id_personaje"));
             Debug.Log("ID del inventario: " + PlayerPrefs.GetInt("id_inventario"));
             Debug.Log("id_checkpoint: " + PlayerPrefs.GetInt("id_checkpoint"));
+        }
+        if (Input.GetKeyUp(KeyCode.V))
+        {
+            QueryUsers();
+        }
+        if (Input.GetKeyUp(KeyCode.B))
+        {
+            PutCheckpoint();
         }
     }
 
@@ -143,7 +155,7 @@ public class Player_stats : MonoBehaviour
 
     public void ShowHearts()
     {
-        Debug.Log(playerBSC.HP);
+        //Debug.Log(playerBSC.HP);
         short i = 0;
         foreach (GameObject obj in HeartContainer)
         {
@@ -195,6 +207,8 @@ public class Player_stats : MonoBehaviour
                 playerBSC = new Player_basic(playerSTATS.vida_actual, playerSTATS.vida_max, playerSTATS.nivel, playerSTATS.xp, playerSTATS.suerte, playerSTATS.ataque, playerSTATS.stamina, playerSTATS.inventario, playerSTATS.multiplicador_monedas, playerSTATS.monedas);
 
                 playerBSC.Info();
+                ShowHearts();
+                Debug.Log("Se cargo el id: " + PlayerPrefs.GetInt("id_checkpoint"));
                 if (errorText != null) errorText.text = "";
             }
             else
@@ -221,7 +235,7 @@ public class Player_stats : MonoBehaviour
         User.inventario = playerBSC.Inventory;
         User.multiplicador_monedas = playerBSC.TimesMoney;
         User.monedas = playerBSC.Money;
-        User.id = PlayerPrefs.GetInt("id_personaje");
+        User.id_usuario = PlayerPrefs.GetInt("id_personaje");
 
 
         string jsonData = JsonUtility.ToJson(User);
