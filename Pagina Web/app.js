@@ -141,9 +141,9 @@ app.get('/api/user_masMalo', async (request, response)=>{
     }
 })
 
-//////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Videojuego//------------------------------------------------------------------------------------------
-/////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 app.post('/api/juego/addPersonaje', async (request, response)=>{
 
@@ -387,6 +387,34 @@ app.post('/api/juego/addUser', async (request, response)=>{
           });        
         //console.log(`${results.affectedRows} row inserted`)
         response.json({'message': "Data inserted correctly.", "id": results.insertId})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+app.get('/api/juego/loadCheckpoint/:id_usuario', async (request, response)=>{
+    let connection = null  //This variable will be used to hold the database connection object.
+
+    try
+    {
+        connection = await connectToDB()
+        const [results, fields] = await connection.execute('SELECT c.id_usuario, c.id_personaje, c.id_nivel FROM darkesttimes_BD.checkpoints AS c JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_personaje JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario WHERE u.id_usuario = ? ORDER BY p.id_personaje DESC LIMIT 1;', [request.params.id_usuario])//La busqueda
+
+        console.log(`${results.length} rows returned`)
+        console.log(results)
+        response.json(results)
     }
     catch(error)
     {

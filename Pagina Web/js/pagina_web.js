@@ -42,7 +42,7 @@ function main()
                 options: {
                     scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
                     }},
                     aspectRatio: 2
                 }
@@ -251,8 +251,17 @@ function main()
                 options: {
                     scales: {
                     y: {
-                        beginAtZero: true
-                    }},
+                        beginAtZero: true,
+                        ticks: {
+                            fontColor: 'white'
+                          }
+                    },
+                    x: {
+                        ticks: {
+                            fontColor: 'white'
+                          }
+                    },
+                },
                     aspectRatio: 2
                 }
             });
