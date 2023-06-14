@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6533698657120310474}
   - component: {fileID: 6533698657120310473}
   - component: {fileID: 2352682558355291786}
+  - component: {fileID: 8661181173284006397}
   m_Layer: 6
   m_Name: Puerta_Hor
   m_TagString: Untagged
@@ -162,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1436809597
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -2139157381, guid: 6ae560cdc829dc841be73bbea5a78f06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -363,3 +364,19 @@ MonoBehaviour:
   efectoaudio: {fileID: 6533698657120310473}
   JugadorCerca: 0
   Abierta: 0
+--- !u!114 &8661181173284006397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6533698657120310465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

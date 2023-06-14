@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8793898524174800266}
   - component: {fileID: 8793898524174800267}
   - component: {fileID: 8793898524174800264}
+  - component: {fileID: 2416337360074306085}
   m_Layer: 6
   m_Name: Puerta_ver
   m_TagString: Untagged
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1436809597
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -792344311, guid: 6ae560cdc829dc841be73bbea5a78f06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -149,8 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3d6a9dc2e39064d86a93d1c7196388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MarcaDialogo: {fileID: 0}
   efectoaudio: {fileID: 8793898524174800264}
   JugadorCerca: 0
+  Abierta: 0
 --- !u!58 &8793898524174800266
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -276,3 +279,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido1: {fileID: 8300000, guid: 79ae950798b86f848ac67741bd78db8a, type: 3}
+--- !u!114 &2416337360074306085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8793898524174800256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

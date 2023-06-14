@@ -15,6 +15,7 @@ public class MovementIA : MonoBehaviour
 {
     [SerializeField] Transform target;
     private bool isFound;
+    private bool isInRange;
 
     NavMeshAgent nvAgent;
 
@@ -28,10 +29,12 @@ public class MovementIA : MonoBehaviour
     void Start()
     {
         isFound = false;
+        isInRange = false;
         nvAgent = GetComponent<NavMeshAgent>();
         nvAgent.updateRotation = false;
         nvAgent.updateUpAxis = false;
         numAleatorio = Random.Range(0,puntosMov.Length);
+        target = puntosMov[numAleatorio];
         sprite = GetComponent<SpriteRenderer>();
         Girar();
     }
@@ -41,14 +44,13 @@ public class MovementIA : MonoBehaviour
     {
         if(isFound)
          {
-                target = GameObject.FindWithTag("Player").transform;
-                isFound = true;
+            nvAgent.destination = target.position;
         }else{
             nvAgent.destination = target.position;
-            transform.position = Vector2.MoveTowards(transform.position,puntosMov[numAleatorio].position,velocidad*Time.deltaTime);
-            if(Vector3.Distance(transform.position,puntosMov[numAleatorio].position)<distanciaMinima)
+            if(Vector2.Distance(nvAgent.transform.position,target.position)<distanciaMinima)
             {
                 numAleatorio = Random.Range(0,puntosMov.Length);
+                target = puntosMov[numAleatorio];
                 Girar();
             }
         }
@@ -66,12 +68,7 @@ public class MovementIA : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Player")){
-            isFound = true;
-            Debug.Log("Lo encontro");
-        }
-    }
-    private void OnTriggerStay2D(Collider2D collision){
-        if(collision.CompareTag("Player")){
+            target = collision.transform;
             isFound = true;
             Debug.Log("Lo encontro");
         }
@@ -79,6 +76,7 @@ public class MovementIA : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision){
         if(collision.CompareTag("Player")){
             isFound = false;
+            target = puntosMov[numAleatorio];
             Debug.Log("No lo encontro");
         }
     }
