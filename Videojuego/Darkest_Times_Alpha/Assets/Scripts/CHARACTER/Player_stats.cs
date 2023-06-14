@@ -21,6 +21,22 @@ public class userStats
     public float multiplicador_monedas;
     public int monedas;
 }
+[System.Serializable]
+public class userStatsID
+{
+    public int vida_actual;
+    public int vida_max;
+    public int nivel;
+    public int xp;
+    public float suerte;
+    public int ataque;
+    public int stamina;
+    public int inventario;
+    public float multiplicador_monedas;
+    public int monedas;
+    public int id;
+
+}
 
 
 public class Player_stats : MonoBehaviour
@@ -45,8 +61,7 @@ public class Player_stats : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("id", 1);
-        //PlayerPrefs.SetInt("id_inventario", 1);
-        //PlayerPrefs.SetInt("id_checkpoint", 1);
+        PlayerPrefs.SetInt("personaje", 1);
 
         QueryUsers();
 
@@ -72,6 +87,8 @@ public class Player_stats : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+
+        //Tests
         if (Input.GetKeyUp(KeyCode.T))
         {
             TakeDamage(1);
@@ -87,14 +104,6 @@ public class Player_stats : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Y))
         {
             GetMoney(10);
-        }
-        if (Input.GetKeyUp(KeyCode.I))
-        {
-            QueryUsers();
-        }
-        if (Input.GetKeyUp(KeyCode.R))
-        {
-            playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 5, 5, 1, 0);
         }
         if (Input.GetKeyUp(KeyCode.N))
         {
@@ -166,8 +175,6 @@ public class Player_stats : MonoBehaviour
 
     IEnumerator GetUserCheckpoint()
     {
-        //Debug.Log(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}");
-        //using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP + "{\"id\":" + PlayerPrefs.GetInt("id") + "}"))
 
         string requestUrl = url + getUsersEP + "/" + PlayerPrefs.GetInt("id").ToString();
 
@@ -202,7 +209,7 @@ public class Player_stats : MonoBehaviour
 
     IEnumerator UpdateCheckpoint()
     {
-        userStats User = new userStats();
+        userStatsID User = new userStatsID();
 
         User.vida_actual = playerBSC.HP;
         User.vida_max = playerBSC.MAXHP;
@@ -214,6 +221,7 @@ public class Player_stats : MonoBehaviour
         User.inventario = playerBSC.Inventory;
         User.multiplicador_monedas = playerBSC.TimesMoney;
         User.monedas = playerBSC.Money;
+        User.id = PlayerPrefs.GetInt("id_personaje");
 
 
         string jsonData = JsonUtility.ToJson(User);
@@ -244,9 +252,6 @@ public class Player_stats : MonoBehaviour
                 Debug.Log("Error: " + www.error);
                 if (errorText_updateCheckpoint != null) errorText_updateCheckpoint.text = "Error: " + www.error;
             }
-
-
-            Debug.Log("HOLA");
         }
     }
 

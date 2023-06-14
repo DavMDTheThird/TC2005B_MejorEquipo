@@ -8,6 +8,7 @@ public class VendedorTienda : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //tienda.SetActive(false);
         if(collision.CompareTag("Player"))
         {
             tienda.SetActive(true);

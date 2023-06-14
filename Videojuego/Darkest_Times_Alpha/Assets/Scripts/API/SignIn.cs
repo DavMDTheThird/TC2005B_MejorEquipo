@@ -98,6 +98,7 @@ public class SignIn : MonoBehaviour
                 
                 PlayerPrefs.SetString("username", nombre);
                 PlayerPrefs.SetInt("id", respuesta_para_ID.id);
+                Debug.Log("id now is: " + PlayerPrefs.GetInt("id"));
             } 
             else {
                 Debug.Log("Error: " + www.error);
