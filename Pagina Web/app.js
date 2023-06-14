@@ -343,7 +343,7 @@ app.get('/api/juego/getCheckpoint/:id', async (request, response)=>{
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT p.vida_actual, p.vida_max, p.nivel, p.xp, p.suerte, p.ataque, p.stamina, p.inventario, p.multiplicador_monedas, p.monedas FROM darkesttimes_BD.checkpoints AS c JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_checkpoint JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario WHERE u.id_usuario = ? ORDER BY p.id_personaje DESC LIMIT 1;', [request.params.id])
+        const [results, fields] = await connection.execute('SELECT p.vida_actual, p.vida_max, p.nivel, p.xp, p.suerte, p.ataque, p.stamina, p.inventario, p.multiplicador_monedas, p.monedas FROM darkesttimes_BD.checkpoints AS c JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_personaje JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario WHERE u.id_usuario = ? ORDER BY p.id_personaje DESC LIMIT 1;', [request.params.id])
 
         console.log(`${results.length} rows returned`)
         console.log(results)
