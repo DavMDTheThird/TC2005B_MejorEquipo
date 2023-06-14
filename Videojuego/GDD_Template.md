@@ -172,8 +172,8 @@ Cada personaje interpretara un jugador relacionado al temas de los backrooms y s
 1.David->Samurai->Espada
 
     Stats:
-    1.Hp: 10
-    2.Lck: 60%
+    1.Hp: 8
+    2.Lck: 85%
     3.Stamina: 3
     4.x Atk: 5
     5.x Monedas: 1.0
@@ -190,18 +190,18 @@ Cada personaje interpretara un jugador relacionado al temas de los backrooms y s
 3.Daniel->
 
     Stats:
-    1.Hp: 6
+    1.Hp: 8
     2.Lck: 85%
     3.Stamina: 3
     4.Atk: 4
-    5.x Monedas: 1.5
+    5.x Monedas: 1.0
 
 4.Juan->
 
     Stats:
     1.Hp: 6
     2.Lck: 80%
-    3.Stamina: 3
+    3.Stamina: 4
     4.Atk: 4
     5.x Monedas: 1.0
 
