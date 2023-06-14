@@ -165,6 +165,35 @@ El jugador escogera entre cuatro personajes principales con una historia y stats
 
 - 10. Cada vez que cierro los ojos, me encuentro en un recuerdo del pasado. Son fragmentos de mi vida que se repiten una y otra vez. No importa cuánto intente evitarlos, siempre regreso a esos momentos dolorosos. Estoy atrapado en mis propios recuerdos.
 
+3. Hospital: 
+
+**Que es este lugar? No veo nada!!**
+
+El jugador aparece en el lobby de hospital y se encunetra confundido y asustado.
+
+**mmm parece un hopital.**
+
+**Deberia revisar las habitaciones para encontrar la llave de la salida.**
+
+El jugador explora a sus alrededores y se encuentra con diferentes enemigos y armas.
+
+**Este hospital le pertenece a esa compañia SCP.**
+
+**Al parecer realizaban experimentos con humanos. De seguro son los causantes de que desapareciera.**
+
+**Bitacora#56: Los experimentos se salieron de control no se si pueda esconderme por mucho mas tiempo.**
+
+**Bitacora#30: Creo que encontre una debilidad y es cualquier fuente de luz. Sin embargo, ya casi me quedo sin baterias.**
+
+**Bitacora#1: El sujeto no aguanto el procedimiento comenzaremos con la limpieza.**
+
+**Anuncio SCP: Recordemos que debemos asegurar, contener y protejer.**
+
+**Proyecto DT: El proyecto desea abrir portales a diferentes partes y epocas. Comenzar a probar con distintos sujetos de prueba....**
+
+**Creo que ya estoy cerca de la salida, pero que es ese ruido?**
+El jugador llega a la entrada del siguiente piso y encuentra un subboss final.
+
 #### ***Personajes***
 
 Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc: 
