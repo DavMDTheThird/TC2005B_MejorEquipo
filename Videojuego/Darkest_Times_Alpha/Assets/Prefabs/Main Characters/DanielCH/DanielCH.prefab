@@ -204,7 +204,12 @@ MonoBehaviour:
   url: http://localhost:5000
   getUsersEP: /api/user/checkpoint
   errorText: {fileID: 0}
-  babyCharacter: 1
+  updateCheckpointEP: 
+  errorText_updateCheckpoint: {fileID: 0}
+  respuesta_para_updateCheckpoint:
+    mensaje: 
+    id: 0
+  HeartContainer: []
 --- !u!114 &4499063437207991674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,9 +224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 4.5
   runSprint: 7
-  BulletPrefab: {fileID: 973528560280927882, guid: 2cc15e99684ac44818ae7f75423fcb0f, type: 3}
-  firingPoint: {fileID: 4228117553346436070}
-  fireRate: 0.5
   animator: {fileID: 5673788724312163327}
 --- !u!1 &6811699497180686095
 GameObject:
@@ -235,7 +237,7 @@ GameObject:
   - component: {fileID: 7734603876317447748}
   - component: {fileID: 7407055193695724883}
   m_Layer: 8
-  m_Name: gun
+  m_Name: Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 6811699497180686095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.063, y: -0.39, z: 0}
-  m_LocalScale: {x: 0.07, y: 0.08, z: 1}
+  m_LocalScale: {x: 0.06, y: 0.07, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4228117553346436070}
@@ -298,10 +300,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c620d07ad4cbcf8438211b88e7772e8a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -323,3 +325,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5673788724312163321}
   distance: 1
+  BulletPrefab: {fileID: 973528560280927882, guid: 255c4f517a5c2ad40b118e5055392164, type: 3}
+  firingPoint: {fileID: 4228117553346436070}
+  fireRate: 0.5

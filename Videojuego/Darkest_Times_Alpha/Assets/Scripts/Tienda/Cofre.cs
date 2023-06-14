@@ -7,7 +7,7 @@ public class Cofre : MonoBehaviour
     Animator myAnim;
     [SerializeField] private GameObject MarcaDialogo;
     public bool JugadorCerca;
-
+    public EfectosSonido efectoaudio;
     public GameObject cofreItem;
     public float cofreDelay;
 
@@ -42,6 +42,7 @@ public class Cofre : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && !itemPicked && JugadorCerca)
         {
+            efectoaudio.GetComponent<AudioSource>().PlayOneShot(efectoaudio.sonido1);
             MarcaDialogo.SetActive(false);
             myAnim.Play("cofre_abrir");
             StartCoroutine(GetChestItem());
