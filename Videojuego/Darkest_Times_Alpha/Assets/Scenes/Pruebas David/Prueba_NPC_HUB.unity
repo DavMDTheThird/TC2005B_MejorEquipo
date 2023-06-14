@@ -1545,7 +1545,7 @@ GameObject:
   - component: {fileID: 2070516986}
   m_Layer: 7
   m_Name: spider
-  m_TagString: Enemigos
+  m_TagString: spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2036,7 +2036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdf3f2eec9284fd6af8fbfb3a789453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 7
+  CargarEscena: 
 --- !u!1 &7249086684789267859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,4 +2089,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdf3f2eec9284fd6af8fbfb3a789453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 9
+  CargarEscena: 
