@@ -23,6 +23,7 @@ TagManager:
   - bengalas
   - spider
   - bala
+  - clump
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - personaje
   - Enemigos
   - Bullets
-  - 
+  - Radar
   - 
   - 
   - 

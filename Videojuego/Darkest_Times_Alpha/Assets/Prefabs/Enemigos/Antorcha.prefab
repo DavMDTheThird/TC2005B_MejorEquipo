@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 605012665083001006}
   - component: {fileID: 806266968560940481}
   - component: {fileID: 2021067402565020223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FuenteLuzM
   m_TagString: antorcha
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7564696112346092373}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0033507836, w: 0.9999944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.4724367
+  m_PointLightOuterRadius: 2.7369318
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -157,6 +157,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0003766461, y: 0.056201745}
+  m_Offset: {x: 0.00037670135, y: 0.11493404}
   serializedVersion: 2
-  m_Radius: 2.7087722
+  m_Radius: 3.2373605

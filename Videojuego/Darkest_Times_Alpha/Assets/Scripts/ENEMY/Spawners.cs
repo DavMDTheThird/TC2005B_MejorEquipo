@@ -6,16 +6,18 @@ public class Spawners : MonoBehaviour
 {
     [SerializeField]
     private GameObject enemy;
-    private float eyeIntervalTime = 10.0f;
+    private float eyeIntervalTime = 25.0f;
 
     void Start()
     {
-        InvokeRepeating("spawnEnemy",eyeIntervalTime,eyeIntervalTime);
+        if(enemy.tag == "eyeBall"){
+            InvokeRepeating("spawnEnemy",eyeIntervalTime,eyeIntervalTime);
+        }
     }
 
     private void spawnEnemy()
     {
-        GameObject enemyObject = Instantiate(enemy,new Vector3(Random.Range(-21.0f,21f),Random.Range(8f,16f),0),Quaternion.identity);
+        GameObject enemyObject = Instantiate(enemy,gameObject.transform.position,Quaternion.identity);
     }
 
 

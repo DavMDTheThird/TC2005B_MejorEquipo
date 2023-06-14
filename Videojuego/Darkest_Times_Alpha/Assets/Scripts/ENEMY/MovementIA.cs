@@ -66,14 +66,15 @@ public class MovementIA : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision){
+    public void OnTriggerEnter2D(Collider2D collision){
+        Debug.Log("Toque" + collision.gameObject.name);
         if(collision.CompareTag("Player")){
             target = collision.transform;
             isFound = true;
             Debug.Log("Lo encontro");
         }
     }
-    private void OnTriggerExit2D(Collider2D collision){
+    public void OnTriggerExit2D(Collider2D collision){
         if(collision.CompareTag("Player")){
             isFound = false;
             target = puntosMov[numAleatorio];
