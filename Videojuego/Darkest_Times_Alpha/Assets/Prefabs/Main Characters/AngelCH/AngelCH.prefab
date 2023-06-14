@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 91577757526503732}
   - component: {fileID: 4317542646107714460}
   - component: {fileID: 7587701428600475781}
+  - component: {fileID: 451964624913997283}
   m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
@@ -106,6 +107,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &451964624913997283
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576794990623882474}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0010559391, y: 2.7287705}
+  m_Size: {x: 0.828635, y: 7.1180363}
+  m_Direction: 0
 --- !u!1 &1593677467760204502
 GameObject:
   m_ObjectHideFlags: 0
