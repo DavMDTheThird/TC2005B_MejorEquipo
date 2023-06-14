@@ -15,6 +15,9 @@ public class StatsEnemigo : MonoBehaviour
         if(enemigo.tag == "eyeBall"){
             vida = 20;
         }
+        if(enemigo.tag == "spider"){
+            vida = 50;
+        }
     }
 
     void Update()
@@ -36,6 +39,10 @@ public class StatsEnemigo : MonoBehaviour
             vida -= 5;
         }
         if (collision.gameObject.tag == "antorcha")
+        {
+            vida -= 10;
+        }
+        if (collision.gameObject.tag == "bala")
         {
             vida -= 10;
         }

@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: colectar
       value: 
       objectReference: {fileID: 8300000, guid: 22dc0786fe49a3a43975e54c9acc7053, type: 3}
+    - target: {fileID: 322868296592437575, guid: 9072afcebb8df9040bc98954b5f7cd2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 322868296592437575, guid: 9072afcebb8df9040bc98954b5f7cd2a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1654687543
+      objectReference: {fileID: 0}
     - target: {fileID: 322868296592437624, guid: 9072afcebb8df9040bc98954b5f7cd2a, type: 3}
       propertyPath: m_Name
       value: HuesoMOnedas

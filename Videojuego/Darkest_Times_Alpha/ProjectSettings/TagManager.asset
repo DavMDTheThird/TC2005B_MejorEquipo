@@ -21,6 +21,8 @@ TagManager:
   - eyeBall
   - BossFinal
   - bengalas
+  - spider
+  - bala
   layers:
   - Default
   - TransparentFX
