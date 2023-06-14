@@ -169,9 +169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5673788724312163321}
-  distance: 1
+  distance: 1.5
   animator: {fileID: 7587701428600475781}
-  delay: 0.3
+  delay: 0.1
 --- !u!1 &5673788724312163324
 GameObject:
   m_ObjectHideFlags: 0
