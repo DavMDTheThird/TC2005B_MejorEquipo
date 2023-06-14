@@ -19,6 +19,14 @@ public class Response
     public string mensaje;
     public int id;
 }
+[System.Serializable]
+public class LoadUser
+{
+    public string nombre;
+    public int id_usuario;
+    public int id_personaje;
+    public int id_nivel;
+}
 
 public class SignIn : MonoBehaviour
 {   
@@ -106,4 +114,38 @@ public class SignIn : MonoBehaviour
             }
         }
     }
+
+    IEnumerator GetLoadCheckpoint()
+    {
+
+        string requestUrl = url_logIn + getUsersEP_logIn + "/\"" + correo + "\"";
+
+        Debug.Log(requestUrl);
+
+        using (UnityWebRequest www = UnityWebRequest.Get(requestUrl))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                //Debug.Log("Response: " + www.downloadHandler.text);
+                string jsonString = www.downloadHandler.text;
+                LoadUser userLoad;
+                userLoad = JsonUtility.FromJson<LoadUser>(jsonString);
+                
+
+                PlayerPrefs.SetString("username", userLoad.nombre);
+                PlayerPrefs.SetInt("id", userLoad.id_usuario);
+                PlayerPrefs.SetInt("personaje", userLoad.id_personaje);
+                PlayerPrefs.SetInt("id_nivel", userLoad.id_nivel);
+
+            }
+            else
+            {
+                Debug.Log("Error: " + www.error);
+                if (errorText_logIn != null) errorText_logIn.text = "Error: " + www.error;
+            }
+        }
+    }
+
 }
