@@ -50,18 +50,21 @@ SELECT * FROM darkesttimes_BD.personaje;
 SELECT * FROM darkesttimes_BD.checkpoints;
 SELECT * FROM darkesttimes_BD.inventario;
 
-SELECT *
+SELECT c.id_usuario, c.id_personaje, c.id_nivel
 FROM darkesttimes_BD.checkpoints AS c
 JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_personaje
 JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario
 WHERE u.id_usuario = 10 ORDER BY p.id_personaje DESC LIMIT 1;
+
+-- id_usuario, id_personaje, id_nivel
 
 SELECT p.vida_actual, p.vida_max, p.nivel, p.xp, p.suerte, p.ataque, p.stamina,
        p.inventario, p.multiplicador_monedas, p.monedas
 FROM darkesttimes_BD.checkpoints AS c
 JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_personaje
 JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario
-WHERE u.id_usuario = 1 ORDER BY p.id_personaje DESC LIMIT 1;
+WHERE u.id_usuario = 10 ORDER BY p.id_personaje DESC LIMIT 1;
+
 
 
 
