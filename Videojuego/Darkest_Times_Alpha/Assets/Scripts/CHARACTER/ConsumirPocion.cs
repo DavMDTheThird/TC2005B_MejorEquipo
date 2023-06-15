@@ -11,7 +11,7 @@ public class ConsumirPocion : MonoBehaviour
     private GameObject player;
     private Player_stats playerStats;
     public int slot;
-        
+
     public enum ObjetosPociones
     {
         Stamina,
