@@ -14,6 +14,7 @@ public class Linterna : MonoBehaviour
     public bool IsBroken = false;// Booleano que verifica si esta apunto de romperse
     public int slot;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,8 @@ public class Linterna : MonoBehaviour
         if(equipada){
             if(this.IsBroken == false){
                 coolDownL -= Time.deltaTime;
+                //LuzBar.instance.UseLuz(0.016f);
+                
             }
             if(coolDownL <= 0){
                 ControladorSonidos.Instance.EjecutarSonido(colectar);
@@ -36,6 +39,7 @@ public class Linterna : MonoBehaviour
                 Destroy(gameObject);
                 Debug.Log("Se rompe");
             }
+            
             Debug.Log("Te quedan " + coolDownL + " segundos.");
         }
     }
