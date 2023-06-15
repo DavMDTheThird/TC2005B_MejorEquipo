@@ -360,14 +360,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A continuacion jugaras un Demo de DarkestTimes.
+  m_text: '
 
 
-    Si te gusto nuestro
-    proyecto apoyanos en nuestras redes sociales.
+    A continuacion jugaras un Demo de DarkestTimes.
 
 
-    El juego contiene Jumpscares.
+    Si te gusto
+    nuestro proyecto apoyanos en nuestras redes sociales.
 
 
     Controles:
@@ -381,7 +381,7 @@ MonoBehaviour:
     Correr: Shift Izq
 
 
-    Suerte'
+    Mucha Suerte'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d24f9b5b0b74e04b938b698c1dac722, type: 2}
   m_sharedMaterial: {fileID: -8969187747699180541, guid: 8d24f9b5b0b74e04b938b698c1dac722, type: 2}

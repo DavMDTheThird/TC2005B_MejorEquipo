@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4317542646107714460}
   - component: {fileID: 7587701428600475781}
   - component: {fileID: 451964624913997283}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Weapon
-  m_TagString: Untagged
+  m_TagString: bate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,9 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2691998249783855585}
   - component: {fileID: 7170334502277912971}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: WeaponParent
-  m_TagString: Untagged
+  m_TagString: bate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
