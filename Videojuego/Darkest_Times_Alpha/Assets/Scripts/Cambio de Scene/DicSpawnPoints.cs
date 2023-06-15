@@ -54,7 +54,7 @@ public class DicSpawnPoints : MonoBehaviour
     float[][] Hospital =
     {
         new float[] { 0, -2, 0 },
-        new float[] { 0, 0, 0 },
+        new float[] { 38, 56, 0 },
         new float[] { 0, 0, 0 }
     };
 

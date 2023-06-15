@@ -11,7 +11,7 @@ public class pickUpAtaque : MonoBehaviour
     [SerializeField] GameObject linterna;
     [SerializeField] GameObject mechero;
     [SerializeField] GameObject antorcha;
-    [SerializeField] GameObject bengala;
+
 
     private int precio;
     private int totalHuesos;
@@ -109,9 +109,13 @@ public class pickUpAtaque : MonoBehaviour
             {
                 if (invenPrueba.isFull[i] == null)
                 {
-                    invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                   
                     Destroy(gameObject);
                     break;
+                    //invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    //Destroy(gameObject);
+                    //break;
                 }
             }
         }
