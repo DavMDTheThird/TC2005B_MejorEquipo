@@ -114,6 +114,10 @@ public class StatsEnemigo : MonoBehaviour
             playerStats.TakeDamage(atk);
             timeToAttack = Time.time + attackDelay;
         }
+        if(collision.gameObject.tag == "bala")
+        {
+            vida -= 25;
+        }
     }
 
 }

@@ -57,6 +57,8 @@ public class Player_stats : MonoBehaviour
 
     public List<GameObject> HeartContainer;
 
+    Scene currentScene;
+
 
     void Start()
     {
@@ -66,7 +68,9 @@ public class Player_stats : MonoBehaviour
         // PlayerPrefs.SetInt("id_inventario", 1);
         // PlayerPrefs.SetInt("id_checkpoint", 1);
 
-        QueryUsers();
+        currentScene = SceneManager.GetActiveScene();
+        PlayerPrefs.SetString("scene", currentScene.name);
+        Debug.Log(PlayerPrefs.GetString("scene"));
 
         HeartContainer.Add(GameObject.Find("0Hearts"));
         HeartContainer.Add(GameObject.Find("1Hearts"));
@@ -79,7 +83,11 @@ public class Player_stats : MonoBehaviour
         HeartContainer.Add(GameObject.Find("8Hearts"));
         HeartContainer.Add(GameObject.Find("9Hearts"));
         HeartContainer.Add(GameObject.Find("10Hearts"));
-        ShowHearts();
+
+        QueryUsers();
+
+        
+        //ShowHearts();
     }
 
 
@@ -156,7 +164,7 @@ public class Player_stats : MonoBehaviour
 
     public void ShowHearts()
     {
-        //Debug.Log(playerBSC.HP);
+        Debug.Log(playerBSC.HP);
         short i = 0;
         foreach (GameObject obj in HeartContainer)
         {
