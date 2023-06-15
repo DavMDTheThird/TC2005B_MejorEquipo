@@ -414,7 +414,7 @@ app.get('/api/juego/loadCheckpoint/:correo', async (request, response)=>{
 
         console.log(`${results.length} rows returned`)
         console.log(results)
-        response.json(results)
+        response.json(results[0])
     }
     catch(error)
     {

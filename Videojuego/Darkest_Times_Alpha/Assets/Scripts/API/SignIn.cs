@@ -19,6 +19,7 @@ public class Response
     public string mensaje;
     public int id;
 }
+
 [System.Serializable]
 public class LoadUser
 {
@@ -44,11 +45,13 @@ public class SignIn : MonoBehaviour
     [SerializeField] string contraseña;
 
     public Response respuesta_para_ID;
-    
+
+    LoadUser userLoad;
+
     public TMP_Text hi_box;
 
     public void SetName(){
-        hi_box.text = hi_box.text + nombre;
+        hi_box.text = "Hola: " + nombre;
     }
 
 
@@ -70,9 +73,10 @@ public class SignIn : MonoBehaviour
     {
         StartCoroutine(AddUser());
     }
-    // public void SetID{
-
-    // }
+    public void LoadUser()
+    {
+        StartCoroutine(GetLoadCheckpoint());
+    }
 
     IEnumerator AddUser()
     {
@@ -118,7 +122,7 @@ public class SignIn : MonoBehaviour
     IEnumerator GetLoadCheckpoint()
     {
 
-        string requestUrl = url_logIn + getUsersEP_logIn + "/\"" + correo + "\"";
+        string requestUrl = url_logIn + getUsersEP_logIn + "/" + correo;
 
         Debug.Log(requestUrl);
 
@@ -130,11 +134,13 @@ public class SignIn : MonoBehaviour
             {
                 //Debug.Log("Response: " + www.downloadHandler.text);
                 string jsonString = www.downloadHandler.text;
-                LoadUser userLoad;
+                Debug.Log(jsonString);
                 userLoad = JsonUtility.FromJson<LoadUser>(jsonString);
-                
+
+
 
                 PlayerPrefs.SetString("username", userLoad.nombre);
+                hi_box.text = "Hola: " + userLoad.nombre;
                 PlayerPrefs.SetInt("id", userLoad.id_usuario);
                 PlayerPrefs.SetInt("personaje", userLoad.id_personaje);
                 PlayerPrefs.SetInt("id_nivel", userLoad.id_nivel);
