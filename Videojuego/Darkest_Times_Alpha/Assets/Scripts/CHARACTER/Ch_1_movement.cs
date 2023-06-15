@@ -10,6 +10,7 @@ public class Ch_1_movement : MonoBehaviour
 
     public float runSpeed = 2f;
     public float runSprint = 2f;
+    private bool tuto = false;
 
     Vector2 mousePos;
 

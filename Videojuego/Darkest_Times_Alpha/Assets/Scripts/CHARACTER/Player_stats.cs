@@ -60,11 +60,11 @@ public class Player_stats : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("id", 1);
-        PlayerPrefs.SetInt("id_personaje", 1);
-        PlayerPrefs.SetInt("personaje", 1);
-        PlayerPrefs.SetInt("id_inventario", 1);
-        PlayerPrefs.SetInt("id_checkpoint", 1);
+        // PlayerPrefs.SetInt("id", 4);
+        // PlayerPrefs.SetInt("id_personaje", 1);
+        // PlayerPrefs.SetInt("personaje", 1);
+        // PlayerPrefs.SetInt("id_inventario", 1);
+        // PlayerPrefs.SetInt("id_checkpoint", 1);
 
         QueryUsers();
 
@@ -79,6 +79,7 @@ public class Player_stats : MonoBehaviour
         HeartContainer.Add(GameObject.Find("8Hearts"));
         HeartContainer.Add(GameObject.Find("9Hearts"));
         HeartContainer.Add(GameObject.Find("10Hearts"));
+        ShowHearts();
     }
 
 

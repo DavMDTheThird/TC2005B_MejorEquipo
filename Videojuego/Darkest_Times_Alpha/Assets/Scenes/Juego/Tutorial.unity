@@ -4522,7 +4522,6 @@ GameObject:
   - component: {fileID: 810357322}
   - component: {fileID: 810357325}
   - component: {fileID: 810357326}
-  - component: {fileID: 5327624132841349046}
   - component: {fileID: 8129765420024046799}
   - component: {fileID: 8129765420024046800}
   m_Layer: 6
@@ -44351,9 +44350,10 @@ GameObject:
   - component: {fileID: 1531815751}
   - component: {fileID: 1531815750}
   - component: {fileID: 1531815749}
+  - component: {fileID: 1531815752}
   m_Layer: 0
   m_Name: SpawnEnemy
-  m_TagString: Untagged
+  m_TagString: eyeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44499,7 +44499,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -1372625422
   m_Radius: 0.01
-  m_Speed: 10
+  m_Speed: 9
   m_Acceleration: 7
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -44527,6 +44527,22 @@ CircleCollider2D:
   m_Offset: {x: 0.32610363, y: 0}
   serializedVersion: 2
   m_Radius: 13.671819
+--- !u!114 &1531815752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531815744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24780243802578c4ab955ad7c36b58b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 1531815744}
+  colectar: {fileID: 0}
+  damageDelay: 0
+  attackDelay: 1
 --- !u!114 &1537667375 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4998384024991419014, guid: c0a6eb5379f53574dac9c3649f127f88, type: 3}
@@ -48418,27 +48434,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4304757460498513102, guid: 5a61f3d7465c74c41840e4125f065a9b, type: 3}
   m_PrefabInstance: {fileID: 5241316538389949025}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5327624132841349046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810357321}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46bbbec1e92d7418da8105282be00269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: localhost:5000
-  getUsersEP: /api/juego/getCheckpoint
-  errorText: {fileID: 0}
-  updateCheckpointEP: 
-  errorText_updateCheckpoint: {fileID: 0}
-  respuesta_para_updateCheckpoint:
-    mensaje: 
-    id: 0
-  HeartContainer: []
 --- !u!1 &5673788723798032648
 GameObject:
   m_ObjectHideFlags: 0
@@ -48993,9 +48988,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 810357321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43bbd14155cce924bbc1162ef9f05f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 46bbbec1e92d7418da8105282be00269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  url: localhost:5000
+  getUsersEP: /api/juego/getCheckpoint
+  errorText: {fileID: 0}
+  updateCheckpointEP: 
+  errorText_updateCheckpoint: {fileID: 0}
+  respuesta_para_updateCheckpoint:
+    mensaje: 
+    id: 0
   HeartContainer: []
 --- !u!4 &8363204625397811795
 Transform:

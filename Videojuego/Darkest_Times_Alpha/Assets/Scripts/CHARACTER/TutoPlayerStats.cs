@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 
-public class Player_stats : MonoBehaviour
+public class TutoPlayerStats : MonoBehaviour
 {
     Player_basic playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 5, 5, 1, 0);
 
@@ -34,6 +34,7 @@ public class Player_stats : MonoBehaviour
         HeartContainer.Add(GameObject.Find("8Hearts"));
         HeartContainer.Add(GameObject.Find("9Hearts"));
         HeartContainer.Add(GameObject.Find("10Hearts"));
+        ShowHearts();
     }
 
 
@@ -44,6 +45,10 @@ public class Player_stats : MonoBehaviour
         if (playerBSC != null && playerBSC.HP == 0)
         {
             SceneManager.LoadScene("GameOver");
+        }
+        if (Input.GetKeyUp(KeyCode.G))
+        {
+            playerBSC.Info();
         }
     }
 
