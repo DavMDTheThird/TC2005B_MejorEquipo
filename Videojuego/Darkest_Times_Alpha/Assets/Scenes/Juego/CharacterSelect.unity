@@ -262,7 +262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Choose Your Character:'
+  m_text: 'Escoje tu personaje:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.6
+  m_fontSize: 28.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831616, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.4999847
+      value: -3.499981
       objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_text
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.2
+  m_fontSize: 11.9
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.65
+  m_fontSize: 9.5
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1865,7 +1865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831616, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.4999695
+      value: -3.4999733
       objectReference: {fileID: 0}
     - target: {fileID: 8381977790482831623, guid: 8c9740d3eccaf4173abfaa96bd48e2d1, type: 3}
       propertyPath: m_text

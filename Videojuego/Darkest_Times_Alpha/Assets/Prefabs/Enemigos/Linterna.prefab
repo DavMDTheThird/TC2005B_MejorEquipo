@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3892158060811639372}
   - component: {fileID: 3892158060811639373}
   - component: {fileID: 3950702665384866862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fuente LuzL
   m_TagString: linterna
   m_Icon: {fileID: 0}
