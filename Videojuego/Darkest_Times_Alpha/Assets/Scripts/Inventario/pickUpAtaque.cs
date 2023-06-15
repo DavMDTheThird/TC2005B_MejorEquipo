@@ -101,7 +101,7 @@ public class pickUpAtaque : MonoBehaviour
             {
                 if (invenPrueba.isFull[i] == null)
                 {
-                    GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                    //GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                    
                     Destroy(gameObject);
                     break;

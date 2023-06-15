@@ -8,6 +8,7 @@ public class StatsEnemigo : MonoBehaviour
     Canvas heartsCanvas;
     [SerializeField] private GameObject enemigo;
     [SerializeField] private AudioClip colectar;
+    [SerializeField] public GameObject creditos;
     private short vida;
     private short atk;
     private bool recibeDaño;
@@ -42,6 +43,12 @@ public class StatsEnemigo : MonoBehaviour
     {
         if(vida<=0)
         {
+            ControladorSonidos.Instance.EjecutarSonido(colectar);
+            Destroy(gameObject);
+        }
+        if(vida == 0 && enemigo.tag == "spider")
+        {
+            creditos.SetActive(true);
             ControladorSonidos.Instance.EjecutarSonido(colectar);
             Destroy(gameObject);
         }
