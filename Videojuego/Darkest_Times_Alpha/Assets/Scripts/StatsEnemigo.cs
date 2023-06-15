@@ -12,12 +12,14 @@ public class StatsEnemigo : MonoBehaviour
     private short atk;
     private bool recibeDaño;
     private float timeToDamage;
+    private float timeToAttack;
     public float damageDelay;
+    public float attackDelay;
     // Start is called before the first frame update
     void Start()
     {
         timeToDamage = 0;
-        //playerStats = GetComponent<Player_stats>();
+        playerStats = GetComponent<Player_stats>();
         if(enemigo.tag == "eyeBall"){
             vida = 50;
             atk = 2;
@@ -82,31 +84,35 @@ public class StatsEnemigo : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Player" && enemigo.tag == "clump")
-        {
-            vida -= 1;
-            playerStats.TakeDamage(atk);
-        }
-        if(enemigo.tag != "eyeBall"){
-            if(collision.gameObject.tag == "Player")
-            {
-                playerStats.TakeDamage(atk);
-            }
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if(collision.gameObject.tag == "Player" && enemigo.tag == "clump")
+    //     {
+    //         vida -= 1;
+    //         playerStats = collision.gameObject.GetComponent<Player_stats>();
+    //         playerStats.TakeDamage(atk);
+    //     }
+    //     if(collision.gameObject.tag == "Player")
+    //     {
+    //         playerStats = collision.gameObject.GetComponent<Player_stats>();
+    //         playerStats.TakeDamage(atk);
+    //     }
+        
+    // }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player" && enemigo.tag == "clump")
         {
             vida -= 1;
+            playerStats = collision.gameObject.GetComponent<Player_stats>();
             playerStats.TakeDamage(atk);
         }
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player" && Time.time >= timeToAttack)
         {
+            playerStats = collision.gameObject.GetComponent<Player_stats>();
             playerStats.TakeDamage(atk);
+            timeToAttack = Time.time + attackDelay;
         }
     }
 

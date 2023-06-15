@@ -187,6 +187,7 @@ MonoBehaviour:
   enemigo: {fileID: 1531365190164958616}
   colectar: {fileID: 8300000, guid: d1d3a4a9e1112ee4e9bc5d7e39335bde, type: 3}
   damageDelay: 1
+  attackDelay: 1
 --- !u!114 &3010282424038888531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido1: {fileID: 8300000, guid: d1d3a4a9e1112ee4e9bc5d7e39335bde, type: 3}
+  sonido2: {fileID: 0}
 --- !u!1 &5705824762777201531
 GameObject:
   m_ObjectHideFlags: 0

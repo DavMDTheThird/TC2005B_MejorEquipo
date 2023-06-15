@@ -51,6 +51,12 @@ public class DicSpawnPoints : MonoBehaviour
         new float[] { 0, 0, 0 },
         new float[] { 0, 0, 0 }
     };
+    float[][] Hospital =
+    {
+        new float[] { 0, -2, 0 },
+        new float[] { 0, 0, 0 },
+        new float[] { 0, 0, 0 }
+    };
 
 
 
@@ -75,5 +81,6 @@ public class DicSpawnPoints : MonoBehaviour
         myDictionary.Add("Prueba_transision_3", Prueba_transision_3);
         myDictionary.Add("Lobby", Lobby);
         myDictionary.Add("DentroTienda", DentroTienda);
+        myDictionary.Add("Hospital", Hospital);
     }
 }
