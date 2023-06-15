@@ -193,6 +193,7 @@ MonoBehaviour:
   enemigo: {fileID: 6233265190606086958}
   colectar: {fileID: 8300000, guid: 42c4744333b0f7942898b6152cb6fbb6, type: 3}
   damageDelay: 1
+  attackDelay: 0
 --- !u!114 &6233265190606086951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ GameObject:
   - component: {fileID: 6233265190979647590}
   - component: {fileID: 6233265190979647588}
   - component: {fileID: 6233265190979647589}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Radar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
