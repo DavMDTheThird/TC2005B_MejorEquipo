@@ -198,7 +198,7 @@ El jugador llega a la entrada del siguiente piso y encuentra un subboss final.
 
 Cada personaje interpretara un jugador relacionado al temas de los backrooms y spc: 
 
-1.David->Samurai->Espada
+1.David->Hacker
 
     Stats:
     1.Hp: 8
@@ -207,7 +207,7 @@ Cada personaje interpretara un jugador relacionado al temas de los backrooms y s
     4.x Atk: 5
     5.x Monedas: 1.0
 
-2.Angel->Futbolista->Bate
+2.Angel->Futbolista
 
     Stats:
     1.Hp: 8
@@ -216,7 +216,7 @@ Cada personaje interpretara un jugador relacionado al temas de los backrooms y s
     4.Atk: 5
     5.x Monedas: 2
 
-3.Daniel->
+3.Daniel->Vikingo
 
     Stats:
     1.Hp: 8
