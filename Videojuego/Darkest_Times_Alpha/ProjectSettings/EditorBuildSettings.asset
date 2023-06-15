@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Juego/CharacterSelect.unity
     guid: b43383b012863481c9c99c7175174329
   - enabled: 1
-    path: Assets/Scenes/PrincipalScenes/Lobby.unity
+    path: Assets/Scenes/Juego/Lobby.unity
     guid: 9f10791f45685904a927621bf0dbf8e8
   - enabled: 0
     path: Assets/Scenes/Pruebas David/Prueba_NPC_HUB.unity
@@ -35,16 +35,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Pruebas David/Prueba_transision_3.unity
     guid: 8dde9e39e67dd41cfaaf39df79fef424
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrincipalScenes/Tienda.unity
     guid: 9b324a39893017b47ad7ef6fb6e17a21
   - enabled: 0
     path: Assets/Scenes/PrincipalScenes/DentroTienda.unity
     guid: 0a4cb3a1329f19943961900d8d1865eb
   - enabled: 1
-    path: Assets/Scenes/PrincipalScenes/GameOver.unity
+    path: Assets/Scenes/Juego/GameOver.unity
     guid: f32b3bb80c2950849b362ae717821012
   - enabled: 1
-    path: Assets/Scenes/PrincipalScenes/Hospital.unity
+    path: Assets/Scenes/Juego/Hospital.unity
     guid: b87f1d7f4331ccf4c90c8f39f5d7b1d9
+  - enabled: 1
+    path: Assets/Scenes/Juego/Cutscenes2.unity
+    guid: 87bb663da0c6ef1408cf96ae92145b5e
   m_configObjects: {}
