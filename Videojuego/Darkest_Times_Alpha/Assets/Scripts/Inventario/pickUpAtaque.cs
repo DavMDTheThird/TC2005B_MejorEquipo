@@ -24,27 +24,27 @@ public class pickUpAtaque : MonoBehaviour
         invenPrueba = jugador.GetComponent<inventarioPrueba>();
     }
 
-    public void PrecioObjeto(string objeto)
-    {
-        switch (objeto)
-        {
-            case "BotonStamina":
-                precio = 15;
-                break;
-            case "BotonEscudo":
-                precio = 20;
-                break;
-            case "BotonAtaque":
-                precio = 15;
-                break;
-            case "BotonVida":
-                precio = 10;
-                break;
-        }
-    }
+    // public void PrecioObjeto(string objeto)
+    // {
+    //     switch (objeto)
+    //     {
+    //         case "BotonStamina":
+    //             precio = 15;
+    //             break;
+    //         case "BotonEscudo":
+    //             precio = 20;
+    //             break;
+    //         case "BotonAtaque":
+    //             precio = 15;
+    //             break;
+    //         case "BotonVida":
+    //             precio = 10;
+    //             break;
+    //     }
+    // }
     public void AdquirirObjeto(string objeto)
     {
-        PrecioObjeto(objeto);
+        // PrecioObjeto(objeto);
         itemButtom = (GameObject)Resources.Load(objeto); 
         for (int i = 0; i < invenPrueba.slots.Length; i++)
         {
@@ -59,20 +59,20 @@ public class pickUpAtaque : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleE")
-        {
-            jugador = GameObject.FindGameObjectWithTag("Player");
-            invenPrueba = jugador.GetComponent<inventarioPrueba>();
-            for (int i = 0; i < invenPrueba.slots.Length; i++)
-            {
-                if (invenPrueba.isFull[i] == null)
-                {
-                    invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
-                    Destroy(gameObject);
-                    break;
-                }
-            }
-        }
+        // if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleE")
+        // {
+        //     jugador = GameObject.FindGameObjectWithTag("Player");
+        //     invenPrueba = jugador.GetComponent<inventarioPrueba>();
+        //     for (int i = 0; i < invenPrueba.slots.Length; i++)
+        //     {
+        //         if (invenPrueba.isFull[i] == null)
+        //         {
+        //             invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+        //             Destroy(gameObject);
+        //             break;
+        //         }
+        //     }
+        // }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleA")
         {
             jugador = GameObject.FindGameObjectWithTag("Player");
@@ -87,7 +87,21 @@ public class pickUpAtaque : MonoBehaviour
                 }
             }
         }
-        if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleS")
+        // if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleS")
+        // {
+        //     jugador = GameObject.FindGameObjectWithTag("Player");
+        //     invenPrueba = jugador.GetComponent<inventarioPrueba>();
+        //     for (int i = 0; i < invenPrueba.slots.Length; i++)
+        //     {
+        //         if (invenPrueba.isFull[i] == null)
+        //         {
+        //             invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+        //             Destroy(gameObject);
+        //             break;
+        //         }
+        //     }
+        // }
+        if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleV")
         {
             jugador = GameObject.FindGameObjectWithTag("Player");
             invenPrueba = jugador.GetComponent<inventarioPrueba>();
@@ -98,24 +112,6 @@ public class pickUpAtaque : MonoBehaviour
                     invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
                     Destroy(gameObject);
                     break;
-                }
-            }
-        }
-        if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleV")
-        {
-            jugador = GameObject.FindGameObjectWithTag("Player");
-            invenPrueba = jugador.GetComponent<inventarioPrueba>();
-            for (int i = 0; i < invenPrueba.slots.Length; i++)
-            {
-                if (invenPrueba.isFull[i] == null)
-                {
-                    //GameObject boton = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
-                   
-                    Destroy(gameObject);
-                    break;
-                    //invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
-                    //Destroy(gameObject);
-                    //break;
                 }
             }
         }
