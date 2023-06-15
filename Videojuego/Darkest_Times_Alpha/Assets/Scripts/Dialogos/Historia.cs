@@ -13,6 +13,7 @@ public class Historia : MonoBehaviour
     [SerializeField] private TMP_Text dialogoTexto; //Texto o dialogo
     [SerializeField,TextArea(4,6)] private string[] dialogoLinea; //Numero de parrafos con 4 a 6 lineas 
 
+
     // Update is called once per frame
     void Update()
     {

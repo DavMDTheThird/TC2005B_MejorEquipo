@@ -28,6 +28,7 @@ public class Mechero : MonoBehaviour
         if(equipada){
             if(this.IsBroken == false){
                 coolDownM -= Time.deltaTime;
+                //LuzBar.instance.UseLuz(0.0045f);
             }
             if(coolDownM <= 0){
                 ControladorSonidos.Instance.EjecutarSonido(colectar);
@@ -37,6 +38,7 @@ public class Mechero : MonoBehaviour
                 Debug.Log("Se rompe");
             }
             Debug.Log("Te quedan " + coolDownM + " segundos.");
+            
         }
     }
 
