@@ -410,7 +410,7 @@ app.get('/api/juego/loadCheckpoint/:id_usuario', async (request, response)=>{
     try
     {
         connection = await connectToDB()
-        const [results, fields] = await connection.execute('SELECT c.id_usuario, c.id_personaje, c.id_nivel FROM darkesttimes_BD.checkpoints AS c JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_personaje JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario WHERE u.id_usuario = ? ORDER BY p.id_personaje DESC LIMIT 1;', [request.params.id_usuario])//La busqueda
+        const [results, fields] = await connection.execute('SELECT u.nombre, c.id_usuario, c.id_personaje, c.id_nivel FROM darkesttimes_BD.checkpoints AS c JOIN darkesttimes_BD.personaje AS p ON p.id_personaje = c.id_personaje JOIN darkesttimes_BD.usuarios AS u ON c.id_usuario = u.id_usuario WHERE correo = ? ORDER BY p.id_personaje DESC LIMIT 1;', [request.params.id_usuario])//La busqueda
 
         console.log(`${results.length} rows returned`)
         console.log(results)
