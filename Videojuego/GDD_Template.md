@@ -141,7 +141,7 @@ El jugador escogera entre cuatro personajes principales con una historia y stats
 1. Samurai - David
 2. Futbolista - Angel
 3. Arqueologo Juanpa
-4. - Daniel
+4. Vikingo - Daniel
 
 **Poner 4 historias**
 
