@@ -37,17 +37,27 @@ public class userStatsID
     public int id_usuario;
 
 }
+[System.Serializable]
+public class user
+{
+    public int id_usuario;
+}
 
 
 public class Player_stats : MonoBehaviour
 {
     //API
     [SerializeField] string url;
-    [SerializeField] string getUsersEP;
-    [SerializeField] Text errorText;
+
 
     [SerializeField] string updateCheckpointEP;
     [SerializeField] Text errorText_updateCheckpoint;
+
+    [SerializeField] string getUsersEP;
+    [SerializeField] Text errorText;
+
+    [SerializeField] string sendDeathEP;
+    [SerializeField] Text errorTextDeath;
 
     public Response respuesta_para_updateCheckpoint;
 
@@ -193,6 +203,12 @@ public class Player_stats : MonoBehaviour
         StartCoroutine(UpdateCheckpoint());
     }
 
+    public void PutDeaths()
+    {
+        StartCoroutine(UpdateDeaths());
+    }
+    
+
 
     IEnumerator GetUserCheckpoint()
     {
@@ -278,49 +294,81 @@ public class Player_stats : MonoBehaviour
         }
     }
 
+    IEnumerator UpdateDeaths()
+    {
+        user UserP = new user();
+
+        UserP.id_usuario = PlayerPrefs.GetInt("id_personaje");
+
+        string jsonData = JsonUtility.ToJson(UserP);
+
+        //Debug.Log(url + sendDeathEP);
+        Debug.Log(jsonData);
+
+
+        using (UnityWebRequest www = UnityWebRequest.Put(url + sendDeathEP, jsonData))
+        {
+            //www.method = "POST";
+            www.SetRequestHeader("Content-Type", "application/json");
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                string responseJson = www.downloadHandler.text;
+                Debug.Log("Response: " + responseJson);
+
+                if (errorTextDeath != null) errorTextDeath.text = "";
+            }
+            else
+            {
+                Debug.Log("Error: " + www.error);
+                if (errorTextDeath != null) errorTextDeath.text = "Error: " + www.error;
+            }
+        }
+    }
 
 
 
-    //IEnumerator AddUser()
-    //{
-    //    /*
-    //    // This should work with an API that does NOT expect JSON
-    //    WWWForm form = new WWWForm();
-    //    form.AddField("name", "newGuy" + Random.Range(1000, 9000).ToString());
-    //    form.AddField("surname", "Tester" + Random.Range(1000, 9000).ToString());
-    //    Debug.Log(form);
-    //    */
+        //IEnumerator AddUser()
+        //{
+        //    /*
+        //    // This should work with an API that does NOT expect JSON
+        //    WWWForm form = new WWWForm();
+        //    form.AddField("name", "newGuy" + Random.Range(1000, 9000).ToString());
+        //    form.AddField("surname", "Tester" + Random.Range(1000, 9000).ToString());
+        //    Debug.Log(form);
+        //    */
 
-    //    // Create the object to be sent as json
-    //    User testUser = new User();
-    //    testUser.name = "newGuy" + Random.Range(1000, 9000).ToString();
-    //    testUser.surname = "Tester" + Random.Range(1000, 9000).ToString();
-    //    //Debug.Log("USER: " + testUser);
-    //    string jsonData = JsonUtility.ToJson(testUser);
-    //    //Debug.Log("BODY: " + jsonData);
+        //    // Create the object to be sent as json
+        //    User testUser = new User();
+        //    testUser.name = "newGuy" + Random.Range(1000, 9000).ToString();
+        //    testUser.surname = "Tester" + Random.Range(1000, 9000).ToString();
+        //    //Debug.Log("USER: " + testUser);
+        //    string jsonData = JsonUtility.ToJson(testUser);
+        //    //Debug.Log("BODY: " + jsonData);
 
-    //    // Send using the Put method:
-    //    // https://stackoverflow.com/questions/68156230/unitywebrequest-post-not-sending-body
-    //    using (UnityWebRequest www = UnityWebRequest.Put(url + getUsersEP, jsonData))
-    //    {
-    //        //UnityWebRequest www = UnityWebRequest.Post(url + getUsersEP, form);
-    //        // Set the method later, and indicate the encoding is JSON
-    //        //www.method = "POST";
-    //        www.SetRequestHeader("Content-Type", "application/json");
-    //        yield return www.SendWebRequest();
+        //    // Send using the Put method:
+        //    // https://stackoverflow.com/questions/68156230/unitywebrequest-post-not-sending-body
+        //    using (UnityWebRequest www = UnityWebRequest.Put(url + getUsersEP, jsonData))
+        //    {
+        //        //UnityWebRequest www = UnityWebRequest.Post(url + getUsersEP, form);
+        //        // Set the method later, and indicate the encoding is JSON
+        //        //www.method = "POST";
+        //        www.SetRequestHeader("Content-Type", "application/json");
+        //        yield return www.SendWebRequest();
 
-    //        if (www.result == UnityWebRequest.Result.Success)
-    //        {
-    //            Debug.Log("Response: " + www.downloadHandler.text);
-    //            //if (errorText != null) errorText.text = "";
-    //        }
-    //        else
-    //        {
-    //            Debug.Log("Error: " + www.error);
-    //            //if (errorText != null) errorText.text = "Error: " + www.error;
-    //        }
-    //    }
-    //}
+        //        if (www.result == UnityWebRequest.Result.Success)
+        //        {
+        //            Debug.Log("Response: " + www.downloadHandler.text);
+        //            //if (errorText != null) errorText.text = "";
+        //        }
+        //        else
+        //        {
+        //            Debug.Log("Error: " + www.error);
+        //            //if (errorText != null) errorText.text = "Error: " + www.error;
+        //        }
+        //    }
+        //}
 
 
-}
+    }

@@ -345,10 +345,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   url: localhost:5000
+  updateCheckpointEP: /api/juego/updateCheckpoint
+  errorText_updateCheckpoint: {fileID: 0}
   getUsersEP: /api/juego/getCheckpoint
   errorText: {fileID: 0}
-  updateCheckpointEP: 
-  errorText_updateCheckpoint: {fileID: 0}
+  sendDeathEP: /api/juego/addDeath
+  errorTextDeath: {fileID: 0}
   respuesta_para_updateCheckpoint:
     mensaje: 
     id: 0

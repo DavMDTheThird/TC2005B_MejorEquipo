@@ -203,11 +203,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bbbec1e92d7418da8105282be00269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://localhost:5000
-  getUsersEP: /api/user/checkpoint
-  errorText: {fileID: 0}
-  updateCheckpointEP: 
+  url: localhost:5000
+  updateCheckpointEP: /api/juego/updateCheckpoint
   errorText_updateCheckpoint: {fileID: 0}
+  getUsersEP: /api/juego/getCheckpoint
+  errorText: {fileID: 0}
+  sendDeathEP: /api/juego/addDeath
+  errorTextDeath: {fileID: 0}
   respuesta_para_updateCheckpoint:
     mensaje: 
     id: 0
