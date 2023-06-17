@@ -21,7 +21,7 @@ public class pickUpAtaque : MonoBehaviour
     private void Start()
     {
         jugador = GameObject.FindGameObjectWithTag("Player");
-        invenPrueba = jugador.GetComponent<inventarioPrueba>();
+        //invenPrueba = jugador.GetComponent<inventarioPrueba>();
     }
 
     public void PrecioObjeto(string objeto)
@@ -64,8 +64,8 @@ public class pickUpAtaque : MonoBehaviour
     {
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleE")
         {
-            jugador = GameObject.FindGameObjectWithTag("Player");
-            invenPrueba = jugador.GetComponent<inventarioPrueba>();
+            //jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -78,8 +78,8 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleA")
         {
-            jugador = GameObject.FindGameObjectWithTag("Player");
-            invenPrueba = jugador.GetComponent<inventarioPrueba>();
+            //jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -92,8 +92,8 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleS")
         {
-            jugador = GameObject.FindGameObjectWithTag("Player");
-            invenPrueba = jugador.GetComponent<inventarioPrueba>();
+            //jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -106,8 +106,8 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleV")
         {
-            jugador = GameObject.FindGameObjectWithTag("Player");
-            invenPrueba = jugador.GetComponent<inventarioPrueba>();
+            //jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -120,6 +120,7 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "linterna")
         {
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -137,6 +138,7 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "mechero")
         {
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -154,6 +156,7 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "antorcha")
         {
+            invenPrueba = collision.gameObject.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)

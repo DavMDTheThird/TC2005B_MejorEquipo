@@ -44541,6 +44541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemigo: {fileID: 1531815744}
   colectar: {fileID: 0}
+  creditos: {fileID: 0}
   damageDelay: 0
   attackDelay: 1
 --- !u!114 &1537667375 stripped
@@ -48992,13 +48993,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   url: localhost:5000
-  getUsersEP: /api/juego/getCheckpoint
-  errorText: {fileID: 0}
   updateCheckpointEP: 
   errorText_updateCheckpoint: {fileID: 0}
+  getUsersEP: /api/juego/getCheckpoint
+  errorText: {fileID: 0}
+  sendDeathEP: 
+  errorTextDeath: {fileID: 0}
   respuesta_para_updateCheckpoint:
     mensaje: 
     id: 0
+  newCharacter: 1
   HeartContainer: []
 --- !u!4 &8363204625397811795
 Transform:
