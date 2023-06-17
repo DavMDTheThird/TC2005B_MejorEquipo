@@ -125,22 +125,22 @@ public class StatsEnemigo : MonoBehaviour
             playerStats.TakeDamage(atk);
             timeToAttack = Time.time + attackDelay;
         }
-        if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
         {
             vida -= 20;
             timeToDamage = Time.time + damageDelay;
         }
-        if (collision.gameObject.tag == "proyectil" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        if (collision.gameObject.tag == "proyectil" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
         {
             vida -= 25;
             timeToDamage = Time.time + damageDelay;
         }
-        if (collision.gameObject.tag == "espada" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        if (collision.gameObject.tag == "espada" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
         {
             vida -= 15;
             timeToDamage = Time.time + damageDelay;
         }
-        if (collision.gameObject.tag == "bate" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        if (collision.gameObject.tag == "bate" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
         {
             vida -= 10;
             timeToDamage = Time.time + damageDelay;

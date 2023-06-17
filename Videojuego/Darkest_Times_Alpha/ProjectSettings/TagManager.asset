@@ -26,6 +26,7 @@ TagManager:
   - clump
   - bate
   - espada
+  - proyectil
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - Enemigos
   - Bullets
   - Radar
-  - 
+  - Meele
   - 
   - 
   - 

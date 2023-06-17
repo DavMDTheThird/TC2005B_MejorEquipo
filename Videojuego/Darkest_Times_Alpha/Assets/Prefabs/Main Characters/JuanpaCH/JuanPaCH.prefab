@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5673788724312163321}
-  distance: 1
+  distance: 0.5
   animator: {fileID: 6736430870700103527}
   delay: 0.2
 --- !u!1 &4550692681112482632
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 3385029199300496187}
   - component: {fileID: 6736430870700103527}
   - component: {fileID: 8095886957423164200}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Weapon
   m_TagString: espada
   m_Icon: {fileID: 0}
@@ -354,6 +354,7 @@ MonoBehaviour:
   respuesta_para_updateCheckpoint:
     mensaje: 
     id: 0
+  newCharacter: 0
   HeartContainer: []
 --- !u!114 &4499063437207991674
 MonoBehaviour:

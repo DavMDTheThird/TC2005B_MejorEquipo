@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4317542646107714460}
   - component: {fileID: 7587701428600475781}
   - component: {fileID: 451964624913997283}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Weapon
   m_TagString: bate
   m_Icon: {fileID: 0}
@@ -354,6 +354,7 @@ MonoBehaviour:
   respuesta_para_updateCheckpoint:
     mensaje: 
     id: 0
+  newCharacter: 0
   HeartContainer: []
 --- !u!114 &4499063437207991674
 MonoBehaviour:
