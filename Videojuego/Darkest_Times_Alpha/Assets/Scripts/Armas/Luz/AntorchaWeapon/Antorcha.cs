@@ -28,6 +28,7 @@ public class Antorcha : MonoBehaviour
         if(equipada){
             if(this.IsBroken == false){
                 coolDownA -= Time.deltaTime;
+                //LuzBar.instance.UseLuz(0.0049f);
             }
             if(coolDownA <= 0){
                 ControladorSonidos.Instance.EjecutarSonido(colectar);

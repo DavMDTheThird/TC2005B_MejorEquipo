@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class itemTienda : MonoBehaviour
 {
+    
     private inventarioPrueba invenPrueba;
-    public GameObject itemButtom;
+    private GameObject jugador;
+    private GameObject inventario;
 
     private void Start()
     {
-        invenPrueba = GameObject.FindGameObjectWithTag("Player").GetComponent<inventarioPrueba>();
+         jugador = GameObject.FindGameObjectWithTag("Player");
+    if (jugador != null)
+    {
+        Transform inventarioTransform = jugador.transform.GetChild(1);
+        if (inventarioTransform != null)
+        {
+            inventario = inventarioTransform.gameObject;
+        }
     }
+    invenPrueba = jugador.GetComponent<inventarioPrueba>();
+    }
+
     // Start is called before the first frame update
     public void comprarObjeto()
     {
@@ -18,7 +30,7 @@ public class itemTienda : MonoBehaviour
         {
             if (invenPrueba.isFull[i] == null)
             {
-                invenPrueba.isFull[i] = Instantiate(itemButtom, invenPrueba.slots[i].transform, false);
+                invenPrueba.isFull[i] = Instantiate(inventario, invenPrueba.slots[i].transform, false);
                 break;
             }
         }

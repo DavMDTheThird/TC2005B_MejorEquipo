@@ -11,7 +11,7 @@ public class pickUpAtaque : MonoBehaviour
     [SerializeField] GameObject linterna;
     [SerializeField] GameObject mechero;
     [SerializeField] GameObject antorcha;
-    [SerializeField] GameObject bengala;
+
 
     private int precio;
     private int totalHuesos;
@@ -46,6 +46,9 @@ public class pickUpAtaque : MonoBehaviour
     {
         PrecioObjeto(objeto);
         itemButtom = (GameObject)Resources.Load(objeto); 
+        jugador = GameObject.FindGameObjectWithTag("Player");
+        invenPrueba = jugador.GetComponent<inventarioPrueba>();
+
         for (int i = 0; i < invenPrueba.slots.Length; i++)
         {
             if (invenPrueba.isFull[i] == null && precio <= GameManager.Instance.PuntosTotales)
@@ -61,6 +64,8 @@ public class pickUpAtaque : MonoBehaviour
     {
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleE")
         {
+            jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = jugador.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -73,6 +78,8 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleA")
         {
+            jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = jugador.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -85,6 +92,8 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleS")
         {
+            jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = jugador.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)
@@ -97,6 +106,8 @@ public class pickUpAtaque : MonoBehaviour
         }
         if (collision.CompareTag("Player") && gameObject.tag == "ObjetoRecogibleV")
         {
+            jugador = GameObject.FindGameObjectWithTag("Player");
+            invenPrueba = jugador.GetComponent<inventarioPrueba>();
             for (int i = 0; i < invenPrueba.slots.Length; i++)
             {
                 if (invenPrueba.isFull[i] == null)

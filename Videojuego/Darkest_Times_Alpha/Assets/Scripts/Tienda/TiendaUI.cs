@@ -8,7 +8,7 @@ public class TiendaUI : MonoBehaviour
     private pickUpAtaque inventario;
     private inventarioPrueba inventarioCheck;
     private int totalMonedas;
-    public int totalObjetos;
+    // public int totalObjetos;
     private int precioObjeto;
 
     
@@ -16,23 +16,23 @@ public class TiendaUI : MonoBehaviour
 
     public void AdquirirObjeto(string objeto)
     {
-        /*PrecioObjeto(objeto);*/
-        /*totalMonedas = gamemaneger.PuntosTotales;*/
-        /*
-        if (precioObjeto <= totalMonedas && totalObjetos < 5)
-        {
-            totalObjetos++;
-            /*totalMonedas -= precioObjeto;
+        // PrecioObjeto(objeto);
+        // totalMonedas = gamemaneger.PuntosTotales;
+        
+        // if (precioObjeto <= totalMonedas && totalObjetos < 5)
+        // {
+        //     totalObjetos++;
+        //     totalMonedas -= precioObjeto;
             
-            totalMonedas -= precioObjeto;
-        }*/
-        /*if(totalObjetos < 5)
-        {
-            totalObjetos++;
-            GameObject equipo = (GameObject)Resources.Load(objeto); // va dentro del if
-            Instantiate(equipo, Vector3.zero, Quaternion.identity, panelEquipo.transform); // va dentro del if
+        //     totalMonedas -= precioObjeto;
+        // }
+        // if(totalObjetos < 5)
+        // {
+        //     totalObjetos++;
+        //     GameObject equipo = (GameObject)Resources.Load(objeto); // va dentro del if
+        //     Instantiate(equipo, Vector3.zero, Quaternion.identity, panelEquipo.transform); // va dentro del if
             
-        }*/
+        // }
         
     }
 

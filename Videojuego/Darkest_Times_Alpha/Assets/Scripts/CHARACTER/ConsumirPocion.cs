@@ -10,6 +10,7 @@ public class ConsumirPocion : MonoBehaviour
     private GameObject[] playerList;
     private GameObject player;
     private Player_stats playerStats;
+    public int slot;
 
     public enum ObjetosPociones
     {
@@ -18,6 +19,13 @@ public class ConsumirPocion : MonoBehaviour
         Ataque,
         Escudo
     };
+
+    public void Start(){
+        playerStats = GetComponent<Player_stats>();
+        playerList = GameObject.FindGameObjectsWithTag("Player");
+        player = playerList[0];
+        playerStats = player.GetComponent<Player_stats>();
+    }
 
     public void UsarObjetos()
     {
@@ -30,13 +38,9 @@ public class ConsumirPocion : MonoBehaviour
             case ObjetosPociones.Vida:
                 Debug.Log("Consumir pocion vida");
 
-                playerList = GameObject.FindGameObjectsWithTag("Player");
-                player = playerList[0];
-                playerStats = GetComponent<Player_stats>();
-
                 Debug.Log(player.name);
 
-                playerStats.TakeDamage(-1);
+                playerStats.TakeDamage(-3);
                 break;
             case ObjetosPociones.Ataque:
                 Debug.Log("Consumir pocion ataque");
