@@ -432,8 +432,104 @@ app.get('/api/juego/loadCheckpoint/:correo', async (request, response)=>{
     }
 })
 
+app.put('/api/juego/addDeath', async (request, response)=>{
 
+    let connection = null
 
+    try{
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query(
+            'UPDATE usuarios AS u JOIN personaje AS p ON u.id_usuario = p.id_personaje SET u.muertes_totales = u.muertes_totales + 1, p.muertes = p.muertes + 1 WHERE u.id_usuario = ?;',
+            [
+              request.body['id_usuario']
+            ]
+          );
+        
+        console.log(`${results.affectedRows} rows updated`)
+        response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+app.put('/api/juego/addCompleatedGame', async (request, response)=>{
+
+    let connection = null
+
+    try{
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query(
+            'UPDATE usuarios AS u SET u.juegos_completados = u.juegos_completados + 1 WHERE u.id_usuario = ?;',
+            [
+              request.body['id_usuario']
+            ]
+          );
+        
+        console.log(`${results.affectedRows} rows updated`)
+        response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
+
+app.put('/api/juego/addMobKill', async (request, response)=>{
+
+    let connection = null
+
+    try{
+        connection = await connectToDB()
+
+        const [results, fields] = await connection.query(
+            'UPDATE enemigos SET asesinatos = asesinatos + 1 WHERE id_enemigo = (SELECT id_enemigo FROM enemigos_nombres WHERE nombre_enemigo = ?);',
+            [
+              request.body['nombre_enemigo']
+            ]
+          );
+        
+        console.log(`${results.affectedRows} rows updated`)
+        response.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+    catch(error)
+    {
+        response.status(500)
+        response.json(error)
+        console.log(error)
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end()
+            console.log("Connection closed succesfully!")
+        }
+    }
+})
 
 
 
