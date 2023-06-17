@@ -96,7 +96,7 @@ public class Player_stats : MonoBehaviour
 
         QueryUsers();
 
-        
+
         //ShowHearts();
     }
 
@@ -107,6 +107,7 @@ public class Player_stats : MonoBehaviour
     {
         if (playerBSC != null && playerBSC.HP == 0)
         {
+            PutDeaths();
             SceneManager.LoadScene("GameOver");
         }
 
@@ -180,13 +181,31 @@ public class Player_stats : MonoBehaviour
         {
             obj.SetActive(false);
 
-            if(playerBSC.HP == i)
+            if (playerBSC.HP == i)
             {
                 obj.SetActive(true);
             }
             ++i;
         }
 
+    }
+
+    public void GainHealth(short health)
+    {
+        if (playerBSC.HP + health >= 10)
+        {
+            playerBSC.HP = 10;
+        }
+        else
+        {
+            playerBSC.HP += health;
+        }
+        ShowHearts();
+    }
+
+    public void GainXP(short xp)
+    {
+        playerBSC.XP += xp;
     }
 
 
@@ -207,6 +226,7 @@ public class Player_stats : MonoBehaviour
     {
         StartCoroutine(UpdateDeaths());
     }
+
     
 
 
