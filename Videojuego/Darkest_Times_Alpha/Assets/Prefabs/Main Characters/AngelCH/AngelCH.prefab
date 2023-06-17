@@ -133,9 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2691998249783855585}
   - component: {fileID: 7170334502277912971}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: WeaponParent
-  m_TagString: bate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

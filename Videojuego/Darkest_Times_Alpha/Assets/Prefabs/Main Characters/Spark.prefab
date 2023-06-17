@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8703606042690552971}
   - component: {fileID: 8631161454343309953}
   - component: {fileID: 6200049802935759332}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Spark
-  m_TagString: bala
+  m_TagString: proyectil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

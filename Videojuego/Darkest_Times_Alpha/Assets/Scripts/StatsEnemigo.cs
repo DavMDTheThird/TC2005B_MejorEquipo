@@ -121,15 +121,51 @@ public class StatsEnemigo : MonoBehaviour
             playerStats.TakeDamage(atk);
             timeToAttack = Time.time + attackDelay;
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage)
+        if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        {
+            vida -= 20;
+            timeToDamage = Time.time + damageDelay;
+        }
+        if (collision.gameObject.tag == "proyectil" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        {
+            vida -= 25;
+            timeToDamage = Time.time + damageDelay;
+        }
+        if (collision.gameObject.tag == "espada" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+        {
+            vida -= 15;
+            timeToDamage = Time.time + damageDelay;
+        }
+        if (collision.gameObject.tag == "bate" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
         {
             vida -= 10;
             timeToDamage = Time.time + damageDelay;
         }
     }
+
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+    //     {
+    //         vida -= 20;
+    //         timeToDamage = Time.time + damageDelay;
+    //     }
+    //     if (collision.gameObject.tag == "proyectil" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+    //     {
+    //         vida -= 25;
+    //         timeToDamage = Time.time + damageDelay;
+    //     }
+    //     if (collision.gameObject.tag == "espada" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+    //     {
+    //         vida -= 15;
+    //         timeToDamage = Time.time + damageDelay;
+    //     }
+    //     if (collision.gameObject.tag == "bate" && Time.time >= timeToDamage && enemigo.tag != "eyeBall")
+    //     {
+    //         vida -= 10;
+    //         timeToDamage = Time.time + damageDelay;
+    //     }
+
+    // }
 
 }
