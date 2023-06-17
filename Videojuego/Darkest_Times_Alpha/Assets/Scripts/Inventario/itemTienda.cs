@@ -11,28 +11,29 @@ public class itemTienda : MonoBehaviour
 
     private void Start()
     {
-         jugador = GameObject.FindGameObjectWithTag("Player");
-    if (jugador != null)
-    {
-        Transform inventarioTransform = jugador.transform.GetChild(1);
-        if (inventarioTransform != null)
-        {
-            inventario = inventarioTransform.gameObject;
-        }
-    }
-    invenPrueba = jugador.GetComponent<inventarioPrueba>();
+        jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+           {
+               Transform inventarioTransform = jugador.transform.GetChild(1);
+               if (inventarioTransform != null)
+               {
+                   inventario = inventarioTransform.gameObject;
+               }
+           }
+        //invenPrueba = jugador.GetComponent<inventarioPrueba>();
+        
     }
 
     // Start is called before the first frame update
-    public void comprarObjeto()
-    {
-        for (int i = 0; i < invenPrueba.slots.Length; i++)
-        {
-            if (invenPrueba.isFull[i] == null)
-            {
-                invenPrueba.isFull[i] = Instantiate(inventario, invenPrueba.slots[i].transform, false);
-                break;
-            }
-        }
-    }
+    //public void comprarObjeto()
+    //{
+    //    for (int i = 0; i < invenPrueba.slots.Length; i++)
+    //    {
+    //        if (invenPrueba.isFull[i] == null)
+    //        {
+    //            invenPrueba.isFull[i] = Instantiate(inventario, invenPrueba.slots[i].transform, false);
+    //            break;
+    //        }
+    //    }
+    //}
 }

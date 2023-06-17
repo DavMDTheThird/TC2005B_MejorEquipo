@@ -21,7 +21,7 @@ public class ConsumirPocion : MonoBehaviour
     };
 
     public void Start(){
-        playerStats = GetComponent<Player_stats>();
+        //playerStats = GetComponent<Player_stats>();
         playerList = GameObject.FindGameObjectsWithTag("Player");
         player = playerList[0];
         playerStats = player.GetComponent<Player_stats>();

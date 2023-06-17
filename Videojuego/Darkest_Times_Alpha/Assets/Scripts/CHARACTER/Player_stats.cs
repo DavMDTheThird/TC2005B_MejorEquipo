@@ -63,6 +63,7 @@ public class Player_stats : MonoBehaviour
 
     //public bool babyCharacter = true;
     Player_basic playerBSC;
+    public bool newCharacter = false;
     //Player_basic playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 5, 5, 1, 0);
 
     public List<GameObject> HeartContainer;
@@ -94,7 +95,16 @@ public class Player_stats : MonoBehaviour
         HeartContainer.Add(GameObject.Find("9Hearts"));
         HeartContainer.Add(GameObject.Find("10Hearts"));
 
-        QueryUsers();
+        if(newCharacter == true)
+        {
+            playerBSC = new Player_basic(10, 10, 0, 0, 50, 2, 5, 5, 1, 0);
+            ShowHearts();
+        }
+        else
+        {
+            QueryUsers();
+        }
+        
 
 
         //ShowHearts();
