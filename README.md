@@ -46,7 +46,7 @@ Lo siguiente que se va a tener que hacer es prender el serivdor, pero para insta
 
 Finalmente se va a tener que prender el servidor con el comando: '<span style="color: #00FF66;">npm start</span>'. Si ocurre que el servidor no se inicia y no reconoce el comando 'start', se tendrá que escribir la siguiente linea de codigo: '<span style="color: #00FF66;">"start": "nodemon app.js",</span>' abajo de la linea: '<span style="color: #00FF66;">"scripts": {</span>'.
 
-#### Instrucciones del Prototipo
+## Instrucciones del Prototipo
 
 A continuacion se mostrara una serie de pasos para reconocer el prototipo V1, el cual lleva la mayoria de requerimientos funcionales completos:
 
