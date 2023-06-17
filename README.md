@@ -78,7 +78,7 @@ A continuacion se mostrara una serie de pasos para reconocer el prototipo V1, el
 </p>
 <p style=text-align:justify>
 
-6. Actualmente el juego esta formado por las siguientes escenas principales: Tutorial,Lobby,Hospital,Tienda y Dentro Tienda. El orden para probar el videojuego es asi como se presentan cada una de las escenas.
+6. Actualmente el juego esta formado por las siguientes escenas principales: Menu,Tutorial,Lobby,Hospital. El orden para probar el videojuego es asi como se presentan cada una de las escenas. Para iniciar el juego, dirigete a la escena Menu que se encuentra en la carpeta "Juego" dentro de la carpeta de escenas y finalmente dale iniciar.
 
 </p>
 <p style=text-align:justify>
