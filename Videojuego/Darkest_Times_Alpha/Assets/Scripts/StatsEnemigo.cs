@@ -41,11 +41,15 @@ public class StatsEnemigo : MonoBehaviour
 
     void Update()
     {
-        if(vida<=0)
+        if(gameObject != null)
         {
-            ControladorSonidos.Instance.EjecutarSonido(colectar);
-            Destroy(gameObject);
+            if (vida <= 0)
+            {
+                ControladorSonidos.Instance.EjecutarSonido(colectar);
+                Destroy(gameObject);
+            }
         }
+        
         if(vida == 0 && enemigo.tag == "spider")
         {
             creditos.SetActive(true);
