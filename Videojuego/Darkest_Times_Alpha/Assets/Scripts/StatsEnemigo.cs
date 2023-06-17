@@ -9,6 +9,8 @@ public class StatsEnemigo : MonoBehaviour
     [SerializeField] private GameObject enemigo;
     [SerializeField] private AudioClip colectar;
     [SerializeField] public GameObject creditos;
+    private GameObject arma1;
+    private GameObject arma2;
     private short vida;
     private short atk;
     private bool recibeDaño;
@@ -76,7 +78,6 @@ public class StatsEnemigo : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(enemigo.tag != "spider" && enemigo.tag != "legs"){
             if (collision.CompareTag("linterna") && Time.time >= timeToDamage)
                 {
                     vida -= 20;
@@ -92,7 +93,16 @@ public class StatsEnemigo : MonoBehaviour
                     vida -= 10;
                     timeToDamage = Time.time + damageDelay;
                 }
-        }
+                if (collision.gameObject.tag == "espada" && Time.time >= timeToDamage )
+                {
+                    vida -= 20;
+                    timeToDamage = Time.time + damageDelay;
+                }
+                if (collision.gameObject.tag == "bate" && Time.time >= timeToDamage )
+                {
+                    vida -= 10;
+                    timeToDamage = Time.time + damageDelay;
+                }
     }
 
     // private void OnCollisionEnter2D(Collision2D collision)
@@ -113,6 +123,8 @@ public class StatsEnemigo : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        arma1 = GameObject.FindGameObjectWithTag("bate");
+        arma2 = GameObject.FindGameObjectWithTag("espada");
         if(collision.gameObject.tag == "Player" && enemigo.tag == "clump")
         {
             vida -= 1;
@@ -125,24 +137,14 @@ public class StatsEnemigo : MonoBehaviour
             playerStats.TakeDamage(atk);
             timeToAttack = Time.time + attackDelay;
         }
-        if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
+        if (collision.gameObject.tag == "bala" && Time.time >= timeToDamage )
         {
             vida -= 20;
             timeToDamage = Time.time + damageDelay;
         }
-        if (collision.gameObject.tag == "proyectil" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
+        if (collision.gameObject.tag == "proyectil" && Time.time >= timeToDamage )
         {
             vida -= 25;
-            timeToDamage = Time.time + damageDelay;
-        }
-        if (collision.gameObject.tag == "espada" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
-        {
-            vida -= 15;
-            timeToDamage = Time.time + damageDelay;
-        }
-        if (collision.gameObject.tag == "bate" && Time.time >= timeToDamage /*&& enemigo.tag != "eyeBall"*/)
-        {
-            vida -= 10;
             timeToDamage = Time.time + damageDelay;
         }
     }

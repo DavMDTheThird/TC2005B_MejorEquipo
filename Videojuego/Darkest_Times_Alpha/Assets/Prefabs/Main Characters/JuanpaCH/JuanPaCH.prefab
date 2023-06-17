@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 212369748498844882}
   - component: {fileID: 3235881174646486331}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: WeaponParent
-  m_TagString: Untagged
+  m_TagString: espada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.014114664, y: 2.0541775}
@@ -394,7 +394,7 @@ MonoBehaviour:
   - {fileID: 4150779720362926744}
   - {fileID: 4150779720084444795}
   - {fileID: 4150779720200855368}
-  - {fileID: 4150779720455689838}
+  - {fileID: 4150779719035550917}
   inventario: {fileID: 4150779719083474519}
   totalObjetos: 0
 --- !u!1001 &970140082268456657
@@ -778,6 +778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90158ac3a764c2e408bf99fb73fcb900, type: 3}
+--- !u!1 &4150779719035550917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3813468521597811220, guid: 90158ac3a764c2e408bf99fb73fcb900, type: 3}
+  m_PrefabInstance: {fileID: 970140082268456657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4150779719083474515 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3813468521349216386, guid: 90158ac3a764c2e408bf99fb73fcb900, type: 3}
@@ -806,10 +811,5 @@ GameObject:
 --- !u!1 &4150779720362926744 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3813468520740185161, guid: 90158ac3a764c2e408bf99fb73fcb900, type: 3}
-  m_PrefabInstance: {fileID: 970140082268456657}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4150779720455689838 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3813468520580305087, guid: 90158ac3a764c2e408bf99fb73fcb900, type: 3}
   m_PrefabInstance: {fileID: 970140082268456657}
   m_PrefabAsset: {fileID: 0}

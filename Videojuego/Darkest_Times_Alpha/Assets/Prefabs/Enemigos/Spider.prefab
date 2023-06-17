@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6233265190606086956}
   - component: {fileID: 6233265190606086950}
   - component: {fileID: 6233265190606086951}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spider
   m_TagString: spider
   m_Icon: {fileID: 0}
@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemigo: {fileID: 6233265190606086958}
   colectar: {fileID: 8300000, guid: 42c4744333b0f7942898b6152cb6fbb6, type: 3}
+  creditos: {fileID: 0}
   damageDelay: 1
   attackDelay: 0
 --- !u!114 &6233265190606086951

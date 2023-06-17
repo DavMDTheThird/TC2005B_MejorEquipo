@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b335d101c2732b488fff1d98b38e474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colectar: {fileID: 8300000, guid: 6ea9c33517c499c4ebb0b0f3a08bc986, type: 3}
+  clip: {fileID: 0}
   screamer: {fileID: 0}
+  tiemposcream: 0
 --- !u!61 &7180182478776388895
 BoxCollider2D:
   m_ObjectHideFlags: 0
